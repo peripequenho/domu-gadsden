@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "custom_liquid_AxmgpN": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- assign img = collection.image -%}\n{%- assign heading = collection.title -%}\n\n{%- if img != blank -%}\n<div id=\"cbpx\" class=\"cbpx\" data-cbp-factor=\"0.25\">\n  <img class=\"cbpx__img\"\n       src=\"{{ img | image_url: width: 2000 }}\"\n       srcset=\"{{ img | image_url: width: 800 }} 800w, {{ img | image_url: width: 1400 }} 1400w, {{ img | image_url: width: 2000 }} 2000w\"\n       sizes=\"100vw\" alt=\"{{ heading | escape }}\" loading=\"eager\">\n  <div class=\"cbpx__overlay\"></div>\n  <div class=\"cbpx__content\"><h1 class=\"cbpx__title\">{{ heading }}</h1></div>\n</div>\n\n<style>\n  #cbpx { position: relative; width: 100%; overflow: hidden; height: 320px; background: #0B1120; display: block; }\n  #cbpx .cbpx__img { position: absolute; left: 0; top: -40%; width: 100%; height: 180%; object-fit: cover; object-position: center; will-change: transform; transform: translate3d(0,0,0); backface-visibility: hidden; }\n  #cbpx .cbpx__overlay { position: absolute; inset: 0; z-index: 1; background: #0B1120; opacity: .35; }\n  #cbpx .cbpx__content { position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; box-sizing: border-box; }\n  #cbpx .cbpx__title { margin: 0; color: #fff; font-size: 36px; line-height: 1.04; text-transform: uppercase; letter-spacing: .02em; text-shadow: 0 2px 20px rgba(0,0,0,.35); }\n  @media (min-width: 750px) { #cbpx { height: 480px; } #cbpx .cbpx__title { font-size: 64px; } }\n</style>\n\n<script>\n(function () {\n  var el = document.getElementById('cbpx'); if (!el) return;\n  var img = el.querySelector('.cbpx__img'); if (!img) return;\n  var node = el.parentElement;\n  while (node) {\n    node.style.paddingTop = '0'; node.style.paddingBottom = '0';\n    node.style.marginTop = '0'; node.style.marginBottom = '0';\n    if (node.classList && node.classList.contains('shopify-section')) break;\n    node = node.parentElement;\n  }\n  var factor = parseFloat(el.getAttribute('data-cbp-factor')) || 0.25;\n  var ticking = false;\n  function update() {\n    ticking = false;\n    var r = el.getBoundingClientRect();\n    var vh = window.innerHeight || document.documentElement.clientHeight;\n    if (r.bottom < -50 || r.top > vh + 50) return;\n    var shift = -r.top * factor;\n    var max = r.height * 0.40;\n    if (shift > max) shift = max; else if (shift < -max) shift = -max;\n    img.style.transform = 'translate3d(0,' + shift.toFixed(2) + 'px,0)';\n  }\n  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }\n  window.addEventListener('scroll', onScroll, { passive: true });\n  window.addEventListener('resize', onScroll, { passive: true });\n  update();\n})();\n</script>\n{%- endif -%}",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "visibility": "all"
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "badges": "sale",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "quick_add": "standard",
+        "equal_height": true,
+        "swatch_option": "",
+        "swatch_position": "bottom",
+        "swatch_size_d": 36,
+        "swatch_size_m": 24
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_AxmgpN",
+    "main-collection-product-grid"
+  ]
+}

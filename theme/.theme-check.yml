@@ -1,0 +1,6 @@
+MatchingTranslations:
+  enabled: false
+TemplateLength:
+  enabled: false
+ExcessiveSettingsCount:
+  enabled: false

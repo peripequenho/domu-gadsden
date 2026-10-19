@@ -1,0 +1,106 @@
+{
+ "m": {
+  "title": "Spray para tiña inguinal | Athlex PSS 120 ml – Domu Hogar",
+  "theme": "DOMU ATHLEX original",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 1914,
+    "empty": false
+   },
+   {
+    "id": "reviews-mini",
+    "h": 83,
+    "empty": false
+   },
+   {
+    "id": "horizontal_ticker_Bwfdhe",
+    "h": 38,
+    "empty": false
+   },
+   {
+    "id": "image_slider_k6hTQm",
+    "h": 130,
+    "empty": false
+   },
+   {
+    "id": "faq",
+    "h": 954,
+    "empty": false
+   },
+   {
+    "id": "horizontal_ticker_qxD6nk",
+    "h": 38,
+    "empty": false
+   },
+   {
+    "id": "dolor",
+    "h": 1909,
+    "empty": false
+   },
+   {
+    "id": "mecanismo",
+    "h": 1083,
+    "empty": false
+   },
+   {
+    "id": "comparison_slider_9qeVzq",
+    "h": 444,
+    "empty": false
+   },
+   {
+    "id": "uso",
+    "h": 993,
+    "empty": false
+   },
+   {
+    "id": "ingredientes",
+    "h": 777,
+    "empty": false
+   },
+   {
+    "id": "proceso",
+    "h": 825,
+    "empty": false
+   },
+   {
+    "id": "reviews",
+    "h": 1606,
+    "empty": false
+   },
+   {
+    "id": "legal",
+    "h": 176,
+    "empty": false
+   },
+   {
+    "id": "skin",
+    "h": 0,
+    "empty": true
+   },
+   {
+    "id": "progreso",
+    "h": 0,
+    "empty": true
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1375"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 6,
+  "nImgs": 114,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1375",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

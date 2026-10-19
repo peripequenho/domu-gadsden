@@ -1,0 +1,247 @@
+{
+ "intro": {
+  "eyebrow": "Test · 8 preguntas · un minuto",
+  "bullets": [
+   "No te pedimos el mail. No te pedimos el teléfono.",
+   "No hay que mandar ninguna foto ni mostrarle nada a nadie.",
+   "Se contesta con el pulgar, en el baño, y nadie se entera."
+  ]
+ },
+ "questions": [
+  {
+   "n": 0,
+   "question": "¿En qué parte del cuerpo aparece la molestia?",
+   "help": "Marcá el lugar donde más se siente.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "ingle",
+     "title": "En la ingle",
+     "desc": "El pliegue entre la pierna y la entrepierna, o al lado de las bolas."
+    },
+    {
+     "v": "pie",
+     "title": "En los pies",
+     "desc": "Entre los dedos, o en la planta."
+    },
+    {
+     "v": "ingle-pie",
+     "title": "En los dos lados",
+     "desc": "En la ingle y también en los pies."
+    },
+    {
+     "v": "otro",
+     "title": "En otro pliegue",
+     "desc": "Axilas, debajo de la panza, atrás de la rodilla."
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "question": "¿Hace cuánto que viene pasando?",
+   "help": "Contando desde la primera vez que lo notaste.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "dias",
+     "title": "Unos días",
+     "desc": "Arrancó esta semana o la anterior."
+    },
+    {
+     "v": "semanas",
+     "title": "Unas semanas",
+     "desc": "Ya lleva un tiempo largo."
+    },
+    {
+     "v": "meses",
+     "title": "Meses",
+     "desc": "Perdí la cuenta de cuándo empezó."
+    },
+    {
+     "v": "anios",
+     "title": "Más de un año",
+     "desc": "Va y viene desde hace mucho."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "question": "¿Qué es lo que más molesta?",
+   "help": "Elegí lo que más se repite en el día.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "picazon",
+     "title": "Que pica",
+     "desc": "Y uno se rasca disimulado cuando no lo ve nadie."
+    },
+    {
+     "v": "ardor",
+     "title": "Que arde",
+     "desc": "Sobre todo al caminar, o después de la ducha."
+    },
+    {
+     "v": "humedad",
+     "title": "Que está siempre húmedo",
+     "desc": "Te secás, y a las dos horas está igual."
+    },
+    {
+     "v": "piel",
+     "title": "Cómo se ve la piel",
+     "desc": "Roja, áspera, o distinta al resto."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "question": "Después de unos días tranquilos, sin transpirar, ¿mejora?",
+   "help": "Pensá en un fin de semana de sillón y aire acondicionado, sin entrenar.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "si",
+     "title": "Sí, se va casi del todo",
+     "desc": "Sin transpirar, casi ni se nota."
+    },
+    {
+     "v": "poco",
+     "title": "Mejora un poco, pero sigue ahí",
+     "desc": "Baja, pero nunca se va del todo."
+    },
+    {
+     "v": "nada",
+     "title": "No cambia nada",
+     "desc": "Con calor o sin calor, sigue igual."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "question": "¿Cómo es un día normal tuyo?",
+   "help": "Esto define cuánto tiempo pasa la zona húmeda.",
+   "cheer": "Faltan cuatro, y son las que más ayudan a afinar el resultado.",
+   "options": [
+    {
+     "v": "mucho",
+     "title": "Entreno o trabajo moviéndome",
+     "desc": "Casi todos los días termino transpirado."
+    },
+    {
+     "v": "algo",
+     "title": "Algo de movimiento",
+     "desc": "Entreno un par de veces por semana."
+    },
+    {
+     "v": "sentado",
+     "title": "Sentado casi todo el día",
+     "desc": "Oficina, volante, escritorio."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "question": "¿Ya se probó algo encima?",
+   "help": "Una crema, un polvo, talco, lo que sea.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "nada",
+     "title": "Todavía nada",
+     "desc": "Es la primera vez que busco qué hacer."
+    },
+    {
+     "v": "volvio",
+     "title": "Sí, mejoró, y después volvió",
+     "desc": "Mientras me lo ponía iba bien. Lo dejé y volvió."
+    },
+    {
+     "v": "nosirvio",
+     "title": "Sí, y no pasó nada",
+     "desc": "Me lo puse y siguió igual."
+    },
+    {
+     "v": "ahora",
+     "title": "Estoy usando algo ahora mismo",
+     "desc": "Estoy en el medio de eso."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "question": "¿Es la primera vez que pasa?",
+   "help": "Contando todas las veces que te acordás.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "primera",
+     "title": "Sí, es la primera vez",
+     "desc": "Nunca antes me había pasado."
+    },
+    {
+     "v": "unavez",
+     "title": "Ya pasó una vez",
+     "desc": "Pasó antes, se fue, y ahora volvió."
+    },
+    {
+     "v": "seguido",
+     "title": "Pasa seguido",
+     "desc": "Va y viene. Ya lo conozco de memoria."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "question": "¿Alguna de estas situaciones aplica?",
+   "help": "Esta pregunta existe para saber si te tenemos que decir que no nos compres.",
+   "cheer": "",
+   "options": [
+    {
+     "v": "ninguna",
+     "title": "Ninguna de estas",
+     "desc": "La piel está entera, sin heridas."
+    },
+    {
+     "v": "herida",
+     "title": "Piel abierta o que sangra",
+     "desc": "De rascarse, o agrietada."
+    },
+    {
+     "v": "pus",
+     "title": "Ampollas, pus u olor fuerte",
+     "desc": "O la zona hinchada y caliente."
+    },
+    {
+     "v": "salud",
+     "title": "Diabetes o defensas bajas",
+     "desc": "También si hay corticoides de por medio."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "medico",
+   "chapa": "Pará un segundo",
+   "title": "Esto no te lo tenemos que vender nosotros. Te lo tiene que ver un médico.",
+   "body": "<p>Por lo que marcaste, la piel está abierta o hay algo más que picazón. Cuando la piel está lastimada, o cuando hay diabetes o defensas bajas de por medio, cualquier cosa que se aplique encima puede complicar el asunto en vez de ayudar.</p>\r\n      <p>Así que te decimos lo que casi nadie que te quiere vender algo te va a decir: <strong>ATHLEX no es para vos hoy</strong>. Andá a que te vea alguien. Una consulta dura quince minutos y no le tenés que explicar nada a nadie más.</p>\r\n\r\n      <h3>Mientras tanto, tres cosas que ayudan y son gratis</h3>\r\n      <ul>\r\n        <li>Secar la zona con la toalla a toquecitos, sin frotar. Frotar sobre piel lastimada la abre más.</li>\r\n        <li>Ropa interior de algodón y holgada, y cambiarla apenas quedó húmeda de transpiración.</li>\r\n        <li>Toalla propia, y no compartirla con nadie de la casa.</li>\r\n      </ul>\r\n\r\n      <p>Cuando la piel esté cerrada y quieras que la zona se mantenga seca todos los días, volvé y hablamos. Acá vamos a estar.</p>"
+  },
+  {
+   "id": "vuelve",
+   "chapa": "Tu resultado · el que vuelve",
+   "title": "No es que no funcione lo que usaste. Es que lo dejaste antes de tiempo.",
+   "body": "<p>Lo que marcaste es el caso más común de todos: se pone algo, mejora, se deja de poner, y a las semanas está de vuelta. Y el que lo vive termina convencido de que nada le sirve.</p>\r\n      <p>La explicación es más aburrida que eso. La picazón se va antes de que la piel esté realmente lista. Uno deja de sentirlo, deja de ponerse lo que sea que se estaba poniendo, y la zona vuelve a estar como estaba: caliente, húmeda y con roce todo el día.</p>\r\n\r\n      <div class=\"ax-dest\">{{ section.settings.absolucion }}</div>\r\n\r\n      <div class=\"ax-voces\">\r\n        <p class=\"ax-voces-tit\">No sos el único: esto lo escribió otra persona, en un foro</p>\r\n        <blockquote>&laquo;uno ve la mejoría y corta&hellip; da embole seguir poniendo cuando parece que está ok&raquo;<cite>Mensaje de un foro público, en español</cite></blockquote>\r\n        <p class=\"ax-voces-pie\">{{ section.settings.voces_pie }}</p>\r\n      </div>\r\n\r\n      <h3>El único secreto de verdad de todo esto</h3>\r\n      <p>Cuando ya no se siente nada, <strong>seguí una semana más</strong>. Esa semana de más es la que evita volver a empezar de cero. Es la parte que casi nadie hace, y es exactamente la que separa al que lo resuelve del que lo arrastra un año.</p>\r\n\r\n      <h3>Qué podés hacer hoy, gratis</h3>\r\n      <ul>\r\n        <li>Secar bien la zona antes de vestirse. Bien seca, no \"casi seca\".</li>\r\n        <li>Sacarse la ropa húmeda apenas termina el entrenamiento, no al llegar a casa.</li>\r\n        <li>Ropa interior de algodón y holgada, y toalla propia.</li>\r\n      </ul>\r\n\r\n      <h3>Y qué hace ATHLEX</h3>\r\n      <p>Es un spray. Se aplica sin tocar la zona y sin frotar nada, se seca solo en segundos y la deja seca y fresca. Como es un spray y no una crema, se hace todos los días sin ritual y sin drama, que es justo lo que hace falta cuando el problema es de constancia.</p>"
+  },
+  {
+   "id": "instalado",
+   "chapa": "Tu resultado · se quedó a vivir",
+   "title": "Si no mejora cuando no hay transpiración, ya no es solamente roce.",
+   "body": "<p>Una paspadura de roce mejora sola cuando pasan unos días tranquilos. Lo que marcaste sigue ahí igual aunque el día sea tranquilo. Eso quiere decir que la zona dejó de ser un lugar de paso y se volvió un lugar cómodo para quedarse: calor, humedad y roce, todos los días, a la misma hora.</p>\r\n\r\n      <div class=\"ax-dest\">{{ section.settings.absolucion }}</div>\r\n\r\n      <div class=\"ax-voces\">\r\n        <p class=\"ax-voces-tit\">No sos el único: esto lo escribió otra persona, en un foro</p>\r\n        <blockquote>&laquo;en internet ví que es un hongo llamado tiña inguinal y viendo las imágenes es exactamente lo mismo&raquo;<cite>Mensaje de un foro público, en español (ortografía original)</cite></blockquote>\r\n        <p class=\"ax-voces-pie\">{{ section.settings.voces_pie }}</p>\r\n      </div>\r\n\r\n      <p>No hay ninguna batalla microscópica que ganar, ni ningún escudo que romper. Hay un ambiente que cortar: la zona tiene que quedar seca, y tiene que quedar seca todos los días, no el día que uno se acuerda.</p>\r\n\r\n      <h3>Qué podés hacer hoy, gratis</h3>\r\n      <ul>\r\n        <li>Secar bien la zona antes de vestirse, con la toalla a toquecitos.</li>\r\n        <li>Cambiar la ropa interior apenas quedó húmeda de transpiración.</li>\r\n        <li>Toalla propia, y ponerse las medias antes que el calzoncillo si también aparece en los pies.</li>\r\n      </ul>\r\n\r\n      <h3>Y qué hace ATHLEX</h3>\r\n      <p>Es un spray. Se aplica sin tocar la zona, se seca solo en segundos y la deja seca y fresca. Y esto es importante: <strong>cuando ya no se siente nada, seguí una semana más</strong>. Esa semana de más es la que evita volver a empezar.</p>"
+  },
+  {
+   "id": "humedad",
+   "chapa": "Tu resultado · recién empieza",
+   "title": "Lo agarraste temprano. Es la parte fácil.",
+   "body": "<p>Por lo que marcaste, la zona mejora cuando no hay transpiración. Eso es una buena noticia y es información concreta: lo que lo mantiene es la humedad y el roce del día, no otra cosa. La ducha, entrenar, ocho horas sentado, el calor. Todo eso deja la zona húmeda, y húmeda es donde el problema se instala.</p>\r\n\r\n      <div class=\"ax-dest\">{{ section.settings.absolucion }}</div>\r\n\r\n      <div class=\"ax-voces\">\r\n        <p class=\"ax-voces-tit\">No sos el único: esto lo escribió otra persona, en un foro</p>\r\n        <blockquote>&laquo;pensé que me había pegado herpes, pero al final era por la transpiración&raquo;<cite>Mensaje de un foro público, en español</cite></blockquote>\r\n        <p class=\"ax-voces-pie\">{{ section.settings.voces_pie }}</p>\r\n      </div>\r\n\r\n      <p>La diferencia entre que esto quede en una molestia de una semana o se transforme en algo que dura un año es bastante simple: que la zona vuelva a estar seca todos los días, sin excepción.</p>\r\n\r\n      <h3>Qué podés hacer hoy, gratis</h3>\r\n      <ul>\r\n        <li>Secar bien la zona antes de vestirse. Bien seca, no \"casi seca\".</li>\r\n        <li>Sacarse la ropa húmeda apenas termina el entrenamiento.</li>\r\n        <li>Ropa interior de algodón y holgada, y toalla propia.</li>\r\n      </ul>\r\n\r\n      <h3>Y qué hace ATHLEX</h3>\r\n      <p>Es un spray. Se aplica sin tocar la zona y sin frotar, se seca solo en segundos y la deja seca y fresca. Es lo mismo que se hace con un desodorante, en otro lugar del cuerpo.</p>"
+  }
+ ]
+}

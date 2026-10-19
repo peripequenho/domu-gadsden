@@ -1,0 +1,72 @@
+{
+ "d": {
+  "title": "Productos – Domu Hogar",
+  "theme": "DOMU Gadsden 1.1.0",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_RNkFxw",
+    "h": 605,
+    "empty": false
+   },
+   {
+    "id": "collection_list_R6tnja",
+    "h": 315,
+    "empty": false
+   },
+   {
+    "id": "main-collection-product-grid",
+    "h": 4372,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 90,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Productos – Domu Hogar",
+  "theme": "DOMU Gadsden 1.1.0",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_RNkFxw",
+    "h": 385,
+    "empty": false
+   },
+   {
+    "id": "collection_list_R6tnja",
+    "h": 136,
+    "empty": false
+   },
+   {
+    "id": "main-collection-product-grid",
+    "h": 7192,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 84,
+  "status": 200,
+  "errors": [
+   "consola: Clarity pixel failed to start... TypeError: Failed to fetch"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

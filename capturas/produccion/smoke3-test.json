@@ -1,0 +1,26 @@
+{
+ "m": {
+  "title": "ATHLEX · Test – Domu Hogar",
+  "theme": "DOMU ATHLEX original v2",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "test",
+    "h": 490,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 4,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

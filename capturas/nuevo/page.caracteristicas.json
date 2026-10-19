@@ -1,0 +1,54 @@
+{
+ "d": {
+  "title": "Contact – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_bDnkYj",
+    "h": 605,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [
+   "slideshow_bDnkYj"
+  ],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Contact – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_bDnkYj",
+    "h": 532,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [
+   "slideshow_bDnkYj"
+  ],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 304,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

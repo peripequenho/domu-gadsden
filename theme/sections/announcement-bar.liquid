@@ -1,0 +1,1079 @@
+{%- comment -%}
+  Barra de anuncios (H03 y H04): anuncios en columnas o en carrusel (T04), con ícono, tamaños y
+  disposición por dispositivo, visibilidad por producto (de la barra y de cada anuncio), cupón para
+  copiar y redes sociales. Conserva las utilidades de Dawn (redes, país e idioma a los costados).
+{%- endcomment -%}
+{%- liquid
+  assign s = section.settings
+
+  assign social_icons = true
+  if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
+    assign social_icons = false
+  endif
+  if s.enable_country_selector or s.enable_language_selector
+    assign language_country_selector = true
+  endif
+
+  capture bar_visible
+    render 'gad-product-visibility', list: s.hide_products, only: s.only_listed, product: product
+  endcapture
+-%}
+
+{%- if bar_visible == 'true' or request.design_mode -%}
+  {%- capture slides -%}
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign b = block.settings
+        capture block_visible
+          render 'gad-product-visibility', list: b.hide_products, only: b.only_listed, product: product
+        endcapture
+        if block_visible != 'true'
+          continue
+        endif
+        if block.type == 'social' and social_icons == false
+          continue
+        endif
+      -%}
+      <div
+        class="gad-ann__item gad-ann__item--d-{{ b.layout_d }} gad-ann__item--m-{{ b.layout_m }} gad-ann__item--ad-{{ b.align_d }} gad-ann__item--am-{{ b.align_m }}"
+        style="--fs-m: {{ b.size_m }}px; --fs-d: {{ b.size_d }}px; --ic-m: {{ b.icon_size_m }}px; --ic-d: {{ b.icon_size_d }}px;"
+        {{ block.shopify_attributes }}
+      >
+        {%- case block.type -%}
+          {%- when 'announcement' -%}
+            {%- capture inner -%}
+              {%- if b.icon != blank or b.icon_image != blank -%}
+                {%- render 'gad-icon', name: b.icon, filled: b.icon_filled, image: b.icon_image, class: 'gad-ann__icon' -%}
+              {%- endif -%}
+              <span class="gad-ann__text">{{ b.text }}</span>
+            {%- endcapture -%}
+            {%- if b.link != blank -%}
+              <a href="{{ b.link }}" class="gad-ann__inner gad-ann__link link link--text focus-inset">{{ inner }}</a>
+            {%- else -%}
+              <p class="gad-ann__inner">{{ inner }}</p>
+            {%- endif -%}
+
+          {%- when 'coupon' -%}
+            <div class="gad-ann__inner">
+              {%- if b.icon != blank or b.icon_image != blank -%}
+                {%- render 'gad-icon', name: b.icon, filled: b.icon_filled, image: b.icon_image, class: 'gad-ann__icon' -%}
+              {%- endif -%}
+              {%- if b.text != blank -%}
+                <span class="gad-ann__text">{{ b.text }}</span>
+              {%- endif -%}
+              <gad-copy class="gad-ann__coupon" data-code="{{ b.code | escape }}" data-copied="{{ b.copied | escape }}">
+                <span class="gad-ann__code">{{ b.code | escape }}</span>
+                <button type="button" class="gad-ann__copy" aria-label="{{ b.button | escape }} {{ b.code | escape }}">
+                  <span data-gad-copy-label>{{ b.button | escape }}</span>
+                </button>
+                <span class="visually-hidden" role="status" data-gad-copy-status></span>
+              </gad-copy>
+            </div>
+
+          {%- when 'social' -%}
+            <div class="gad-ann__inner gad-ann__social">
+              {%- render 'social-icons' -%}
+            </div>
+        {%- endcase -%}
+      </div>
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- liquid
+    assign count = slides | split: 'class="gad-ann__item ' | size | minus: 1
+    assign d_cols = s.d_cols
+    if d_cols == 0
+      assign d_cols = count | at_least: 1
+    endif
+    assign bar_label = 'sections.announcements.announcement_bar' | t
+    assign m_cols = s.m_cols
+    if m_cols == 0
+      assign m_cols = count | at_least: 1
+    endif
+  -%}
+
+  {%- if social_icons and s.show_social -%}
+    {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+  {%- else -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'social' -%}
+        {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- render 'gad-colors', s: s, key: section.id -%}
+  <div
+    class="utility-bar gad-ann-bar {% render 'gad-scheme', s: s, key: section.id %}{% if s.show_line_separator %} utility-bar--bottom-border{% endif %}{% if s.separator %} gad-ann-bar--sep{% endif %}{% if language_country_selector %} header-localization{% endif %}{% if bar_visible != 'true' %} gad-ann-bar--hidden-here{% endif %}"
+    style="--pt: {{ s.padding_top }}px; --pb: {{ s.padding_bottom }}px;"
+   {% if s.title_scale != blank and s.title_scale != '100' %} data-gad-hs="{{ s.title_scale }}"{% endif %}{% if s.text_scale != blank and s.text_scale != '100' %} data-gad-ts="{{ s.text_scale }}"{% endif %}
+  >
+    <div class="page-width utility-bar__grid{% if count > 0 and language_country_selector or s.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or s.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
+      {%- if s.show_social and social_icons -%}
+        {%- render 'social-icons' -%}
+      {%- endif -%}
+      {%- if count > 0 -%}
+        <div class="announcement-bar gad-ann" role="region" aria-label="{{ 'sections.announcements.announcement_bar' | t }}">
+          {%- render 'gad-carousel',
+            s: s,
+            key: section.id,
+            slides: slides,
+            d_per_view: d_cols,
+            m_per_view: m_cols,
+            gap_d: s.gap,
+            gap_m: s.gap,
+            label: bar_label
+          -%}
+        </div>
+      {%- endif -%}
+      <div class="localization-wrapper">
+        {%- if s.enable_country_selector and localization.available_countries.size > 1 -%}
+          <localization-form class="small-hide medium-hide">
+            {%- form 'localization', id: 'AnnouncementCountryForm', class: 'localization-form' -%}
+              <div>
+                <h2 class="visually-hidden" id="AnnouncementCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                {%- render 'country-localization', localPosition: 'AnnouncementCountry' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
+        {% endif %}
+
+        {%- if s.enable_language_selector and localization.available_languages.size > 1 -%}
+          <localization-form class="small-hide medium-hide">
+            {%- form 'localization', id: 'AnnouncementLanguageForm', class: 'localization-form' -%}
+              <div>
+                <h2 class="visually-hidden" id="AnnouncementLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                {%- render 'language-localization', localPosition: 'AnnouncementLanguage' -%}
+              </div>
+            {%- endform -%}
+          </localization-form>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "max_blocks": 12,
+  "class": "announcement-bar-section",
+  "enabled_on": {
+    "groups": [
+      "header"
+    ]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-4"
+    },
+    {
+      "type": "header",
+      "content": "Colores propios"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_colors",
+      "label": "Usar colores propios",
+      "default": false,
+      "info": "Pisan a la combinación de colores elegida arriba."
+    },
+    {
+      "type": "color",
+      "id": "cc_bg",
+      "label": "Fondo",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color_background",
+      "id": "cc_bg_gradient",
+      "label": "Degradé de fondo",
+      "info": "Si cargás un degradé, reemplaza al color de fondo."
+    },
+    {
+      "type": "color",
+      "id": "cc_text",
+      "label": "Texto",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "cc_accent",
+      "label": "Acento",
+      "default": "#334FB4"
+    },
+    {
+      "type": "color",
+      "id": "cc_btn_bg",
+      "label": "Fondo del botón lleno",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "cc_btn_text",
+      "label": "Texto del botón lleno",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "cc_outline",
+      "label": "Botón de contorno y enlaces",
+      "default": "#121212"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "label": "t:sections.header.settings.show_line_separator.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Columnas"
+    },
+    {
+      "type": "range",
+      "id": "d_cols",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "label": "Anuncios a la vez en desktop",
+      "default": 1,
+      "info": "0: todos en una fila."
+    },
+    {
+      "type": "range",
+      "id": "m_cols",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "label": "Anuncios a la vez en mobile",
+      "default": 1,
+      "info": "0: todos en una fila."
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Separación entre anuncios",
+      "default": 24
+    },
+    {
+      "type": "checkbox",
+      "id": "separator",
+      "label": "Línea entre anuncios",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Carrusel"
+    },
+    {
+      "type": "select",
+      "id": "car_type",
+      "label": "Tipo",
+      "options": [
+        {
+          "value": "classic",
+          "label": "Clásico (se frena en los extremos)"
+        },
+        {
+          "value": "loop",
+          "label": "Infinito"
+        },
+        {
+          "value": "fade",
+          "label": "Fundido"
+        }
+      ],
+      "default": "loop"
+    },
+    {
+      "type": "select",
+      "id": "car_drag",
+      "label": "Arrastre con mouse o dedo",
+      "options": [
+        {
+          "value": "off",
+          "label": "Desactivado"
+        },
+        {
+          "value": "on",
+          "label": "Activado"
+        }
+      ],
+      "default": "on"
+    },
+    {
+      "type": "checkbox",
+      "id": "car_autoplay",
+      "label": "Pase automático",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "car_speed",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "unit": "s",
+      "label": "Velocidad del pase",
+      "default": 5
+    },
+    {
+      "type": "color_scheme",
+      "id": "car_arrows_scheme",
+      "label": "Colores de las flechas",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "car_arrows_bare",
+      "label": "Flechas transparentes",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "car_dots_color",
+      "label": "Color de los puntos",
+      "info": "Vacío: el color del texto."
+    },
+    {
+      "type": "header",
+      "content": "Carrusel en desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "d_carousel",
+      "label": "Mostrar como carrusel en desktop",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "d_per_move",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "label": "Cuántos pasan por movimiento",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "d_dots",
+      "label": "Puntos",
+      "options": [
+        {
+          "value": "hidden",
+          "label": "Ocultos"
+        },
+        {
+          "value": "under",
+          "label": "Abajo"
+        }
+      ],
+      "default": "hidden"
+    },
+    {
+      "type": "select",
+      "id": "d_arrows",
+      "label": "Flechas",
+      "options": [
+        {
+          "value": "hidden",
+          "label": "Ocultas"
+        },
+        {
+          "value": "under",
+          "label": "Abajo"
+        },
+        {
+          "value": "sides",
+          "label": "A los costados"
+        }
+      ],
+      "default": "hidden"
+    },
+    {
+      "type": "header",
+      "content": "Carrusel en mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "m_carousel",
+      "label": "Mostrar como carrusel en mobile",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "m_per_move",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Cuántos pasan por movimiento",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "m_dots",
+      "label": "Puntos",
+      "options": [
+        {
+          "value": "hidden",
+          "label": "Ocultos"
+        },
+        {
+          "value": "under",
+          "label": "Abajo"
+        }
+      ],
+      "default": "hidden"
+    },
+    {
+      "type": "select",
+      "id": "m_arrows",
+      "label": "Flechas",
+      "options": [
+        {
+          "value": "hidden",
+          "label": "Ocultas"
+        },
+        {
+          "value": "under",
+          "label": "Abajo"
+        },
+        {
+          "value": "sides",
+          "label": "A los costados"
+        }
+      ],
+      "default": "hidden"
+    },
+    {
+      "type": "header",
+      "content": "Relleno"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Arriba",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Abajo",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Visibilidad por producto"
+    },
+    {
+      "type": "product_list",
+      "id": "hide_products",
+      "label": "Fichas",
+      "limit": 50,
+      "info": "Por defecto, la barra no se ve en estas fichas."
+    },
+    {
+      "type": "checkbox",
+      "id": "only_listed",
+      "label": "Mostrar sólo en estas fichas",
+      "default": false,
+      "info": "Al revés: se ve sólo en las fichas de la lista. Sin fichas en la lista, se ve siempre."
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.heading_utilities.content"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.announcement-bar.settings.paragraph.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "label": "t:sections.announcement-bar.settings.show_social.label",
+      "default": false,
+      "info": "t:sections.announcement-bar.settings.show_social.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "label": "t:sections.announcement-bar.settings.enable_country_selector.label",
+      "default": false,
+      "info": "t:sections.announcement-bar.settings.enable_country_selector.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "label": "t:sections.announcement-bar.settings.enable_language_selector.label",
+      "default": false,
+      "info": "t:sections.announcement-bar.settings.enable_language_selector.info"
+    },
+    {
+      "type": "header",
+      "content": "Tamaño de la letra"
+    },
+    {
+      "type": "select",
+      "id": "title_scale",
+      "label": "Tamaño de los títulos",
+      "options": [
+        {
+          "value": "70",
+          "label": "70 %"
+        },
+        {
+          "value": "80",
+          "label": "80 %"
+        },
+        {
+          "value": "90",
+          "label": "90 %"
+        },
+        {
+          "value": "100",
+          "label": "Normal"
+        },
+        {
+          "value": "110",
+          "label": "110 %"
+        },
+        {
+          "value": "125",
+          "label": "125 %"
+        },
+        {
+          "value": "150",
+          "label": "150 %"
+        },
+        {
+          "value": "175",
+          "label": "175 %"
+        },
+        {
+          "value": "200",
+          "label": "200 %"
+        }
+      ],
+      "default": "100"
+    },
+    {
+      "type": "select",
+      "id": "text_scale",
+      "label": "Tamaño de los textos",
+      "options": [
+        {
+          "value": "70",
+          "label": "70 %"
+        },
+        {
+          "value": "80",
+          "label": "80 %"
+        },
+        {
+          "value": "90",
+          "label": "90 %"
+        },
+        {
+          "value": "100",
+          "label": "Normal"
+        },
+        {
+          "value": "110",
+          "label": "110 %"
+        },
+        {
+          "value": "125",
+          "label": "125 %"
+        },
+        {
+          "value": "150",
+          "label": "150 %"
+        },
+        {
+          "value": "175",
+          "label": "175 %"
+        },
+        {
+          "value": "200",
+          "label": "200 %"
+        }
+      ],
+      "default": "100",
+      "info": "Agranda o achica los títulos y los textos de esta sección respecto del tamaño global."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label",
+          "default": "Envíos a todo el país"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        },
+        {
+          "type": "header",
+          "content": "Texto e ícono"
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Alineación en mobile",
+          "options": [
+            {
+              "value": "left",
+              "label": "Izquierda"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Derecha"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "align_d",
+          "label": "Alineación en desktop",
+          "options": [
+            {
+              "value": "left",
+              "label": "Izquierda"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Derecha"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "range",
+          "id": "size_m",
+          "min": 8,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del texto en mobile",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "size_d",
+          "min": 10,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del texto en desktop",
+          "default": 13
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Ícono",
+          "info": "Nombre en inglés de Material Symbols, ej. local_shipping. Vacío: sin ícono."
+        },
+        {
+          "type": "checkbox",
+          "id": "icon_filled",
+          "label": "Ícono relleno",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Ícono propio (imagen)"
+        },
+        {
+          "type": "range",
+          "id": "icon_size_m",
+          "min": 10,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del ícono en mobile",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "icon_size_d",
+          "min": 10,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del ícono en desktop",
+          "default": 18
+        },
+        {
+          "type": "select",
+          "id": "layout_m",
+          "label": "Ícono y texto en mobile",
+          "options": [
+            {
+              "value": "row",
+              "label": "En fila"
+            },
+            {
+              "value": "stack",
+              "label": "Apilados"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "layout_d",
+          "label": "Ícono y texto en desktop",
+          "options": [
+            {
+              "value": "row",
+              "label": "En fila"
+            },
+            {
+              "value": "stack",
+              "label": "Apilados"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "header",
+          "content": "Visibilidad por producto"
+        },
+        {
+          "type": "product_list",
+          "id": "hide_products",
+          "label": "Fichas",
+          "limit": 50,
+          "info": "Por defecto, el anuncio no se ve en estas fichas."
+        },
+        {
+          "type": "checkbox",
+          "id": "only_listed",
+          "label": "Mostrar sólo en estas fichas",
+          "default": false,
+          "info": "Al revés: se ve sólo en las fichas de la lista. Sin fichas en la lista, se ve siempre."
+        }
+      ]
+    },
+    {
+      "type": "coupon",
+      "name": "Cupón",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Texto",
+          "default": "Usá el código"
+        },
+        {
+          "type": "text",
+          "id": "code",
+          "label": "Código",
+          "default": "BIENVENIDA"
+        },
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Texto del botón",
+          "default": "Copiar"
+        },
+        {
+          "type": "text",
+          "id": "copied",
+          "label": "Mensaje al copiar",
+          "default": "¡Copiado!"
+        },
+        {
+          "type": "header",
+          "content": "Texto e ícono"
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Alineación en mobile",
+          "options": [
+            {
+              "value": "left",
+              "label": "Izquierda"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Derecha"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "align_d",
+          "label": "Alineación en desktop",
+          "options": [
+            {
+              "value": "left",
+              "label": "Izquierda"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Derecha"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "range",
+          "id": "size_m",
+          "min": 8,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del texto en mobile",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "size_d",
+          "min": 10,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del texto en desktop",
+          "default": 13
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Ícono",
+          "info": "Nombre en inglés de Material Symbols, ej. local_shipping. Vacío: sin ícono."
+        },
+        {
+          "type": "checkbox",
+          "id": "icon_filled",
+          "label": "Ícono relleno",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Ícono propio (imagen)"
+        },
+        {
+          "type": "range",
+          "id": "icon_size_m",
+          "min": 10,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del ícono en mobile",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "icon_size_d",
+          "min": 10,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño del ícono en desktop",
+          "default": 18
+        },
+        {
+          "type": "select",
+          "id": "layout_m",
+          "label": "Ícono y texto en mobile",
+          "options": [
+            {
+              "value": "row",
+              "label": "En fila"
+            },
+            {
+              "value": "stack",
+              "label": "Apilados"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "layout_d",
+          "label": "Ícono y texto en desktop",
+          "options": [
+            {
+              "value": "row",
+              "label": "En fila"
+            },
+            {
+              "value": "stack",
+              "label": "Apilados"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "header",
+          "content": "Visibilidad por producto"
+        },
+        {
+          "type": "product_list",
+          "id": "hide_products",
+          "label": "Fichas",
+          "limit": 50,
+          "info": "Por defecto, el cupón no se ve en estas fichas."
+        },
+        {
+          "type": "checkbox",
+          "id": "only_listed",
+          "label": "Mostrar sólo en estas fichas",
+          "default": false,
+          "info": "Al revés: se ve sólo en las fichas de la lista. Sin fichas en la lista, se ve siempre."
+        }
+      ]
+    },
+    {
+      "type": "social",
+      "name": "Redes sociales",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Muestra las redes cargadas en Configuración del tema > Redes sociales."
+        },
+        {
+          "type": "header",
+          "content": "Texto e ícono"
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Alineación en mobile",
+          "options": [
+            {
+              "value": "left",
+              "label": "Izquierda"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Derecha"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "align_d",
+          "label": "Alineación en desktop",
+          "options": [
+            {
+              "value": "left",
+              "label": "Izquierda"
+            },
+            {
+              "value": "center",
+              "label": "Centro"
+            },
+            {
+              "value": "right",
+              "label": "Derecha"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "range",
+          "id": "icon_size_m",
+          "min": 10,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño de los íconos en mobile",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "icon_size_d",
+          "min": 10,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "label": "Tamaño de los íconos en desktop",
+          "default": 18
+        },
+        {
+          "type": "header",
+          "content": "Visibilidad por producto"
+        },
+        {
+          "type": "product_list",
+          "id": "hide_products",
+          "label": "Fichas",
+          "limit": 50,
+          "info": "Por defecto, el bloque no se ve en estas fichas."
+        },
+        {
+          "type": "checkbox",
+          "id": "only_listed",
+          "label": "Mostrar sólo en estas fichas",
+          "default": false,
+          "info": "Al revés: se ve sólo en las fichas de la lista. Sin fichas en la lista, se ve siempre."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.announcement-bar.presets.name",
+      "blocks": [
+        {
+          "type": "announcement",
+          "settings": {
+            "icon": "local_shipping"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

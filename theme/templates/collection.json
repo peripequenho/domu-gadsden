@@ -1,0 +1,225 @@
+{
+  "sections": {
+    "slideshow_RNkFxw": {
+      "type": "slideshow",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "visibility": "all",
+        "pagination_d": "over",
+        "pagination_m": "over"
+      },
+      "blocks": {
+        "slide_7a9JpQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/06-envio-a-todo-el-pais.png",
+            "image_overlay_opacity": 20,
+            "heading": "<strong>Envíos a todo el país</strong>",
+            "heading_size": "h1",
+            "heading_accent": "#ffffff",
+            "subheading": "Comprá seguro, recibí en tu casa",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "transparent_text": "light",
+            "box_align": "middle-left",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        },
+        "slide_b9w4xY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/01-credito-lga.png",
+            "image_overlay_opacity": 20,
+            "heading": "<strong>Equipá tu casa hoy, pagalo en cuotas</strong>",
+            "heading_size": "h1",
+            "heading_accent": "#ffffff",
+            "subheading": "Crédito LGA — aprobación rápida",
+            "button_label": "Ver créditos →",
+            "link": "shopify://collections/apto-credito-lga",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "transparent_text": "light",
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-4",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        },
+        "slide_NpnXDt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/02-3-cuotas-sin-interes.png",
+            "image_overlay_opacity": 20,
+            "heading": "<strong>Todo en 3 cuotas sin interés</strong>",
+            "heading_size": "h1",
+            "heading_accent": "#ffffff",
+            "subheading": "Con Mercado Pago, sin recargo",
+            "button_label": "Comprar → ",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "transparent_text": "light",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_7a9JpQ",
+        "slide_b9w4xY",
+        "slide_NpnXDt"
+      ]
+    },
+    "collection_list_R6tnja": {
+      "type": "collection-list",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "visibility": "all",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "car_type": "loop",
+        "car_autoplay": true,
+        "car_speed": 2,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": true,
+        "d_per_move": 2,
+        "d_gap": 40,
+        "d_peek": 30,
+        "d_edge_fit": false,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_gap": 9,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "sides",
+        "full_width": true,
+        "card_layout": "overlay",
+        "overlay_position": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "overlay_text": "#ffffff",
+        "card_title_d": 24,
+        "card_title_m": 15,
+        "card_arrow": false,
+        "card_radius": 10
+      },
+      "blocks": {
+        "featured_collection_ryCUWL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seguridad",
+            "title": ""
+          }
+        },
+        "featured_collection_RArdVA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "indumentaria-deportiva",
+            "title": ""
+          }
+        },
+        "featured_collection_pDrxtT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beauty-y-skincare",
+            "title": ""
+          }
+        },
+        "featured_collection_UwEWeH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "desayunos-y-meriendas",
+            "title": ""
+          }
+        },
+        "featured_collection_YHQiJn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ayudantes-de-cocina",
+            "title": ""
+          }
+        },
+        "featured_collection_bByeF8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cuidado-personal",
+            "title": ""
+          }
+        },
+        "featured_collection_KdHBRg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hogar",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ryCUWL",
+        "featured_collection_RArdVA",
+        "featured_collection_pDrxtT",
+        "featured_collection_UwEWeH",
+        "featured_collection_YHQiJn",
+        "featured_collection_bByeF8",
+        "featured_collection_KdHBRg"
+      ]
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "badges": "sale",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "quick_add": "standard",
+        "equal_height": true,
+        "swatch_option": "",
+        "swatch_position": "top",
+        "swatch_size_d": 36,
+        "swatch_size_m": 24
+      }
+    }
+  },
+  "order": [
+    "slideshow_RNkFxw",
+    "collection_list_R6tnja",
+    "main-collection-product-grid"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "custom_liquid_x4X4Er": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- assign img = collection.image -%}\n{%- assign heading = collection.title -%}\n\n{%- if img != blank -%}\n<div id=\"cbpx\" class=\"cbpx\" data-cbp-factor=\"0.25\">\n  <img class=\"cbpx__img\"\n       src=\"{{ img | image_url: width: 2000 }}\"\n       srcset=\"{{ img | image_url: width: 800 }} 800w, {{ img | image_url: width: 1400 }} 1400w, {{ img | image_url: width: 2000 }} 2000w\"\n       sizes=\"100vw\" alt=\"{{ heading | escape }}\" loading=\"eager\">\n  <div class=\"cbpx__overlay\"></div>\n  <div class=\"cbpx__content\"><h1 class=\"cbpx__title\">{{ heading }}</h1></div>\n</div>\n\n<style>\n  #cbpx { position: relative; width: 100%; overflow: hidden; height: 320px; background: #0B1120; display: block; }\n  #cbpx .cbpx__img { position: absolute; left: 0; top: -40%; width: 100%; height: 180%; object-fit: cover; object-position: center; will-change: transform; transform: translate3d(0,0,0); backface-visibility: hidden; }\n  #cbpx .cbpx__overlay { position: absolute; inset: 0; z-index: 1; background: #0B1120; opacity: .35; }\n  #cbpx .cbpx__content { position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; box-sizing: border-box; }\n  #cbpx .cbpx__title { margin: 0; color: #fff; font-size: 36px; line-height: 1.04; text-transform: uppercase; letter-spacing: .02em; text-shadow: 0 2px 20px rgba(0,0,0,.35); }\n  @media (min-width: 750px) { #cbpx { height: 480px; } #cbpx .cbpx__title { font-size: 64px; } }\n</style>\n\n<script>\n(function () {\n  var el = document.getElementById('cbpx'); if (!el) return;\n  var img = el.querySelector('.cbpx__img'); if (!img) return;\n  var node = el.parentElement;\n  while (node) {\n    node.style.paddingTop = '0'; node.style.paddingBottom = '0';\n    node.style.marginTop = '0'; node.style.marginBottom = '0';\n    if (node.classList && node.classList.contains('shopify-section')) break;\n    node = node.parentElement;\n  }\n  var factor = parseFloat(el.getAttribute('data-cbp-factor')) || 0.25;\n  var ticking = false;\n  function update() {\n    ticking = false;\n    var r = el.getBoundingClientRect();\n    var vh = window.innerHeight || document.documentElement.clientHeight;\n    if (r.bottom < -50 || r.top > vh + 50) return;\n    var shift = -r.top * factor;\n    var max = r.height * 0.40;\n    if (shift > max) shift = max; else if (shift < -max) shift = -max;\n    img.style.transform = 'translate3d(0,' + shift.toFixed(2) + 'px,0)';\n  }\n  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }\n  window.addEventListener('scroll', onScroll, { passive: true });\n  window.addEventListener('resize', onScroll, { passive: true });\n  update();\n})();\n</script>\n{%- endif -%}",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "visibility": "all"
+      }
+    },
+    "custom_liquid_F7BdNg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- if collection.handle == 'apto-credito-lga' -%}\n<div id=\"cred3\">\n  <div class=\"cred3__head\">\n    <h2>Comprá en cuotas con crédito LGA</h2>\n    <p>En 3 pasos simples — un crédito por cliente.</p>\n  </div>\n  <div class=\"cred3__steps\" id=\"cred3steps\">\n    <div class=\"cred3__card\"><span class=\"cred3__num\">1</span><span class=\"cred3__ico\">🛒</span><h3>Elegí tu producto</h3><p>Entrá al producto que quieras llevarte de nuestro catálogo.</p></div>\n    <div class=\"cred3__card\"><span class=\"cred3__num\">2</span><span class=\"cred3__ico\">💳</span><h3>Tocá el botón de crédito</h3><p>Dentro del producto, hacé click en «Pagá en cuotas con crédito LGA».</p></div>\n    <div class=\"cred3__card\"><span class=\"cred3__num\">3</span><span class=\"cred3__ico\">💬</span><h3>Te contactamos</h3><p>LGA evalúa tu solicitud y te escribe por WhatsApp. No pagás nada acá.</p></div>\n  </div>\n  <div class=\"cred3__dots\" id=\"cred3dots\" aria-hidden=\"true\"><span></span><span></span><span></span></div>\n  <div class=\"cred3__note\">Hasta 24 cuotas · pago semanal, mensual o diario en efectivo · solo Tucumán</div>\n</div>\n<style>\n  #cred3 { --teal:#0F766E; --teal-soft:#ecfdf5; max-width:1100px; margin:0 auto; padding:36px 16px; box-sizing:border-box; }\n  #cred3 .cred3__head { text-align:center; margin-bottom:26px; }\n  #cred3 .cred3__head h2 { margin:0 0 6px; font-size:26px; line-height:1.15; color:#0b1120; }\n  #cred3 .cred3__head p { margin:0; color:#5b6472; font-size:15px; }\n  #cred3 .cred3__steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }\n  #cred3 .cred3__card { position:relative; background:#fff; border:1px solid #e6e9ee; border-radius:16px; padding:28px 20px 22px; text-align:center; box-shadow:0 6px 22px rgba(11,17,32,.05); box-sizing:border-box; }\n  #cred3 .cred3__num { position:absolute; top:-14px; left:50%; transform:translateX(-50%); width:30px; height:30px; border-radius:50%; background:var(--teal); color:#fff; font-weight:700; font-size:15px; display:flex; align-items:center; justify-content:center; }\n  #cred3 .cred3__ico { display:block; font-size:34px; margin:6px 0 10px; }\n  #cred3 .cred3__card h3 { margin:0 0 8px; font-size:17px; color:var(--teal); }\n  #cred3 .cred3__card p { margin:0; font-size:14px; color:#5b6472; line-height:1.45; }\n  #cred3 .cred3__note { margin-top:22px; text-align:center; background:var(--teal-soft); color:var(--teal); font-size:13.5px; font-weight:600; padding:12px 16px; border-radius:12px; }\n  #cred3 .cred3__dots { display:none; }\n  @media (min-width:750px) { #cred3 .cred3__clone { display:none !important; } }\n  @media (max-width:749px) {\n    #cred3 .cred3__steps { grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:100%; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; gap:14px; padding:22px 0 6px; scrollbar-width:none; }\n    #cred3 .cred3__steps::-webkit-scrollbar { display:none; }\n    #cred3 .cred3__card { scroll-snap-align:center; }\n    #cred3 .cred3__dots { display:flex; justify-content:center; gap:7px; margin-top:14px; }\n    #cred3 .cred3__dots span { width:8px; height:8px; border-radius:50%; background:#cbd5d1; transition:background .2s, width .2s; }\n    #cred3 .cred3__dots span.on { background:var(--teal); width:22px; border-radius:4px; }\n    #cred3 .cred3__head h2 { font-size:22px; }\n  }\n</style>\n<script>\n(function(){\n  var steps=document.getElementById('cred3steps'), dotsWrap=document.getElementById('cred3dots');\n  if(!steps||!dotsWrap) return;\n  var dots=dotsWrap.children, real=steps.children.length;\n  var mq=window.matchMedia('(max-width:749px)');\n  var timer=null, resumeT=null, idx=0, hasClone=false;\n  function ensureClone(){ if(!hasClone){ var c=steps.children[0].cloneNode(true); c.className='cred3__card cred3__clone'; c.setAttribute('aria-hidden','true'); steps.appendChild(c); hasClone=true; } }\n  function cw(){ var f=steps.children[0]; return f ? f.getBoundingClientRect().width + 14 : 0; }\n  function goTo(i, smooth){ try{ steps.scrollTo({ left: cw()*i, behavior: smooth?'smooth':'auto' }); }catch(e){ steps.scrollLeft = cw()*i; } }\n  function paint(i){ var d=((i%real)+real)%real; for(var k=0;k<dots.length;k++){ dots[k].className=(k===d?'on':''); } }\n  function advance(){ idx++; goTo(idx, true); paint(idx); if(idx>=real){ setTimeout(function(){ idx=0; goTo(0,false); paint(0); }, 480); } }\n  function play(){ stop(); if(mq.matches){ timer=setInterval(advance, 3200); } }\n  function stop(){ if(timer){ clearInterval(timer); timer=null; } }\n  function pauseResume(){ stop(); if(resumeT) clearTimeout(resumeT); resumeT=setTimeout(function(){ var i=Math.round(steps.scrollLeft/(cw()||1)); if(i>=real) i=0; idx=i; paint(idx); play(); }, 4500); }\n  steps.addEventListener('pointerdown', pauseResume, {passive:true});\n  steps.addEventListener('wheel', pauseResume, {passive:true});\n  steps.addEventListener('touchstart', pauseResume, {passive:true});\n  function boot(){ if(mq.matches){ ensureClone(); idx=0; goTo(0,false); paint(0); play(); } else { stop(); paint(0); } }\n  if(mq.addEventListener) mq.addEventListener('change', boot); else if(mq.addListener) mq.addListener(boot);\n  if(document.readyState==='loading'){ window.addEventListener('DOMContentLoaded', boot); } else { boot(); }\n})();\n</script>\n{%- endif -%}",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "visibility": "all"
+      }
+    },
+    "image_slider_WpHhwR": {
+      "type": "gad-media-slider",
+      "settings": {
+        "show_empty": true,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "page_width": "page",
+        "radius_d": 0,
+        "m_full_width": true,
+        "radius_m": 0,
+        "car_type": "classic",
+        "car_drag": "off",
+        "car_autoplay": false,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": false,
+        "car_dots_color": "#1b1b1b",
+        "car_center": false,
+        "d_per_view": 1,
+        "d_per_move": 1,
+        "d_gap": 28,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "hidden",
+        "m_per_view": 1,
+        "m_per_move": 1,
+        "m_gap": 12,
+        "m_peek": 0,
+        "m_edge_fit": true,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "visibility": "mobile",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "video_slide_6Q8WRQ": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/DOMU x LGA - Credito (como comprar).mp4",
+            "thumbnail": "shopify://shop_images/portada-credito-lga-domu_1920x1080_425388a1-85fe-4b06-9d1d-ce238db9620b.jpg",
+            "loop": true,
+            "autoplay": true,
+            "tap_toggle": true,
+            "pulse": false,
+            "button_scheme": "scheme-4",
+            "sound": true,
+            "sound_scheme": "scheme-3",
+            "timeline": false,
+            "timeline_color": "#0b1f3a",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_6Q8WRQ"
+      ]
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "badges": "sale",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "quick_add": "standard",
+        "equal_height": true,
+        "swatch_option": "",
+        "swatch_position": "top",
+        "swatch_size_d": 36,
+        "swatch_size_m": 24
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_x4X4Er",
+    "custom_liquid_F7BdNg",
+    "image_slider_WpHhwR",
+    "main-collection-product-grid"
+  ]
+}

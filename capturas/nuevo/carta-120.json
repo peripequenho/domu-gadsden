@@ -1,0 +1,26 @@
+{
+ "m": {
+  "title": "ATHLEX · Carta del fundador – Domu Hogar",
+  "theme": "Gadsden 1.2.0 (ATHLEX)",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "nota",
+    "h": 9560,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 1,
+  "nImgs": 5,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

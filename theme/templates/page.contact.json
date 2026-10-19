@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "contact_form_U9ptC4": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contáctanos",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "ok_icon": "check_circle",
+        "ok_icon_filled": false,
+        "ok_text": "#28c100",
+        "ok_bg": "#f2ffed",
+        "ok_radius": 8,
+        "ok_border": 1,
+        "ok_border_color": "#28c100",
+        "err_icon": "error",
+        "err_icon_filled": false,
+        "err_text": "#ff0000",
+        "err_bg": "#fff5f5",
+        "err_radius": 8,
+        "err_border": 1,
+        "err_border_color": "#ff0000",
+        "button_full_width": true,
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "field_row_B7EVcM": {
+          "type": "fields",
+          "settings": {
+            "f1_on": true,
+            "f1_type": "name",
+            "f1_label": "",
+            "f1_required": false,
+            "f1_error": "This field is required",
+            "f2_on": true,
+            "f2_type": "email",
+            "f2_label": "",
+            "f2_required": false,
+            "f2_error": "This field is required"
+          }
+        },
+        "field_row_HX8WGh": {
+          "type": "fields",
+          "settings": {
+            "f1_on": true,
+            "f1_type": "phone",
+            "f1_label": "",
+            "f1_required": false,
+            "f1_error": "This field is required",
+            "f2_on": false,
+            "f2_type": "custom",
+            "f2_label": "Custom input name",
+            "f2_required": false,
+            "f2_error": "This field is required"
+          }
+        },
+        "textarea_trVaGc": {
+          "type": "textarea",
+          "settings": {
+            "kind": "comment",
+            "label": "",
+            "maxlength": 0,
+            "required": false,
+            "error": "This field is required"
+          }
+        }
+      },
+      "block_order": [
+        "field_row_B7EVcM",
+        "field_row_HX8WGh",
+        "textarea_trVaGc"
+      ]
+    }
+  },
+  "order": [
+    "contact_form_U9ptC4"
+  ]
+}

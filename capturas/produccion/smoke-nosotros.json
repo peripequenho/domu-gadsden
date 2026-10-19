@@ -1,0 +1,164 @@
+{
+ "d": {
+  "title": "Nosotros – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_hero_ByxwwM",
+    "h": 300,
+    "empty": false
+   },
+   {
+    "id": "icon_bar_MjU9WG",
+    "h": 117,
+    "empty": false
+   },
+   {
+    "id": "multicolumn_LipbPN",
+    "h": 214,
+    "empty": false
+   },
+   {
+    "id": "slideshow_hero_Hpr8fx",
+    "h": 209,
+    "empty": false
+   },
+   {
+    "id": "content_tabs_KpYMNP",
+    "h": 344,
+    "empty": false
+   },
+   {
+    "id": "comparison_table_gXJrt7",
+    "h": 451,
+    "empty": false
+   },
+   {
+    "id": "testimonials_RUyymc",
+    "h": 286,
+    "empty": false
+   },
+   {
+    "id": "multirow_x6YNjf",
+    "h": 859,
+    "empty": false
+   },
+   {
+    "id": "slideshow_hero_R3w9HF",
+    "h": 279,
+    "empty": false
+   },
+   {
+    "id": "rich_text_Ddzr3i",
+    "h": 372,
+    "empty": false
+   },
+   {
+    "id": "contact_form_XPCpqm",
+    "h": 364,
+    "empty": false
+   },
+   {
+    "id": "collapsible_content_J6WxeR",
+    "h": 717,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [
+   "multirow_x6YNjf"
+  ],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 5,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Nosotros – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_hero_ByxwwM",
+    "h": 213,
+    "empty": false
+   },
+   {
+    "id": "icon_bar_MjU9WG",
+    "h": 128,
+    "empty": false
+   },
+   {
+    "id": "multicolumn_LipbPN",
+    "h": 250,
+    "empty": false
+   },
+   {
+    "id": "slideshow_hero_Hpr8fx",
+    "h": 222,
+    "empty": false
+   },
+   {
+    "id": "content_tabs_KpYMNP",
+    "h": 372,
+    "empty": false
+   },
+   {
+    "id": "comparison_table_gXJrt7",
+    "h": 401,
+    "empty": false
+   },
+   {
+    "id": "testimonials_RUyymc",
+    "h": 286,
+    "empty": false
+   },
+   {
+    "id": "multirow_x6YNjf",
+    "h": 1271,
+    "empty": false
+   },
+   {
+    "id": "slideshow_hero_R3w9HF",
+    "h": 261,
+    "empty": false
+   },
+   {
+    "id": "rich_text_Ddzr3i",
+    "h": 534,
+    "empty": false
+   },
+   {
+    "id": "contact_form_XPCpqm",
+    "h": 398,
+    "empty": false
+   },
+   {
+    "id": "collapsible_content_J6WxeR",
+    "h": 886,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [
+   "multirow_x6YNjf"
+  ],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 5,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

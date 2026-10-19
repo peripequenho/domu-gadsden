@@ -1,0 +1,259 @@
+{
+  "sections": {
+    "nota": {
+      "type": "gad-article",
+      "blocks": {
+        "b00": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-foros.jpg",
+            "alt": "Una mano sosteniendo un teléfono con un texto largo en pantalla",
+            "pie": "Reddit, grupos y consultas médicas online quedan públicas. Ahí está escrito casi todo lo que la gente no dice en voz alta. (Foto: Pexels)"
+          }
+        },
+        "b01": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Hace [DATO: cuántos meses] me puse a leer foros. Reddit, grupos de Facebook, consultas médicas online que quedan públicas para cualquiera. Cientos de mensajes de hombres con picazón en la ingle, escritos casi todos de madrugada, que es cuando uno se anima.</p><p>Empecé buscando qué producto hacía falta y terminé encontrando algo que no esperaba.</p>"
+          }
+        },
+        "b02": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Lo que más se repetía no era la picazón"
+          }
+        },
+        "b03": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Era la vergüenza.</p><p>Gente googleando a las tres de la mañana porque no se animaba a decirlo en voz alta adelante de un médico, con la luz prendida. Gente que llevaba meses así, midiendo el momento de rascarse para que no la vieran. Uno escribió que preguntar en internet era su penúltima opción, y que la última era explicárselo en persona al médico. La penúltima opción, escrito por alguien que llevaba meses sin decírselo a nadie.</p>"
+          }
+        },
+        "b04": {
+          "type": "citas",
+          "settings": {
+            "titulo": "Dos de los mensajes que me hicieron arrancar",
+            "cita_1": "No quiero ir al médico porque francamente me da demasiada vergüenza.",
+            "fuente_1": "Mensaje de un foro público, traducido del inglés",
+            "cita_2": "ya no tengo la paranoia de que alguien me agarre rascándome",
+            "fuente_2": "Mensaje de un foro público, en español",
+            "pie": "Citas textuales de los foros que leí. No son clientes de ATHLEX: el producto es nuevo."
+          }
+        },
+        "b05": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Y lo que nadie les estaba diciendo"
+          }
+        },
+        "b06": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Que eso tiene nombre, que está estudiado hace décadas y que no es lo que la mayoría teme.</p><p>Se llama tiña inguinal y la causa un dermatofito, casi siempre <em>Trichophyton rubrum</em>. Es <strong>el mismo hongo que causa el pie de atleta</strong>: idéntico organismo, distinto lugar del cuerpo. En los pies nadie se avergüenza. Diez centímetros más arriba, de golpe, es un secreto.</p>"
+          }
+        },
+        "b07": {
+          "type": "destacado",
+          "settings": {
+            "texto": "El mismo hongo del pie de atleta. <em>No es una enfermedad de transmisión sexual.</em>"
+          }
+        },
+        "b08": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Ese dato solo les habría ahorrado meses de angustia a la mitad de los que leí. Y no se lo estaba diciendo nadie: lo que sí encontré fue un mercado entero vendiendo miedo — armaduras moleculares, escudos invisibles, hongos mil veces más resistentes, porcentajes de eficacia que no salen de ningún estudio que puedas leer.</p><p>Ahí decidí que si iba a hacer un producto, lo que lo iba a diferenciar no era el ingrediente sino no mentirte.</p>"
+          }
+        },
+        "b09": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Lo segundo que aprendí: por qué vuelve"
+          }
+        },
+        "b10": {
+          "type": "ciclo",
+          "settings": {
+            "titulo": "El círculo que se repetía en casi todos los mensajes",
+            "n1": "Pica",
+            "n2": "Usás algo",
+            "n3": "Mejora",
+            "n4": "Lo dejás",
+            "pie": "Después de dos o tres vueltas, la conclusión siempre era la misma: \"a mí no me sirve nada\"."
+          }
+        },
+        "b11": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>La explicación es más aburrida que la que venden por ahí. La picazón afloja antes de que la piel termine de recuperarse. Dejás de sentirla, dejás de ponerte lo que te estabas poniendo, y la zona queda como estaba antes.</p><p>Por eso los médicos insisten más con cuánto tiempo hay que seguir usándolo que con qué usar.</p>"
+          }
+        },
+        "b12": {
+          "type": "semana",
+          "settings": {
+            "titulo": "Tres semanas, dos finales distintos",
+            "fila_a": "El que corta cuando deja de picar",
+            "pie_a": "Corta el día que deja de sentirlo. Los cuadros oscuros son el tiempo que tarda en volver.",
+            "fila_b": "El que sigue una semana más",
+            "pie_b": "Sigue siete días después de dejar de sentirlo. Esa franja es toda la diferencia."
+          }
+        },
+        "b13": {
+          "type": "destacado",
+          "settings": {
+            "texto": "Cuando ya no lo sentís, <em>seguí una semana más</em>. Es la parte que casi nadie hace."
+          }
+        },
+        "b14": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Tres cosas que podés hacer hoy sin comprarme nada"
+          }
+        },
+        "b15": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<ul><li><strong>Secar la zona a toquecitos antes de vestirte.</strong> Bien seca, no \"casi seca\". La mitad del asunto se juega en esos veinte segundos.</li><li><strong>Las medias antes que el calzoncillo.</strong> El pie funciona como reservorio del mismo hongo, y la ropa interior hace escala ahí camino a la ingle. Es una recomendación médica documentada, y es gratis.</li><li><strong>Toalla propia y ropa interior de algodón, holgada.</strong> La toalla compartida es una de las vías de contagio dentro de una misma casa.</li></ul><p>Eso va primero, antes que cualquier cosa que yo te venda, y si con eso te alcanza mejor todavía.</p>"
+          }
+        },
+        "b16": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-medias.jpg",
+            "alt": "Una persona poniéndose una media antes de terminar de vestirse",
+            "pie": "Las medias antes que el calzoncillo: así la ropa interior no hace escala en los pies. (Foto: Pexels)"
+          }
+        },
+        "b17": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Por qué terminé haciendo un spray"
+          }
+        },
+        "b18": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Porque después de leer tanto, me quedó clarísimo dónde estaba la falla, y estaba lejos de la fórmula: a las dos semanas la gente abandonaba la crema, y ahí se caía todo.</p><p>Y no hay que buscarle mucha explicación. Para ponerte una crema tenés que lavarte las manos, abrir el pomo, tocarte una zona que está sensible, esperar a que se absorba, lavarte otra vez y recién ahí vestirte. Dos veces por día, durante semanas. El que abandona no es vago: el procedimiento es un bardo.</p>"
+          }
+        },
+        "b19": {
+          "type": "versus",
+          "settings": {
+            "titulo": "Lo que hay que hacer, contado en pasos",
+            "col_a": "Una crema",
+            "pasos_a": "Lavarte las manos\nAbrir el pomo\nTocarte la zona y esparcir\nEsperar a que se absorba\nVolver a lavarte las manos\nEsperar para vestirte",
+            "col_b": "Un spray",
+            "pasos_b": "Apuntar y apretar\nVestirte",
+            "pie": "La diferencia no es la potencia. Es cuántas veces vas a tener ganas de hacerlo."
+          }
+        },
+        "b20": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Así que armé lo contrario: apuntás, apretás y ya está. Se seca solo en segundos, no te obliga a tocarte la zona y te vestís enseguida.</p><p>El envase tampoco te delata: parece un producto de deporte, porque lo es. Puede quedar en el estante de un baño compartido y nadie va a preguntar nada.</p>"
+          }
+        },
+        "b21": {
+          "type": "video",
+          "settings": {
+            "titulo": "Así se aplica y así se seca",
+            "video": "shopify://files/videos/athlex-frio-v3.mp4",
+            "pie": "Sin contacto, sin frotar y sin esperar para vestirse."
+          }
+        },
+        "b22": {
+          "type": "caja",
+          "settings": {
+            "titulo": "ATHLEX PSS",
+            "sub": "Spray corporal para zonas de roce. 120 ml. Se aplica sin tocarte, seca en segundos.",
+            "boton": "Quiero probarlo un mes",
+            "pie": "Garantía de 30 días. Si no te convence, escribinos y te devolvemos lo que pagaste."
+          }
+        },
+        "b23": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Lo que no te puedo prometer"
+          }
+        },
+        "b24": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>No te va a cambiar la vida en una noche, y no te voy a poner un porcentaje inventado para que suene mejor. No tengo ese estudio y prefiero decirlo.</p><p>Tampoco es para todo el mundo. Si la piel está abierta o sangra, si hay ampollas o pus, o si hay diabetes, defensas bajas o corticoides de por medio, esto lo tiene que ver un médico antes que yo. Prefiero perder esa venta.</p><p>Lo que sí: probalo un mes. Si no notás diferencia, escribinos y te devuelvo lo que pagaste, sin formulario de diez preguntas. Y las reseñas de la página del producto tienen fecha y se ve cuáles son de compras verificadas: chequealas vos mismo, una por una.</p>"
+          }
+        },
+        "b25": {
+          "type": "test",
+          "settings": {
+            "titulo": "¿No sabés si es tu caso?",
+            "texto": "Armé un test de 8 preguntas con lo que aprendí leyendo todo eso. No pide mail ni fotos, y al final te dice qué encaja con lo que contaste. Si hay que hacerse a un lado y mandarte al médico, te lo dice ahí.",
+            "boton": "Hacer el test",
+            "url": "/pages/athlex-test"
+          }
+        },
+        "b26": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>En algún momento vas a darte cuenta de que pasó un día entero y no pensaste en rascarte. Ese día me acordás.</p>"
+          }
+        },
+        "b27": {
+          "type": "firma",
+          "settings": {
+            "nombre": "[DATO: NOMBRE REAL]",
+            "rol": "Fundador de ATHLEX"
+          }
+        }
+      },
+      "block_order": [
+        "b00",
+        "b01",
+        "b02",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21",
+        "b22",
+        "b23",
+        "b24",
+        "b25",
+        "b26",
+        "b27"
+      ],
+      "settings": {
+        "estilo": "portal",
+        "cinta": "PUBLICIDAD · CARTA DEL FUNDADOR DE ATHLEX",
+        "eyebrow": "Carta abierta",
+        "titulo": "Me pasé meses leyendo foros de gente con picazón en la ingle. Lo que más se repetía no era la picazón",
+        "bajada": "Era la vergüenza. Y arriba de esa vergüenza encontré un mercado entero vendiendo miedo. Esto es lo que aprendí, y lo que decidí hacer con eso.",
+        "autor": "Por [DATO: NOMBRE REAL], fundador de ATHLEX",
+        "dato": "23 de agosto 2026 · 4 min de lectura",
+        "handle": "athlex",
+        "utm": "?ref=nota-carta",
+        "barra": true,
+        "barra_titulo": "ATHLEX PSS · 120 ml",
+        "barra_boton": "Ver producto",
+        "temas_titulo": "Temas de la nota",
+        "temas": "Piel, Hongos, Tiña inguinal, Pie de atleta, Higiene personal",
+        "legal": "Esta nota es contenido publicitario de ATHLEX, escrito por su fundador. Las referencias sobre el organismo, el reservorio en los pies y el orden al vestirse provienen de fuentes médicas públicas (StatPearls/NCBI, DermNet NZ, AAFP), citadas en nuestro material de respaldo. ATHLEX PSS es un producto cosmético de higiene y cuidado personal, de uso externo. No reemplaza una consulta médica."
+      }
+    }
+  },
+  "order": [
+    "nota"
+  ]
+}

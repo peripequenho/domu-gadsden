@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "slideshow_bDnkYj": {
+      "type": "slideshow",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "visibility": "all",
+        "pagination_d": "over",
+        "pagination_m": "under"
+      },
+      "blocks": {
+        "slide_NQQ8E8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/horneroprep_caracteristicas_acero_2905c1b3-f07b-458c-9045-a716c31cfd54.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Acero Inoxidable 420HC",
+            "heading_size": "h2",
+            "heading_accent": "#6D388B",
+            "subheading": "Resistencia a la corrosión + retención de filo. Se puede afilar con herramientas comunes. El estándar que usan las marcas premium internacionales.",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "transparent_text": "scheme",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-1",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        },
+        "slide_6iqE3k": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/horneroprep_caracteristicas_acabado.webp",
+            "image_mobile": "shopify://shop_images/horneroprep_caracteristicas_acabado.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Acabado Stone Wash",
+            "heading_size": "h2",
+            "heading_accent": "#6D388B",
+            "subheading": "Oculta los rayones del uso diario. Reduce reflejos. Se mantiene estético mucho más tiempo.",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "transparent_text": "scheme",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-1",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        },
+        "slide_rmQNTf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/horneroprep_caracteristicas_peso.webp",
+            "image_mobile": "shopify://shop_images/horneroprep_caracteristicas_peso.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Peso: 21,8 gramos",
+            "heading_size": "h2",
+            "heading_accent": "#6D388B",
+            "subheading": "Lo vas a olvidar que lo llevás. Hasta que lo necesitás.",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "transparent_text": "scheme",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-1",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        },
+        "slide_NncYnq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/horneroprep_caracteristicas_dimensiones_cb198bd3-8b1c-457e-afe7-cf82a1dc5c5b.webp",
+            "image_mobile": "shopify://shop_images/horneroprep_caracteristicas_dimensiones_cb198bd3-8b1c-457e-afe7-cf82a1dc5c5b.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Dimensiones: 29mmx70mmx5mm",
+            "heading_size": "h2",
+            "heading_accent": "#6D388B",
+            "subheading": "Entra en cualquier llavero sin agregar volumen.",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "transparent_text": "scheme",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-1",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        },
+        "slide_BVJ4Lh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/geekey_multiherramienta_funciones_herramientas.webp",
+            "image_mobile": "shopify://shop_images/geekey_multiherramienta_funciones_herramientas.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Diseñada para cumplir",
+            "heading_size": "h2",
+            "heading_accent": "#6D388B",
+            "subheading": "Cuenta con 16 funciones ideadas a partir de necesidades de usuarios reales y diseñadas para cualquier situación.",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "transparent_text": "scheme",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-1",
+            "atc_label": "",
+            "atc_skip_cart": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_NQQ8E8",
+        "slide_6iqE3k",
+        "slide_rmQNTf",
+        "slide_NncYnq",
+        "slide_BVJ4Lh"
+      ]
+    }
+  },
+  "order": [
+    "slideshow_bDnkYj"
+  ]
+}

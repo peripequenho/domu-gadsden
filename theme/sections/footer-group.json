@@ -1,0 +1,52 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "custom_colors": false,
+        "newsletter_enable": false,
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "payment_list": "",
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 32,
+        "padding_bottom": 20,
+        "custom_widths": true,
+        "copyright_text": "© {año}, <a href=\"/\">{tienda}</a> Propiedad de DomuHogar - Todos los derechos reservados."
+      },
+      "blocks": {
+        "brand_information_P6nrPM": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true,
+            "width_d": 2,
+            "width_m": "2"
+          }
+        },
+        "1c647602-cc00-4009-a058-976435c8ee9e": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer",
+            "width_d": 4,
+            "width_m": "2"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_P6nrPM",
+        "1c647602-cc00-4009-a058-976435c8ee9e"
+      ]
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "sections": {
+    "slideshow_hero_ga8MNL": {
+      "type": "gad-hero-slides",
+      "settings": {
+        "height_desktop": "px",
+        "height_desktop_px": 400,
+        "height_mobile": "px",
+        "height_mobile_px": 400,
+        "transparent_header": false,
+        "th_link": "#1b1b1b",
+        "th_active": "#f5f7fa",
+        "th_hover": "#0b1f3a",
+        "th_logo": "primary",
+        "th_hide_bars": false,
+        "car_type": "loop",
+        "car_drag": false,
+        "car_autoplay": false,
+        "car_speed": 10,
+        "show_dots": true,
+        "car_dots_color": "#f5f7fa",
+        "show_arrows": false,
+        "visibility": "all",
+        "padding_top": 50,
+        "padding_bottom": 50
+      },
+      "blocks": {
+        "slide_NAhmEW": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/store-scanner-for-checkout.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 60,
+            "overlay_color_mobile": "#000000",
+            "overlay_opacity_mobile": 60,
+            "sound_button": false,
+            "sound_scheme": "scheme-4",
+            "pretitle": "Créditos personales y comerciales",
+            "heading": "Equipa tu hogar o comercio HOY",
+            "heading_size": "h1",
+            "heading_accent": "#6d388b",
+            "subtitle": "",
+            "small_size": "h4",
+            "text": "",
+            "button_label_1": "Ver más",
+            "button_link_1": "shopify://collections/all",
+            "button_outline_1": false,
+            "button_label_2": "",
+            "button_outline_2": false,
+            "color_scheme": "scheme-1",
+            "custom_colors": true,
+            "cc_text": "#f3f3f3",
+            "cc_btn_bg": "#2e7d32",
+            "cc_btn_text": "#f3f3f3",
+            "cc_outline": "#dd1d1d",
+            "full_width": false,
+            "max_width": "none",
+            "max_width_px": 500,
+            "max_width_pct": 50,
+            "v_pos": "center",
+            "h_pos": "center",
+            "align": "center",
+            "m_v_pos": "center",
+            "m_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_NAhmEW"
+      ]
+    },
+    "icon_bar_YgtVD6": {
+      "type": "gad-icon-bar",
+      "settings": {
+        "heading": "Compra con seguridad",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "text": "",
+        "layout": "vertical",
+        "icon_size": "medium",
+        "icon_color": "button",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "card_style": "none",
+        "card_color_scheme": "scheme-1",
+        "card_cc_bg": "#f3f3f3",
+        "card_cc_bg_gradient": "linear-gradient(309deg, rgba(15, 142, 191, 1), rgba(255, 255, 255, 1) 53.597%, rgba(15, 142, 191, 1) 100%)",
+        "card_cc_text": "#2e2a39",
+        "full_width": false,
+        "car_type": "loop",
+        "car_autoplay": true,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": false,
+        "d_per_view": 4,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "under",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_per_view": "1",
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "car_drag": "on",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "column_YTC8wi": {
+          "type": "icon",
+          "settings": {
+            "icon": "security",
+            "icon_filled": false,
+            "title": "Compra asegurada con MercadoPago",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_EEVPm7": {
+          "type": "icon",
+          "settings": {
+            "icon": "local_shipping",
+            "icon_filled": true,
+            "title": "Envios Rápidos A TODO EL PAÍS",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_apdWkB": {
+          "type": "icon",
+          "settings": {
+            "icon": "box_add",
+            "icon_filled": true,
+            "title": "Productos EXCLUSIVOS",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_ecUW6L": {
+          "type": "icon",
+          "settings": {
+            "icon": "call_quality",
+            "icon_filled": true,
+            "title": "Soporte en vivo PERSONALIZADO",
+            "text": "<p></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_YTC8wi",
+        "column_EEVPm7",
+        "column_apdWkB",
+        "column_ecUW6L"
+      ]
+    },
+    "slideshow_hero_MjfPeg": {
+      "type": "gad-hero-slides",
+      "settings": {
+        "height_desktop": "px",
+        "height_desktop_px": 400,
+        "height_mobile": "px",
+        "height_mobile_px": 20,
+        "transparent_header": false,
+        "th_link": "#1b1b1b",
+        "th_active": "#f5f7fa",
+        "th_hover": "#0b1f3a",
+        "th_logo": "primary",
+        "th_hide_bars": false,
+        "car_type": "loop",
+        "car_drag": false,
+        "car_autoplay": false,
+        "car_speed": 10,
+        "show_dots": true,
+        "car_dots_color": "#f5f7fa",
+        "show_arrows": false,
+        "visibility": "all",
+        "padding_top": 50,
+        "padding_bottom": 50
+      },
+      "blocks": {
+        "slide_PLwMFA": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/wallet-and-money.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 60,
+            "overlay_color_mobile": "#000000",
+            "overlay_opacity_mobile": 60,
+            "sound_button": false,
+            "sound_scheme": "scheme-3",
+            "pretitle": "Domu existe para una cosa:",
+            "heading": "Que consigas lo que necesitas, sin fundirte.",
+            "heading_size": "h1",
+            "heading_accent": "#6d388b",
+            "subtitle": "",
+            "small_size": "h4",
+            "text": "",
+            "button_label_1": "Conocenos",
+            "button_link_1": "shopify://pages/nosotros",
+            "button_outline_1": false,
+            "button_label_2": "",
+            "button_outline_2": false,
+            "color_scheme": "scheme-1",
+            "custom_colors": true,
+            "cc_text": "#f3f3f3",
+            "cc_btn_bg": "#2e7d32",
+            "cc_btn_text": "#f3f3f3",
+            "cc_outline": "#dd1d1d",
+            "full_width": false,
+            "max_width": "none",
+            "max_width_px": 500,
+            "max_width_pct": 50,
+            "v_pos": "center",
+            "h_pos": "center",
+            "align": "center",
+            "m_v_pos": "center",
+            "m_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PLwMFA"
+      ]
+    },
+    "contact_form_WHP8G7": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contáctanos",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "ok_icon": "check_circle",
+        "ok_icon_filled": false,
+        "ok_text": "#28c100",
+        "ok_bg": "#f2ffed",
+        "ok_radius": 8,
+        "ok_border": 1,
+        "ok_border_color": "#28c100",
+        "err_icon": "error",
+        "err_icon_filled": false,
+        "err_text": "#ff0000",
+        "err_bg": "#fff5f5",
+        "err_radius": 8,
+        "err_border": 1,
+        "err_border_color": "#ff0000",
+        "button_full_width": true,
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "field_row_fNxBGi": {
+          "type": "fields",
+          "settings": {
+            "f1_on": true,
+            "f1_type": "name",
+            "f1_label": "",
+            "f1_required": false,
+            "f1_error": "This field is required",
+            "f2_on": true,
+            "f2_type": "email",
+            "f2_label": "",
+            "f2_required": false,
+            "f2_error": "This field is required"
+          }
+        },
+        "field_row_f84rat": {
+          "type": "fields",
+          "settings": {
+            "f1_on": true,
+            "f1_type": "phone",
+            "f1_label": "",
+            "f1_required": false,
+            "f1_error": "This field is required",
+            "f2_on": false,
+            "f2_type": "custom",
+            "f2_label": "Custom input name",
+            "f2_required": false,
+            "f2_error": "This field is required"
+          }
+        },
+        "textarea_NbxXax": {
+          "type": "textarea",
+          "settings": {
+            "kind": "comment",
+            "label": "",
+            "maxlength": 0,
+            "required": false,
+            "error": "This field is required"
+          }
+        }
+      },
+      "block_order": [
+        "field_row_fNxBGi",
+        "field_row_f84rat",
+        "textarea_NbxXax"
+      ]
+    }
+  },
+  "order": [
+    "slideshow_hero_ga8MNL",
+    "icon_bar_YgtVD6",
+    "slideshow_hero_MjfPeg",
+    "contact_form_WHP8G7"
+  ]
+}

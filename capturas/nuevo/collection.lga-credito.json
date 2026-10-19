@@ -1,0 +1,80 @@
+{
+ "d": {
+  "title": "Apto crédito LGA – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "custom_liquid_x4X4Er",
+    "h": 480,
+    "empty": false
+   },
+   {
+    "id": "custom_liquid_F7BdNg",
+    "h": 412,
+    "empty": false
+   },
+   {
+    "id": "image_slider_WpHhwR",
+    "h": 0,
+    "empty": false
+   },
+   {
+    "id": "main-collection-product-grid",
+    "h": 4297,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 1,
+  "nImgs": 67,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Apto crédito LGA – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "custom_liquid_x4X4Er",
+    "h": 320,
+    "empty": false
+   },
+   {
+    "id": "custom_liquid_F7BdNg",
+    "h": 503,
+    "empty": false
+   },
+   {
+    "id": "image_slider_WpHhwR",
+    "h": 749,
+    "empty": false
+   },
+   {
+    "id": "main-collection-product-grid",
+    "h": 7121,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 1,
+  "nImgs": 67,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

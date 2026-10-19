@@ -1,0 +1,41 @@
+{
+ "m": {
+  "title": "Domu Hogar",
+  "theme": "Gadsden 1.1.1",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "slideshow_hero_ga8MNL",
+    "h": 400,
+    "empty": false
+   },
+   {
+    "id": "icon_bar_YgtVD6",
+    "h": 190,
+    "empty": false
+   },
+   {
+    "id": "slideshow_hero_MjfPeg",
+    "h": 233,
+    "empty": false
+   },
+   {
+    "id": "contact_form_WHP8G7",
+    "h": 485,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 3,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

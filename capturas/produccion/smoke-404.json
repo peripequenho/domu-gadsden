@@ -1,0 +1,66 @@
+{
+ "d": {
+  "title": "404 No encontrado – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 352,
+    "empty": false
+   },
+   {
+    "id": "newsletter",
+    "h": 331,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 404,
+  "errors": [
+   "404 https://domuhogar.com/pages/no-existe-xyz",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "404 No encontrado – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 301,
+    "empty": false
+   },
+   {
+    "id": "newsletter",
+    "h": 312,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 404,
+  "errors": [
+   "404 https://domuhogar.com/pages/no-existe-xyz",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

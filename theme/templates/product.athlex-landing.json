@@ -1,0 +1,1136 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "gad_sticky_media": false,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "thumbs_position": "bottom",
+        "thumbs_count": 5,
+        "thumbs_v_width": 16,
+        "thumbs_v_hide_arrows": false,
+        "thumbs_ratio": "square",
+        "main_arrows": false,
+        "gallery_arrows_scheme": "scheme-3",
+        "gallery_arrows_bare": true,
+        "gallery_dots_color": "#1b1b1b",
+        "mobile_thumbnails": "show",
+        "m_thumbs_position": "bottom",
+        "m_thumbs_count": 5,
+        "m_thumbs_v_width": 22,
+        "m_radius": 0,
+        "m_gap": 0,
+        "m_peek_type": "none",
+        "m_peek_pct": 0,
+        "m_peek_px": 0,
+        "m_edge": true,
+        "m_container": 100,
+        "m_image_width": 100,
+        "m_pagination": "hidden",
+        "m_arrows": "sides",
+        "m_arrows_scheme": "scheme-3",
+        "m_arrows_bare": true,
+        "m_dots_color": "#1b1b1b",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "video_mode": "button",
+        "video_pause": false,
+        "video_sound": false,
+        "video_timeline": false,
+        "video_button_scheme": "scheme-4",
+        "video_timeline_color": "#0b1f3a",
+        "variant_media_first": false,
+        "keep_media_order": false,
+        "filter_option": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "m_padding_top": 0,
+        "m_padding_bottom": 16
+      },
+      "blocks": {
+        "bb-chips": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n/* ── DESKTOP: grilla de 2 columnas, quieta (las copias del ticker no se ven) ── */\n.axb-tick{\n  --axb-accent:#5bbd3a;\n  --axb-ink:#111318;\n  --axb-line:#d8dce2;\n  --axb-bg:#fff;\n  margin:0 0 14px;\n  max-width:440px;\n}\n.axb-tick ul{\n  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;\n  margin:0;padding:0;list-style:none;\n}\n.axb-tick li[aria-hidden=\"true\"]{display:none}\n.axb-tick li{\n  display:flex;align-items:center;gap:7px;min-width:0;\n  padding:7px 9px;\n  border:1.5px solid var(--axb-line);\n  border-radius:10px;\n  background:var(--axb-bg);\n  color:var(--axb-ink);\n  font-size:12px;font-weight:800;line-height:1.15;\n  letter-spacing:.01em;text-transform:uppercase;font-style:normal;\n  transform:none;\n}\n.axb-tick svg{\n  width:16px;height:16px;flex:none;\n  stroke:var(--axb-accent);fill:none;stroke-width:2.2;\n  stroke-linecap:round;stroke-linejoin:round;\n}\n\n/* ── MOBILE: una sola fila que corre sola ─────────────────────────────────── */\n@media (max-width:749px){\n  .axb-tick{\n    max-width:none;overflow:hidden;\n    /* se desvanece en los bordes en vez de cortarse al ras */\n    -webkit-mask-image:linear-gradient(90deg,transparent,#000 20px,#000 calc(100% - 20px),transparent);\n    mask-image:linear-gradient(90deg,transparent,#000 20px,#000 calc(100% - 20px),transparent);\n  }\n  .axb-tick ul{\n    display:flex;width:max-content;\n    animation:axb-tick 24s linear infinite;\n  }\n  .axb-tick li{white-space:nowrap}\n  .axb-tick li[aria-hidden=\"true\"]{display:flex}\n}\n/* la tira son DOS copias: correr media tira + medio gap deja el loop sin salto */\n@keyframes axb-tick{to{transform:translateX(calc(-50% - 4px))}}\n\n@media (max-width:400px){\n  .axb-tick li{padding:6px 8px;font-size:12px;gap:5px;letter-spacing:.01em}\n  .axb-tick svg{width:15px;height:15px}\n}\n</style>\n\n<!-- OJO: cada chip va DOS VECES. La segunda tanda (aria-hidden) es la que hace\n     el loop infinito en mobile; en desktop está oculta. Si cambiás un texto,\n     cambialo en las dos. -->\n<div class=\"axb-tick\"><ul>\n  <li><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2.5v19M4 7l16 10M20 7 4 17M12 6.5 9.5 4M12 6.5 14.5 4M12 17.5 9.5 20M12 17.5l2.5 2.5\"/></svg><span>Anti ardor y picazón</span></li>\n  <li><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M13 3.5l1.9 4.85L19.75 10.25l-4.85 1.9L13 17l-1.9-4.85L6.25 10.25l4.85-1.9z\"/><path d=\"M6 16.5l.85 2.15L9 19.5l-2.15.85L6 22.5l-.85-2.15L3 19.5l2.15-.85z\"/></svg><span>Piel sana otra vez</span></li>\n  <li><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2.75l7.25 2.9v5.6c0 4.35-3.05 7.75-7.25 8.6-4.2-.85-7.25-4.25-7.25-8.6v-5.6z\"/><path d=\"M9 11.9l2.1 2.1L15.2 9.9\"/></svg><span>Evita recontagio</span></li>\n  <li><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 7.5h10.5a3 3 0 1 0-3-3\"/><path d=\"M3 12h13a3 3 0 1 1-3 3\"/><path d=\"M3 16.5h7\"/></svg><span>Secado rápido</span></li>\n  <li aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2.5v19M4 7l16 10M20 7 4 17M12 6.5 9.5 4M12 6.5 14.5 4M12 17.5 9.5 20M12 17.5l2.5 2.5\"/></svg><span>Anti ardor y picazón</span></li>\n  <li aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M13 3.5l1.9 4.85L19.75 10.25l-4.85 1.9L13 17l-1.9-4.85L6.25 10.25l4.85-1.9z\"/><path d=\"M6 16.5l.85 2.15L9 19.5l-2.15.85L6 22.5l-.85-2.15L3 19.5l2.15-.85z\"/></svg><span>Piel sana otra vez</span></li>\n  <li aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2.75l7.25 2.9v5.6c0 4.35-3.05 7.75-7.25 8.6-4.2-.85-7.25-4.25-7.25-8.6v-5.6z\"/><path d=\"M9 11.9l2.1 2.1L15.2 9.9\"/></svg><span>Evita recontagio</span></li>\n  <li aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 7.5h10.5a3 3 0 1 0-3-3\"/><path d=\"M3 12h13a3 3 0 1 1-3 3\"/><path d=\"M3 16.5h7\"/></svg><span>Secado rápido</span></li>\n</ul></div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "size": "sm",
+            "align": "left",
+            "uppercase": true,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "custom_liquid_F6dBXr": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign rating_val = product.metafields.custom.rating_avg.value %}\n{% assign sold_val = product.metafields.custom.sold_text.value %}\n\n{% if rating_val != blank or sold_val != blank %}\n<div class=\"edc-rb\">\n  {% if rating_val != blank %}\n  <div class=\"edc-rb__left\">\n    <span class=\"edc-rb__stars\">★★★★★</span>\n    <span class=\"edc-rb__rating\">{{ rating_val }}</span>\n    <span class=\"edc-rb__sep\">|</span>\n  </div>\n  {% endif %}\n\n  {% if sold_val != blank %}\n  <div class=\"edc-rb__badge\">\n    {{ sold_val }} vendidos\n  </div>\n  {% endif %}\n</div>\n{% endif %}\n\n<style>\n.edc-rb{\n  display:flex;\n  align-items:baseline;\n  gap:10px;\n  flex-wrap:nowrap;\n  margin:8px 0 12px;\n  white-space:nowrap;\n}\n.edc-rb__left{\n  display:flex;\n  align-items:baseline;\n  gap:6px;\n}\n.edc-rb__stars{\n  font-size:14px;\n  letter-spacing:1px;\n}\n.edc-rb__rating{\n  font-size:14px;\n  font-weight:500;\n}\n.edc-rb__sep{\n  opacity:.5;\n}\n.edc-rb__badge{\n  font-size:13px;\n  padding:5px 10px;\n  border-radius:999px;\n  line-height:1;\n  background: linear-gradient(135deg, #e9e1ff 0%, #cfc2ff 100%);\n  color:#2b2b2b;\n  flex-shrink:0;\n}\n</style>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "order": "price_first",
+            "price_color": "button",
+            "compare_color": "foreground",
+            "badge": "sale",
+            "badge_text": "{icono1} SPECIAL OFFER",
+            "badge_icon_scale": 140,
+            "badge_icon_1": "redeem",
+            "badge_icon_1_filled": false,
+            "badge_icon_2": "check_circle",
+            "badge_icon_2_filled": false,
+            "show_tax_note": false,
+            "margin_top": 15,
+            "margin_bottom": 4
+          }
+        },
+        "custom_liquid_HdzP3B": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign v = product.selected_or_first_available_variant -%}\n{%- assign transf = v.price | times: 90 | divided_by: 100 -%}\n\n<div class=\"meli-cuotas\">\n  Mismo precio en \n  <strong>3 cuotas sin interés de:</strong>\n  <span class=\"meli-cuotas__amount\" data-cuotas-amount>\n    {{ v.price | divided_by: 3 | money }}\n  </span>\n</div>\n\n<div class=\"meli-transf\">\n  <span class=\"meli-transf__amount\" data-transf-amount>{{ transf | money }}</span>\n  con transferencia\n  <span class=\"meli-transf__badge\">10% OFF</span>\n</div>\n\n<style>\n.meli-cuotas{\n  color:#00a650;\n  font-size:13px;\n  letter-spacing:0;\n  line-height:1.25;\n  margin:0;\n}\n.meli-cuotas strong{\n  font-weight:600;\n}\n.meli-cuotas__amount{\n  font-size:13px;\n  font-weight:700;\n  letter-spacing:.2px;\n}\n.meli-transf{\n  color:#00a650;\n  font-size:14px;\n  line-height:1.25;\n  margin:1px 0 0;\n}\n.meli-transf__amount{\n  font-size:14px;\n  font-weight:700;\n  letter-spacing:.2px;\n}\n.meli-transf__badge{\n  display:inline-block;\n  background:#00a650;\n  color:#fff;\n  font-size:12px;\n  font-weight:700;\n  padding:1px 6px;\n  border-radius:4px;\n  margin-left:4px;\n  vertical-align:1px;\n}\n</style>\n\n<script>\n(function(){\n  var elCuotas = document.querySelector('[data-cuotas-amount]');\n  var elTransf = document.querySelector('[data-transf-amount]');\n  if(!elCuotas) return;\n\n  function fmt(n){\n    return '$' + n.toLocaleString('es-AR', {minimumFractionDigits:2, maximumFractionDigits:2});\n  }\n  // \"$49.999,00\" -> 49999.00\n  function parseMoney(txt){\n    if(!txt) return null;\n    var m = txt.replace(/[^\\d.,]/g, '').replace(/\\./g, '').replace(',', '.');\n    var n = parseFloat(m);\n    return isNaN(n) ? null : n;\n  }\n  // total del bundle tildado en el widget de Kaching (selector exacto verificado)\n  function selectedBundleTotal(){\n    var checked = document.querySelector('.kaching-bundles__bar input:checked');\n    var bar = checked && checked.closest ? checked.closest('.kaching-bundles__bar') : null;\n    if(!bar) return null;\n    var priceEl = bar.querySelector('.kaching-bundles__bar-price');\n    return priceEl ? parseMoney(priceEl.textContent) : null;\n  }\n  function update(){\n    var total = selectedBundleTotal();\n    if(!total) return;\n    elCuotas.textContent = fmt(total / 3);\n    if(elTransf) elTransf.textContent = fmt(total * 0.9);\n  }\n  document.addEventListener('change', function(e){\n    if(e.target.closest && e.target.closest('.kaching-bundles__bar')) setTimeout(update, 80);\n  }, true);\n  document.addEventListener('click', function(e){\n    if(e.target.closest && e.target.closest('.kaching-bundles__bars')) setTimeout(update, 150);\n  }, true);\n  // sync inicial cuando el widget termina de montar (Lleva 2 viene preseleccionado)\n  var tries = 0, t = setInterval(function(){\n    if(selectedBundleTotal() !== null){ update(); clearInterval(t); }\n    if(++tries > 40) clearInterval(t);\n  }, 250);\n})();\n</script>"
+          }
+        },
+        "conversion_bear_trust_badges_widget_6q4bBR": {
+          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
+        "custom_liquid_NbFHWK": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  ML-style Payment Methods Popup (Shrine)\n  - 3 cuotas sin interés (Mercado Pago)\n  - Sin calculadora\n  - Estilo: header amarillo + acordeones\n{%- endcomment -%}\n\n<!-- TRIGGER -->\n<button\n  type=\"button\"\n  class=\"mlpay-link\"\n  data-mlpay-open>\n  Ver medios de pago\n  <span class=\"mlpay-link-arrow\" aria-hidden=\"true\">›</span>\n</button>\n\n<div class=\"mlpay-backdrop\" data-mlpay-backdrop hidden></div>\n\n<div class=\"mlpay-modal\"\n     role=\"dialog\"\n     aria-modal=\"true\"\n     aria-labelledby=\"mlpayTitle\"\n     data-mlpay-modal\n     hidden>\n\n  <div class=\"mlpay-header\">\n    <button class=\"mlpay-back\"\n            type=\"button\"\n            aria-label=\"Volver\"\n            data-mlpay-close>\n      ‹\n    </button>\n    <div class=\"mlpay-title\" id=\"mlpayTitle\">\n      Medios de pago para este producto\n    </div>\n  </div>\n\n  <div class=\"mlpay-body\">\n\n    <!-- INTRO -->\n    <div class=\"mlpay-intro\">\n      Al finalizar tu compra, pagás con el dinero disponible en tu cuenta.\n      Podés ingresar dinero a Mercado Pago por cuentas vinculadas,\n      transferencia bancaria o en efectivo.\n\n      <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n      <a class=\"mlpay-more\"\n         href=\"https://www.mercadopago.com.ar/banking/balance\"\n         target=\"_blank\"\n         rel=\"noopener\">\n        Conocer más\n      </a>\n    </div>\n\n    <div class=\"mlpay-accordion\">\n\n      <!-- TARJETAS DE CRÉDITO -->\n      <details class=\"mlpay-item\" open>\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de crédito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-badge\">\n            Mismo precio en hasta 3 cuotas\n          </div>\n\n          {%- assign credit_logos = \"visa|Visa,mastercard|Mastercard,american-express|American Express,cabal|Cabal,argencard|Argencard,diners-club|Diners Club,naranjax|Naranja X,tarjeta-shopping|Tarjeta Shopping\" | split: \",\" -%}\n\n          <div class=\"mlpay-logos\">\n            {%- for item in credit_logos -%}\n              {%- assign parts = item | split: \"|\" -%}\n              {%- assign handle = parts[0] -%}\n              {%- assign label = parts[1] -%}\n              <div class=\"mlpay-logo\">\n                <img\n                  src=\"{{ 'bank-' | append: handle | append: '.svg' | file_url }}\"\n                  alt=\"{{ label }}\"\n                  class=\"mlpay-bank-icon\"\n                  loading=\"lazy\">\n              </div>\n            {%- endfor -%}\n          </div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/payments-methods?view=conditions\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer condiciones\n          </a>\n        </div>\n      </details>\n\n      <!-- CUOTAS SIN TARJETA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Cuotas sin Tarjeta</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Comprás y luego pagás las cuotas mes a mes con efectivo,\n            débito o con el dinero de tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/credits/consumer/enrollment/\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DINERO EN CUENTA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Dinero disponible en Mercado Pago</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Pagás con el dinero disponible en tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadopago.com.ar/banking/balance\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DÉBITO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de débito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-visa-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-mastercard-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-cabal-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-maestro.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n      <!-- EFECTIVO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Efectivo</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-pago-facil.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-rapipago.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n    </div>\n  </div>\n</div>\n\n<style>\n[hidden]{display:none!important}\n\n.mlpay-link{\n  background:none;\n  border:0;\n  padding:0;\n  margin:1px 0 0;\n  display:inline-flex;\n  gap:6px;\n  font-size:13px;\n  font-weight:500;\n  color:#3483FA;\n  cursor:pointer;\n}\n.mlpay-link:hover{text-decoration:underline}\n\n.mlpay-backdrop{\n  position:fixed;\n  inset:0;\n  background:rgba(0,0,0,.45);\n  z-index:9998;\n}\n\n.mlpay-modal{\n  position:fixed;\n  inset:0;\n  max-width:520px;\n  margin:auto;\n  background:#fff;\n  z-index:9999;\n  display:flex;\n  flex-direction:column;\n}\n\n.mlpay-header{\n  background:#F9D500;\n  padding:12px;\n  display:flex;\n  align-items:center;\n  gap:10px;\n}\n\n.mlpay-back{\n  background:none;\n  border:0;\n  font-size:28px;\n  cursor:pointer;\n}\n\n.mlpay-title{\n  font-weight:700;\n  font-size:16px;\n  line-height:1.15;\n}\n\n.mlpay-body{padding:16px;overflow:auto}\n\n.mlpay-item summary{\n  display:flex;\n  justify-content:space-between;\n  cursor:pointer;\n  padding:10px 0;\n}\n\n.mlpay-chevron{color:#777}\n\n.mlpay-content{padding-bottom:14px}\n\n.mlpay-badge{\n  background:#EAF7EA;\n  color:#1C7C3A;\n  font-size:12px;\n  font-weight:700;\n  padding:6px 10px;\n  border-radius:999px;\n  display:inline-block;\n  margin-bottom:10px;\n}\n\n.mlpay-logos{\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:12px;\n}\n\n.mlpay-logo{\n  background:#fafafa;\n  border-radius:12px;\n  padding:12px;\n  display:flex;\n  justify-content:center;\n}\n\n.mlpay-bank-icon{\n  width:90px;\n  height:28px;\n  object-fit:contain;\n}\n\n.mlpay-more{\n  color:#2D6CDF;\n  font-weight:600;\n  font-size:13px;\n  text-decoration:none;\n}\n\n.mlpay-more:hover{text-decoration:underline}\n</style>\n\n<script>\n(function(){\n  const openBtn=document.querySelector('[data-mlpay-open]');\n  const modal=document.querySelector('[data-mlpay-modal]');\n  const closeBtn=document.querySelector('[data-mlpay-close]');\n  const backdrop=document.querySelector('[data-mlpay-backdrop]');\n  if(!openBtn||!modal||!closeBtn||!backdrop)return;\n\n  function openModal(){\n    modal.hidden=false;\n    backdrop.hidden=false;\n    document.documentElement.style.overflow='hidden';\n  }\n\n  function closeModal(){\n    modal.hidden=true;\n    backdrop.hidden=true;\n    document.documentElement.style.overflow='';\n  }\n\n  openBtn.addEventListener('click',openModal);\n  closeBtn.addEventListener('click',closeModal);\n  backdrop.addEventListener('click',closeModal);\n  document.addEventListener('keydown',e=>{\n    if(e.key==='Escape'&&!modal.hidden)closeModal();\n  });\n})();\n</script>"
+          }
+        },
+        "custom_liquid_mgX9U6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  ATHLEX · bloque de mensaje — versión para \"Liquid personalizado\".\n\n  Es el bloque del hero (volanta + título + bajada + chips) SIN el botón: pensado\n  para meterse DENTRO del buy box nativo, que ya tiene su propio botón de compra.\n  Dos botones pegados uno arriba del otro compiten y ninguno gana.\n\n  Sirve para las dos formas de usarlo:\n   · Pegado tal cual en un bloque \"Liquid personalizado\" del tema.\n   · Guardado como snippets/athlex-bloque-buybox.liquid e invocado con\n     {% render 'athlex-bloque-buybox' %}.\n\n  Es autónomo a propósito: se trae su tipografía y su paleta, así no depende de\n  que la sección del hero se haya cargado antes (acá va ARRIBA del hero).\n\n  Para editar los textos, tocá solamente el bloque {%- assign -%} de acá abajo.\n{%- endcomment -%}\n\n{%- liquid\n  assign ax_volanta = 'SPRAY PARA TIÑA INGUINAL · USO DIARIO'\n  assign ax_titulo  = '¿LA MANCHA ESTÁ MÁS GRANDE <em>QUE EL MES PASADO?</em>'\n  assign ax_bajada  = 'Si te venís rascando a escondidas, apareció una mancha y de noche te despierta el ardor: no sos el único. Le pasa a muchísimos hombres, sobre todo a deportistas. la respuesta no estaba en cremas o jaboncitos de hojas de te.'\n  assign ax_chips   = 'ALIVIO INMEDIATO,NO SE ENJUAGA,60 ML'\n-%}\n\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap\">\n\n<style>\n  .athlex-bloque{\n    --tinta:#141210;--papel:#E6DFCE;--papel-2:#D6CDB6;--lima:#93D920;\n    --impacto:'Archivo Black','Arial Black',Haettenschweiler,Impact,sans-serif;\n    --texto:'Barlow Semi Condensed','Barlow','Segoe UI Semibold','Segoe UI',Arial,sans-serif;\n\n    /* ── BASE = CELULAR · A SANGRE ──────────────────────────────────────────\n       El bloque rompe el margen del buy box y toca los dos bordes de la pantalla.\n       `calc(50% - 50vw)` de margen a cada lado es exactamente lo que sobra entre\n       el contenedor y el viewport, sea cual sea el padding del tema — no hay que\n       adivinar ningún número.\n       En celular no hay barra de scroll ocupando ancho, así que 100vw es el ancho\n       real y no aparece scroll horizontal. En desktop sí la habría, y por eso más\n       abajo el bloque vuelve a quedar contenido.                                */\n    background:var(--tinta);color:var(--papel);font-family:var(--texto);\n    margin:18px calc(50% - 50vw) 0;max-width:100vw;\n    padding:24px 20px 26px;position:relative;overflow:hidden;\n    background-image:radial-gradient(rgba(147,217,32,.13) 1.5px,transparent 1.6px);\n    background-size:13px 13px;\n  }\n\n  /* Shrine PRO fuerza el color de los titulares a oscuro; sin esto el título\n     queda negro sobre negro y desaparece. */\n  .athlex-bloque h1,.athlex-bloque h2,.athlex-bloque h3{color:inherit}\n\n  .athlex-bloque .ax-eye{font-family:var(--impacto);font-size:9px;letter-spacing:.14em;\n    text-transform:uppercase;color:var(--lima);display:block;width:max-content;\n    max-width:100%;margin:0 0 10px}\n\n  .athlex-bloque h2{margin:0;font-family:var(--impacto);text-transform:uppercase;\n    font-size:clamp(20px,5.6vw,28px);line-height:1.08;letter-spacing:-.01em;\n    transform:skewX(-9deg);display:inline-block}\n  .athlex-bloque h2 span{display:inline-block}\n  .athlex-bloque h2 em{font-style:normal;color:var(--lima)}\n\n  .athlex-bloque .ax-lead{font-size:16.5px;line-height:1.5;max-width:40ch;\n    margin:12px 0 0;opacity:.92}\n\n  /* Los chips van con wrap. Probé una sola fila con arrastre para ahorrar alto,\n     pero el tercero (\"120 ML\") quedaba fuera de cuadro sin ninguna señal de que\n     estaba ahí. Un chip invisible es un chip que no existe: mejor 35px más de\n     alto y que se lean los tres, sobre todo porque estos textos se editan. */\n  .athlex-bloque .ax-chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0;\n    padding:0;list-style:none}\n  .athlex-bloque .ax-chips li{flex:none;font-family:var(--impacto);font-size:9.5px;\n    letter-spacing:.15em;text-transform:uppercase;\n    border:2px solid rgba(230,223,206,.32);padding:6px 10px;\n    transform:skewX(-9deg);opacity:.85}\n  .athlex-bloque .ax-chips li span{display:inline-block;transform:skewX(9deg)}\n\n  /* ── DESKTOP ──────────────────────────────────────────────────────────────\n     Vuelve a quedar contenido dentro de la columna del buy box. Dos razones:\n     en desktop la barra de scroll ocupa ancho y 100vw se pasa (aparecería scroll\n     horizontal), y además un bloque a sangre de 1440px con un texto de 40ch en\n     el medio queda desbalanceado.                                              */\n  @media(min-width:900px){\n    .athlex-bloque{padding:32px 30px 34px;margin:24px 0 0;max-width:none}\n    .athlex-bloque .ax-eye{font-size:10.5px;letter-spacing:.19em;margin-bottom:14px}\n    .athlex-bloque h2{font-size:clamp(26px,2.4vw,32px)}\n    .athlex-bloque .ax-lead{font-size:17.5px;margin-top:16px}\n    .athlex-bloque .ax-chips{gap:9px;margin-top:20px;flex-wrap:wrap;overflow:visible}\n  }\n</style>\n\n<div class=\"athlex-bloque\">\n  {%- if ax_volanta != blank -%}\n    <div class=\"ax-eye\">{{ ax_volanta }}</div>\n  {%- endif -%}\n\n  {%- if ax_titulo != blank -%}\n    <h2><span>{{ ax_titulo }}</span></h2>\n  {%- endif -%}\n\n  {%- if ax_bajada != blank -%}\n    <p class=\"ax-lead\">{{ ax_bajada }}</p>\n  {%- endif -%}\n\n  {%- assign chips = ax_chips | split: ',' -%}\n  {%- if chips.size > 0 -%}\n    <ul class=\"ax-chips\">\n      {%- for c in chips -%}\n        {%- assign c = c | strip -%}\n        {%- if c != blank -%}<li><span>{{ c }}</span></li>{%- endif -%}\n      {%- endfor -%}\n    </ul>\n  {%- endif -%}\n</div>"
+          }
+        },
+        "bb-chequeo": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  ATHLEX · bloque de chequeo — versión para \"Liquid personalizado\".\n\n  Va PEGADO abajo del bloque de mensaje (snippets/athlex-bloque-buybox.liquid),\n  dentro del buy box nativo: lista de ítems tildados + dos tarjetas enfrentadas,\n  una roja y una verde. Mismo fondo, misma trama y mismo ancho a sangre que el\n  bloque de arriba, así los dos leen como una sola pieza.\n\n  Arranca directo con los ítems: sin volanta ni título, por pedido de Gero.\n\n  Los ítems son los de la placa de síntomas que pasó Gero (2026-08-13), en caja\n  alta como ahí. El segundo decía \"EN LA ENTRE LAS PIERNAS\" —se mezclaron \"en la\n  entrepierna\" y \"entre las piernas\"— y quedó como \"ENTRE LAS PIERNAS\".\n\n  ⚠️ LOS TEXTOS DE LAS DOS TARJETAS SIGUEN SIENDO RELLENO. Dicen \"ejemplo\" para\n  que nadie los confunda con copy aprobado. Cuando se escriban tienen que pasar\n  por `node tools/chequeo.mjs`: la tarjeta verde es justo donde es más fácil que\n  se cuele un claim terapéutico o un dato sin fuente.\n\n  Para editar los textos, tocá solamente el bloque {%- assign -%} de acá abajo.\n  Los ítems van separados por | (no por coma: las comas viven adentro del texto).\n\n  Se instala pegándolo en un bloque \"Liquid personalizado\" del buy box, o con\n  {% render 'athlex-chequeo-buybox' %}. Es autónomo a propósito: se trae su\n  tipografía y su paleta.\n{%- endcomment -%}\n\n{%- liquid\n  assign ax_items    = 'PIEL COLORADA Y ÁSPERA|PICAZÓN CONSTANTE ENTRE LAS PIERNAS|TENÉS UNA MANCHA CON EL BORDE MARCADO|TE DESPIERTA EL ARDOR Y LA PICAZÓN|PROBASTE CREMAS Y JABONES PERO NADA TE CALMA|VERGÜENZA CUANDO ESTÁS CON UNA CHICA'\n  assign ax_mal_rot  = 'LO QUE VENIS PROBANDO'\n  assign ax_mal_txt  = 'Gastaste una fortuna en cremas y jaboncitos y seguís igual. <em>Es porque no están desarrollados para la tiña.</em>'\n  assign ax_bien_rot = 'POR QUÉ ATHLEX SÍ'\n  assign ax_bien_txt = '<em>Son 15 ingredientes activos en un spray. </em> Alivio instantáneo, frio que calma la comezón y piel seca en segundos.'\n-%}\n\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap\">\n\n<style>\n  .athlex-chequeo{\n    --tinta:#141210;--papel:#E6DFCE;--lima:#93D920;--lima-honda:#6BA512;\n    /* El rojo no estaba en la paleta: entra sólo acá, y sólo como alarma. */\n    --rojo:#C2452D;--rojo-tenue:#E08C7A;--rojo-fondo:#2A1512;\n    --impacto:'Archivo Black','Arial Black',Haettenschweiler,Impact,sans-serif;\n    --texto:'Barlow Semi Condensed','Barlow','Segoe UI Semibold','Segoe UI',Arial,sans-serif;\n\n    /* ── BASE = CELULAR · A SANGRE ──────────────────────────────────────────\n       Mismo truco que el bloque de mensaje: `calc(50% - 50vw)` a cada lado rompe\n       el margen del buy box sin adivinar el padding del tema. Margen superior 0\n       y padding superior 0: lo único que separa son los 26 px con que cierra el\n       bloque de arriba. Trama idéntica, para que el empalme no se vea.        */\n    background:var(--tinta);color:var(--papel);font-family:var(--texto);\n    margin:0 calc(50% - 50vw);max-width:100vw;\n    padding:0 20px 26px;position:relative;overflow:hidden;\n    background-image:radial-gradient(rgba(147,217,32,.13) 1.5px,transparent 1.6px);\n    background-size:13px 13px;\n  }\n  .athlex-chequeo h1,.athlex-chequeo h2,.athlex-chequeo h3{color:inherit}\n\n  /* ── LA LISTA ─────────────────────────────────────────────────────────────\n     Una columna en celular: a dos, con 16 px de cuerpo, quedan renglones de\n     tres palabras. El tilde es decorativo (aria-hidden): la información es que\n     el ítem está en la lista, no el dibujito.                                */\n  .athlex-chequeo .ax-lista{list-style:none;margin:0;padding:0;\n    display:grid;grid-template-columns:1fr;gap:11px 22px}\n  .athlex-chequeo .ax-lista li{display:grid;grid-template-columns:22px 1fr;\n    gap:10px;align-items:start;font-size:16.5px;line-height:1.35}\n  .athlex-chequeo .ax-tic{width:22px;height:22px;flex:none;margin-top:1px;\n    border:2px solid var(--lima);display:grid;place-items:center}\n  .athlex-chequeo .ax-tic svg{width:12px;height:12px;display:block}\n\n  /* ── LAS DOS TARJETAS ─────────────────────────────────────────────────── */\n  .athlex-chequeo .ax-duo{display:grid;grid-template-columns:1fr;gap:12px;margin:24px 0 0}\n  .athlex-chequeo .ax-card{border:3px solid;padding:16px 16px 18px}\n  .athlex-chequeo .ax-card p{margin:0;font-size:16.5px;line-height:1.45}\n  .athlex-chequeo .ax-rot{display:inline-flex;align-items:center;gap:7px;\n    font-family:var(--impacto);font-size:9.5px;letter-spacing:.15em;\n    text-transform:uppercase;padding:7px 12px;margin:0 0 12px;transform:skewX(-9deg)}\n  .athlex-chequeo .ax-rot span{display:inline-block;transform:skewX(9deg)}\n  .athlex-chequeo .ax-rot svg{width:11px;height:11px;display:block;transform:skewX(9deg)}\n\n  .athlex-chequeo .ax-mal{background:var(--rojo-fondo);border-color:var(--rojo)}\n  .athlex-chequeo .ax-mal .ax-rot{background:var(--rojo);color:#FFF1EC}\n  .athlex-chequeo .ax-mal p{color:var(--rojo-tenue)}\n  .athlex-chequeo .ax-mal em{font-style:normal;font-weight:700;color:#F0705A}\n\n  .athlex-chequeo .ax-bien{background:var(--papel);border-color:var(--lima)}\n  .athlex-chequeo .ax-bien .ax-rot{background:var(--tinta);color:var(--lima)}\n  .athlex-chequeo .ax-bien p{color:var(--tinta)}\n  .athlex-chequeo .ax-bien em{font-style:normal;font-weight:700;color:var(--lima-honda)}\n\n  /* 560 px: la lista pasa a dos columnas. */\n  @media(min-width:560px){\n    .athlex-chequeo .ax-lista{grid-template-columns:1fr 1fr}\n  }\n\n  /* ── DESKTOP ──────────────────────────────────────────────────────────────\n     Vuelve a quedar contenido en la columna del buy box, igual que el bloque de\n     mensaje (si no, 100vw se pasa por el ancho de la barra de scroll). Mismo\n     padding lateral que él, 30 px, para que los dos alineen.                 */\n  @media(min-width:900px){\n    .athlex-chequeo{padding:0 30px 34px;margin:0;max-width:none}\n    .athlex-chequeo .ax-lista{gap:12px 26px}\n    .athlex-chequeo .ax-lista li{font-size:17px}\n    .athlex-chequeo .ax-duo{gap:14px;margin-top:28px}\n    .athlex-chequeo .ax-card{padding:18px 18px 20px}\n    .athlex-chequeo .ax-card p{font-size:17px}\n    .athlex-chequeo .ax-rot{font-size:10.5px;padding:8px 14px;margin-bottom:13px}\n  }\n</style>\n\n<div class=\"athlex-chequeo\">\n  {%- assign items = ax_items | split: '|' -%}\n  {%- if items.size > 0 -%}\n    <ul class=\"ax-lista\">\n      {%- for it in items -%}\n        {%- assign it = it | strip -%}\n        {%- if it != blank -%}\n          <li>\n            <span class=\"ax-tic\" aria-hidden=\"true\">\n              <svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"#93D920\" stroke-width=\"2.6\"\n                   stroke-linecap=\"square\"><path d=\"M2 8.5 L6 12.5 L14 3.5\"/></svg>\n            </span>\n            <span>{{ it }}</span>\n          </li>\n        {%- endif -%}\n      {%- endfor -%}\n    </ul>\n  {%- endif -%}\n\n  <div class=\"ax-duo\">\n    <article class=\"ax-card ax-mal\">\n      {%- if ax_mal_rot != blank -%}\n        <div class=\"ax-rot\">\n          <svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\"\n               stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3 3 L13 13 M13 3 L3 13\"/></svg>\n          <span>{{ ax_mal_rot }}</span>\n        </div>\n      {%- endif -%}\n      <p>{{ ax_mal_txt }}</p>\n    </article>\n\n    <article class=\"ax-card ax-bien\">\n      {%- if ax_bien_rot != blank -%}\n        <div class=\"ax-rot\">\n          <svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\"\n               stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M2 8.5 L6 12.5 L14 3.5\"/></svg>\n          <span>{{ ax_bien_rot }}</span>\n        </div>\n      {%- endif -%}\n      <p>{{ ax_bien_txt }}</p>\n    </article>\n  </div>\n</div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "uppercase": true,
+            "price_in_button": true,
+            "skip_cart": false,
+            "custom_color": false,
+            "color": "#dd1d1d",
+            "icon_scale": 120,
+            "icon_gap": 10,
+            "second_button": false,
+            "second_label": "Buy It Now",
+            "second_custom_color": false,
+            "second_color": "#dd1d1d",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "sticky_atc_K3Ekwf": {
+          "type": "sticky_bar",
+          "settings": {
+            "action": "add_to_cart",
+            "show_when": "after_button",
+            "button_label": "Agregar al carrito",
+            "custom_button": false,
+            "button_color": "#dd1d1d",
+            "color_scheme": "scheme-1",
+            "star_color": "#ffcc00",
+            "stars_text": "(xxxx Reviews)",
+            "variant_mode": "combined",
+            "d_image": false,
+            "d_title": true,
+            "d_stars": false,
+            "d_price": true,
+            "d_badge": true,
+            "d_variants": false,
+            "d_full_button": false,
+            "d_price_in_button": false,
+            "d_transparent": false,
+            "m_image": false,
+            "m_title": true,
+            "m_stars": false,
+            "m_price": true,
+            "m_badge": true,
+            "m_variants": false,
+            "m_full_button": true,
+            "m_stack": true,
+            "m_price_in_button": false,
+            "m_transparent": false
+          }
+        }
+      },
+      "block_order": [
+        "bb-chips",
+        "title",
+        "custom_liquid_F6dBXr",
+        "price",
+        "custom_liquid_HdzP3B",
+        "custom_liquid_NbFHWK",
+        "custom_liquid_mgX9U6",
+        "bb-chequeo",
+        "buy_buttons",
+        "conversion_bear_trust_badges_widget_6q4bBR",
+        "sticky_atc_K3Ekwf"
+      ]
+    },
+    "reviews-mini": {
+      "type": "gad-reviews-mini",
+      "blocks": {
+        "hl-1": {
+          "type": "destacado",
+          "settings": {
+            "foto": "shopify://shop_images/athlex-revu-auto.jpg",
+            "estrellas": 5,
+            "texto": "Imposible andar poniéndome pomadas en la calle",
+            "autor": "Facundo G.",
+            "fecha": "06/26",
+            "verificada": true
+          }
+        },
+        "hl-2": {
+          "type": "destacado",
+          "settings": {
+            "foto": "shopify://shop_images/athlex-revu-cocina.jpg",
+            "estrellas": 5,
+            "texto": "Las cremas eran un asco porque quedabas todo pegajoso",
+            "autor": "Diego R.",
+            "fecha": "07/26",
+            "verificada": true
+          }
+        },
+        "hl-3": {
+          "type": "destacado",
+          "settings": {
+            "foto": "shopify://shop_images/athlex-revu-banco-gym.jpg",
+            "estrellas": 5,
+            "texto": "Ya no estoy para andar poniéndome pomadas a cada rato",
+            "autor": "Cristian V.",
+            "fecha": "06/26",
+            "verificada": true
+          }
+        },
+        "hl-4": {
+          "type": "destacado",
+          "settings": {
+            "foto": "shopify://shop_images/athlex-revu-post-run.jpg",
+            "estrellas": 5,
+            "texto": "ya no tengo la paranoia de que alguien me agarre rascándome",
+            "autor": "Alejandro D.",
+            "fecha": "05/26",
+            "verificada": false
+          }
+        },
+        "hl-5": {
+          "type": "destacado",
+          "settings": {
+            "foto": "shopify://shop_images/athlex-revu-cinta.jpg",
+            "estrellas": 5,
+            "texto": "Tenía que ir al baño constantemente o acortar mi entrenamiento",
+            "autor": "Nicolás P.",
+            "fecha": "07/26",
+            "verificada": true
+          }
+        }
+      },
+      "block_order": [
+        "hl-1",
+        "hl-2",
+        "hl-3",
+        "hl-4",
+        "hl-5"
+      ],
+      "settings": {
+        "velocidad": 40
+      }
+    },
+    "horizontal_ticker_Bwfdhe": {
+      "type": "gad-ticker",
+      "settings": {
+        "speed": 3,
+        "direction": "normal",
+        "pause_hover": false,
+        "gap_m": 60,
+        "gap_d": 100,
+        "color_scheme": "scheme-4",
+        "custom_colors": true,
+        "text_size_m": 12,
+        "text_size_d": 12,
+        "italic": false,
+        "uppercase": true,
+        "bold": false,
+        "image_height_m": 26,
+        "image_height_d": 40,
+        "review_width_m": 300,
+        "review_width_d": 400,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12,
+        "padding_top_d": 16,
+        "padding_bottom_d": 16,
+        "only_on_products_enabled": false,
+        "visibility": "all",
+        "cc_bg": "#141210",
+        "cc_text": "#E6DFCE"
+      },
+      "blocks": {
+        "text_tHT9by": {
+          "type": "text",
+          "settings": {
+            "text": "+1.200 PEDIDOS"
+          }
+        },
+        "text_xb8Lgp": {
+          "type": "text",
+          "settings": {
+            "text": "4,8 ★ EN 300 RESEÑAS"
+          }
+        },
+        "text_9aRyDV": {
+          "type": "text",
+          "settings": {
+            "text": "8 DE CADA 10 RECOMPRAN"
+          }
+        }
+      },
+      "block_order": [
+        "text_tHT9by",
+        "text_xb8Lgp",
+        "text_9aRyDV"
+      ]
+    },
+    "image_slider_k6hTQm": {
+      "type": "gad-media-slider",
+      "settings": {
+        "show_empty": true,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "color_scheme": "scheme-1",
+        "custom_colors": true,
+        "page_width": "full-bleed",
+        "radius_d": 0,
+        "m_full_width": true,
+        "radius_m": 0,
+        "car_type": "loop",
+        "car_drag": "on",
+        "car_autoplay": true,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": false,
+        "car_dots_color": "#1b1b1b",
+        "car_center": false,
+        "d_per_view": 6,
+        "d_per_move": 1,
+        "d_gap": 0,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "hidden",
+        "m_per_view": 3,
+        "m_per_move": 1,
+        "m_gap": 0,
+        "m_peek": 0,
+        "m_edge_fit": true,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "visibility": "all",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "cc_bg": "#E6DFCE",
+        "cc_text": "#141210"
+      },
+      "blocks": {
+        "image_slide_ugc5": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-5.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_ugc7": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-7.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_ugc10": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-10.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_ugc9": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-9.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_9GmAyc": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-2.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_U8ErRp": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-3.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_ugc11": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-11.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_ugc12": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ugc-12.gif",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_ugc5",
+        "image_slide_ugc7",
+        "image_slide_ugc10",
+        "image_slide_ugc9",
+        "image_slide_9GmAyc",
+        "image_slide_U8ErRp",
+        "image_slide_ugc11",
+        "image_slide_ugc12"
+      ]
+    },
+    "faq": {
+      "type": "gad-objections",
+      "blocks": {
+        "faq-3": {
+          "type": "qa",
+          "settings": {
+            "q": "¿Es contagioso? ¿Es una ETS?",
+            "a": "<p>No es una ETS y no es falta de higiene<strong>. Es un hongo de piel de los más comunes que hay</strong>: el mismo del pie de atleta, que <strong>viaja del pie a la ingle sin que te enteres.</strong></p><p><strong>Contagiarse, se contagia:</strong> por la piel, la cama o la toalla compartida.<strong> Si tu pareja tiene síntomas, que se lo trate también, o se lo van a pasar de vuelta.</strong></p><p><strong>IMPORTANTE:</strong> cuando la piel está sana, se termina. No te queda, ni lo tenés que andar contando.</p>"
+          }
+        },
+        "faq-1": {
+          "type": "qa",
+          "settings": {
+            "q": "¿Arde? ¿Dónde me lo puedo poner?",
+            "a": "<p><strong>No arde: sentís frío</strong>, como algo fresco en la piel. Y alivia sin frotar, que es justo lo que una crema no te da.</p><p><strong>Va en la ingle, los pliegues, la cara interna del muslo y los glúteos.</strong> <strong>También en los pies,</strong> que es de donde suele volver.</p><p><strong>Donde no:</strong> en los genitales directo, ni sobre piel lastimada. Lleva alcohol y ahí sí arde. Preferimos avisarte antes de que lo compres.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "qa",
+          "settings": {
+            "q": "¿Cuánto tardo en ver resultados?",
+            "a": "<p>Probalo y fijate en tu propia piel: <strong>el alivio se siente INMEDIATAMENTE</strong>, y con el uso diario la mayoría ve la zona<strong> cada vez mejor semana a semana</strong> — primero <strong>afloja la picazón</strong>, después <strong>baja el colorado, y para la tercera semana la piel suele verse normal de nuevo.</strong></p><p><strong>Eso sí: </strong>no lo dejes cuando deje de picar. Ese es el error por el que a todos les vuelve. Seguí hasta que la piel se vea sana, y una semana más.</p><p><strong>Para eso está la garantía: si en 30 días no ves la piel mejor, te devolvemos la plata.</strong></p>"
+          }
+        },
+        "faq-4": {
+          "type": "qa",
+          "settings": {
+            "q": "¿Cómo se usa?",
+            "a": "<p><strong>Agitalo, tirá dos o tres toques </strong>a 15 cm <strong>sobre la piel limpia y seca</strong>, <strong>y dejá que seque solo </strong>— diez segundos y te vestís. <strong>Sin frotar: se pulveriza y se deja.</strong></p><p><strong>Dos veces por día</strong>, cada 12 horas: <strong>mañana y noche, después de la ducha. </strong>El efecto se va con el lavado y la transpiración, por eso las 12 horas. <strong>Si entrenaste, sumá una tercera </strong>después de bañarte. <strong>Más de tres al día no — irrita y no suma.</strong></p><p><strong>¿Hasta cuándo? </strong>El error de todos es cortar cuando la piel se ve bien. <strong>Las primeras semanas no lo saltees ni un día, aunque ya no pique</strong>. Después seguilo como un desodorante: mientras entrenes y transpires, la humedad vuelve todos los días.</p>"
+          }
+        },
+        "faq-5": {
+          "type": "qa",
+          "settings": {
+            "q": "¿Dónde lo uso?",
+            "a": "<p><strong>Ingle, pliegues, cara interna del muslo y glúteos. Cubrí dos o tres centímetros más allá del borde de lo que se ve rojo</strong> — lo que avanza está en el borde, no en el centro. Y también en los pies, que es de donde suele volver.</p><p><strong>Dónde no:</strong> en los genitales directo, ni sobre piel abierta de tanto rascarte. Ahí esperá a que cierre.</p>"
+          }
+        },
+        "faq-6": {
+          "type": "qa",
+          "settings": {
+            "q": "Envío y garantías",
+            "a": "<p><strong>En CABA llega en 24 horas.</strong> Al resto del país, 3 días hábiles por Andreani, con número de seguimiento. Y en <strong>caja neutra</strong>: nadie sabe qué es ni de qué marca. Ni el cartero.</p><p>Si no te convence, tenés dos coberturas. <strong>Los primeros 10 días: cambio o devolución sin preguntas</strong>, con el envase cerrado. Te arrepentiste, listo. Y aparte, <strong>30 días de garantía: si no ves tu piel mejor, te devolvemos la plata.</strong> Sin fotos, sin motivos, sin vueltas.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-3",
+        "faq-1",
+        "faq-2",
+        "faq-4",
+        "faq-5",
+        "faq-6"
+      ],
+      "settings": {
+        "eyebrow": "04 — LO QUE TODOS PREGUNTAN",
+        "heading": "Sacate las <em>dudas</em>",
+        "open_first": true,
+        "pie": "Producto cosmético de higiene y cuidado personal. Uso externo."
+      }
+    },
+    "horizontal_ticker_qxD6nk": {
+      "type": "gad-ticker",
+      "settings": {
+        "speed": 1.5,
+        "direction": "normal",
+        "pause_hover": false,
+        "gap_m": 60,
+        "gap_d": 100,
+        "color_scheme": "scheme-4",
+        "custom_colors": true,
+        "text_size_m": 12,
+        "text_size_d": 12,
+        "italic": false,
+        "uppercase": true,
+        "bold": false,
+        "image_height_m": 26,
+        "image_height_d": 40,
+        "review_width_m": 300,
+        "review_width_d": 400,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12,
+        "padding_top_d": 16,
+        "padding_bottom_d": 16,
+        "only_on_products_enabled": false,
+        "visibility": "all",
+        "cc_bg": "#141210",
+        "cc_text": "#E6DFCE"
+      },
+      "blocks": {
+        "text_ej6BpY": {
+          "type": "text",
+          "settings": {
+            "text": "ENVÍO EN 24hr EN CABA"
+          }
+        },
+        "text_FMcnB9": {
+          "type": "text",
+          "settings": {
+            "text": "ENVÍO A TODO EL PAÍS"
+          }
+        },
+        "text_Gyfre9": {
+          "type": "text",
+          "settings": {
+            "text": "SI NO TE SIRVE, TE DEVOLVEMOS LA PLATA"
+          }
+        },
+        "text_QHCfNd": {
+          "type": "text",
+          "settings": {
+            "text": "ATENCIÓN DIRECTA POR WHATSAPP"
+          }
+        },
+        "text_AgRTrt": {
+          "type": "text",
+          "settings": {
+            "text": "NADIE SE ENTERA QUÉ HAY ADENTRO"
+          }
+        }
+      },
+      "block_order": [
+        "text_ej6BpY",
+        "text_FMcnB9",
+        "text_Gyfre9",
+        "text_QHCfNd",
+        "text_AgRTrt"
+      ]
+    },
+    "dolor": {
+      "type": "gad-reveal-cards",
+      "blocks": {
+        "pu-1": {
+          "type": "punal",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-dolor-cama.png",
+            "frase": "EVITÁS TENER RELACIONES",
+            "intro": "Se dio la ocasión y pusiste una excusa. Otra vez. No porque no quieras — porque antes que la otra persona vea eso, preferís quedarte con las ganas. Y si estás en pareja, peor: el miedo a pegárselo te frena más que la vergüenza.",
+            "cuerpo": "<p>[TODO — explicación completa de esta situación: qué pasa, por qué pasa y qué se puede hacer.]</p>"
+          }
+        },
+        "pu-2": {
+          "type": "punal",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-dolor-bolsillo.png",
+            "frase": "TE RASCÁS A ESCONDIDAS",
+            "intro": "En el baño del laburo, en el auto antes de bajarte. Aprendiste a hacerlo rápido y sin que te vean. Y lo peor no es rascarte: es la paranoia de que alguien haya visto que tenes podrido ahí abajo. Eso te ocupa la cabeza todo el día.",
+            "cuerpo": "<p>[TODO — explicación completa de esta situación: qué pasa, por qué pasa y qué se puede hacer.]</p>"
+          }
+        },
+        "pu-3": {
+          "type": "punal",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-dolor-vestuario.png",
+            "frase": "TE ESCONDÉS PARA CAMBIARTE",
+            "intro": "En el vestuario esperás a que se vayan todos, o te cambiás mirando a la pared. Las manchas se ven, y la toalla no tapa tanto como creés. ¿Hace cuánto que no te cambiás tranquilo?",
+            "cuerpo": "<p>[TODO — explicación completa de esta situación: qué pasa, por qué pasa y qué se puede hacer.]</p>"
+          }
+        },
+        "pu-4": {
+          "type": "punal",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-dolor-noche.png",
+            "frase": "LA PICAZÓN TE DESPIERTA DE NOCHE",
+            "intro": "Las 3 de la mañana y otra vez despierto. A veces ni te das cuenta: te rascás dormido y amanecés ardiendo, con la piel lastimada. Al otro día andás hecho bolsa — y no le podés contar a nadie por qué.",
+            "cuerpo": "<p>[TODO — explicación completa de esta situación: qué pasa, por qué pasa y qué se puede hacer.]</p>"
+          }
+        },
+        "da-1": {
+          "type": "dato",
+          "settings": {
+            "icono": "hongo",
+            "titulo": "Es un hongo",
+            "texto": "No es falta de higiene: es un hongo en la piel."
+          }
+        },
+        "da-2": {
+          "type": "dato",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Crece con la humedad",
+            "texto": "Transpiración, calor y roce lo alimentan."
+          }
+        },
+        "da-3": {
+          "type": "dato",
+          "settings": {
+            "icono": "vuelve",
+            "titulo": "Por eso vuelve",
+            "texto": "La crema calma; la humedad lo trae de nuevo."
+          }
+        },
+        "da-4": {
+          "type": "dato",
+          "settings": {
+            "icono": "extiende",
+            "titulo": "Y se extiende",
+            "texto": "A muslos y glúteos. Viaja por la toalla."
+          }
+        },
+        "da-5": {
+          "type": "dato",
+          "settings": {
+            "icono": "seco",
+            "titulo": "EL HONGO VIVE DE LA HUMEDAD",
+            "texto": "En piel seca no crece más. Preguntale a cualquier dermatólogo."
+          }
+        },
+        "da-6": {
+          "type": "dato",
+          "settings": {
+            "icono": "frio",
+            "titulo": "El frío calma la picazón",
+            "texto": "Apenas la piel siente el frio, se alivia la picazón el ardor."
+          }
+        }
+      },
+      "block_order": [
+        "pu-1",
+        "pu-2",
+        "pu-3",
+        "pu-4",
+        "da-1",
+        "da-2",
+        "da-3",
+        "da-4",
+        "da-5",
+        "da-6"
+      ],
+      "settings": {
+        "eyebrow": "— EL PROBLEMA",
+        "heading": "¿TE PASA <em>ALGUNA DE ESTAS</em>?",
+        "lead": "Tocá y lee",
+        "boton_popup": "Ver la explicación completa",
+        "ciencia_eyebrow": "— QUÉ ES LO QUE LO CAUSA",
+        "ciencia_titulo": "<strong>LO QUE TENÉS ES </strong><em><strong>UN HONGO</strong></em>",
+        "ciencia_lead": "Se llama tiña inguinal y es más común de lo que pensás. No tiene nada que ver con la higiene: es un hongo que vive en la piel, y mientras la zona esté húmeda y caliente va a seguir ahí.",
+        "ciencia_video": "shopify://files/videos/athlex-ciencia.mp4"
+      }
+    },
+    "mecanismo": {
+      "type": "gad-stamps",
+      "blocks": {
+        "sello-1": {
+          "type": "sello",
+          "settings": {
+            "palabra": "alivio",
+            "texto": "Al instante. Con efecto frio y duradero."
+          }
+        },
+        "sello-2": {
+          "type": "sello",
+          "settings": {
+            "palabra": "SECO",
+            "texto": "Se evapora solo. En segundos."
+          }
+        },
+        "sello-3": {
+          "type": "sello",
+          "settings": {
+            "palabra": "LISTO",
+            "texto": "Te vestís y seguís. Ni la tocaste."
+          }
+        }
+      },
+      "block_order": [
+        "sello-1",
+        "sello-2",
+        "sello-3"
+      ],
+      "settings": {
+        "video": "shopify://files/videos/athlex-frio-v3.mp4",
+        "eyebrow": "02 — QUÉ SENTÍS",
+        "heading": "LA PICAZÓN Y EL ARDOR <em>DESAPARECEN al instante</em>",
+        "lead": "Lo tirás a 15 cm, sin tocar la zona. Sentís el alivio instantáneo y, cuando se evapora, la piel queda seca. Sin frotar, sin enjuagar, sin recontagio.",
+        "remate": "Alivia la sensación de picazón y ardor. Y la zona queda seca."
+      }
+    },
+    "comparison_slider_9qeVzq": {
+      "type": "gad-compare-reveal",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "before_image": "shopify://shop_images/8.png",
+        "after_image": "shopify://shop_images/8_._antes_despues_2_copia.png",
+        "labels": true,
+        "before_label": "Antes de tratar",
+        "after_label": "21 días de uso",
+        "ratio": "4 / 5",
+        "max_width": 360,
+        "corner": 20,
+        "note": "",
+        "background": "#E6DFCE",
+        "text_color": "#141210",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "uso": {
+      "type": "gad-timed-steps",
+      "blocks": {
+        "uso-1": {
+          "type": "paso",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ph-paso-1.jpg",
+            "num": "1",
+            "icon": "agitar",
+            "title": "Agitá",
+            "text": "Un par de sacudidas y listo.",
+            "tiempo": "2 s"
+          }
+        },
+        "uso-2": {
+          "type": "paso",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ph-paso-2.jpg",
+            "num": "2",
+            "icon": "spray",
+            "title": "Aplicá a 15 cm",
+            "text": "Dos o tres golpes sobre la zona y dos centímetros al rededor, sin frotar.",
+            "tiempo": "5 s"
+          }
+        },
+        "uso-3": {
+          "type": "paso",
+          "settings": {
+            "image": "shopify://shop_images/athlex-ph-paso-3.jpg",
+            "num": "3",
+            "icon": "secar",
+            "title": "Dejá secar",
+            "text": "Unos segundos parado ahí y listo. Después te vestís normal.",
+            "tiempo": "8 s"
+          }
+        }
+      },
+      "block_order": [
+        "uso-1",
+        "uso-2",
+        "uso-3"
+      ],
+      "settings": {
+        "eyebrow": "03 — CÓMO SE USA",
+        "heading": "Tres movimientos, <em>quince segundos</em>",
+        "lead": "Dos veces por día sobre la piel limpia y seca: a la mañana y a la noche, después de la ducha. Si entrenaste, una más.",
+        "crono_total": "15",
+        "crono_label": "RELOJ EN MANO",
+        "nota": "No se enjuaga. Y con el uso de todos los días, a las tres semanas la piel se suele ver sana otra vez."
+      }
+    },
+    "ingredientes": {
+      "type": "gad-posters",
+      "blocks": {
+        "eq-1": {
+          "type": "equipo",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-eq-frio.png",
+            "palabra": "EL FRÍO",
+            "linea": "Dos refrescantes: uno pega al toque, el otro se queda un rato más.",
+            "ingredientes": "MENTHYL LACTATE|0,8 %\nMENTHOXYPROPANEDIOL|0,3 %"
+          }
+        },
+        "eq-2": {
+          "type": "equipo",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-eq-secado.png",
+            "palabra": "EL SECADO",
+            "linea": "Evapora en segundos y deja la piel con toque seco.",
+            "ingredientes": "ALCOHOL DENAT.|16 %\nSILICA|1 %"
+          }
+        },
+        "eq-3": {
+          "type": "equipo",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-eq-calma.png",
+            "palabra": "LA CALMA",
+            "linea": "El escuadrón que baja la sensación de picazón y ardor.",
+            "ingredientes": "PANTHENOL|2 %\nBISABOLOL|0,3 %\nALLANTOIN|0,3 %\nGLYCYRRHETINIC ACID|0,1 %"
+          }
+        },
+        "eq-4": {
+          "type": "equipo",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-eq-control.png",
+            "palabra": "EL CONTROL",
+            "linea": "Purificantes y control de olor y grasitud.",
+            "ingredientes": "PIROCTONE OLAMINE|0,5 %\nUNDECYLENOYL GLYCINE|0,5 %\nZINC PCA|0,5 %\nDECYLENE GLYCOL|0,3 %"
+          }
+        },
+        "eq-5": {
+          "type": "equipo",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-eq-lisa.png",
+            "palabra": "LA PIEL LISA",
+            "linea": "Renovación suave para la piel que vive rozando.",
+            "ingredientes": "UREA|3 %\nGLUCONOLACTONE|2 %\nSALICYLIC ACID|0,5 %"
+          }
+        }
+      },
+      "block_order": [
+        "eq-1",
+        "eq-2",
+        "eq-3",
+        "eq-4",
+        "eq-5"
+      ],
+      "settings": {
+        "eyebrow": "05 — QUÉ TIENE ADENTRO",
+        "heading": "La fórmula, <em>abierta</em>",
+        "lead": "Suena a químico porque es química: cada equipo hace algo que sentís.",
+        "lista_titulo": "La fórmula completa, en orden",
+        "lista": "Aqua\nAlcohol Denat.\nDipropylene Glycol\nPentylene Glycol\nUrea\nPanthenol\nGluconolactone\nPEG-40 Hydrogenated Castor Oil\nSilica\nMenthyl Lactate\nPiroctone Olamine\nUndecylenoyl Glycine\nCaprylyl Glycol\nSalicylic Acid\nZinc PCA\nBisabolol\nAllantoin\nDecylene Glycol\nMenthoxypropanediol\nGlycyrrhetinic Acid\nXanthan Gum\nLactic Acid\nSodium Hydroxide",
+        "lista_nota": "En orden decreciente, como en la etiqueta. Concentraciones declaradas sólo en los activos de arriba.",
+        "sello": "TODO DECLARADO",
+        "sello_dato": "pH 4,0"
+      }
+    },
+    "proceso": {
+      "type": "gad-chapters",
+      "blocks": {
+        "proceso-1": {
+          "type": "etapa",
+          "settings": {
+            "video": "shopify://files/videos/athlex-proc-mezcla.mp4",
+            "num": "1",
+            "title": "LA FÓRMULA ESTÁ ESCRITA",
+            "text": "Cada ingrediente, cada porcentaje, el orden y la temperatura de cada paso: todo está en un documento. El laboratorio lo sigue al pie de la letra, lote tras lote. Nada se ajusta a ojo."
+          }
+        },
+        "proceso-2": {
+          "type": "etapa",
+          "settings": {
+            "video": "shopify://files/videos/athlex-proc-llenado.mp4",
+            "num": "2",
+            "title": "SE ELABORA EL LOTE",
+            "text": "Cada ingrediente se pesa en balanza controlada y se mezcla en el orden exacto que marca la fórmula. El orden importa: hecho distinto, es otro producto."
+          }
+        },
+        "proceso-3": {
+          "type": "etapa",
+          "settings": {
+            "video": "shopify://files/videos/athlex-proc-control.mp4",
+            "num": "3",
+            "title": "SE CONTROLA ANTES DE ENVASAR",
+            "text": "De cada lote se saca una muestra y se mide todo: pH, viscosidad, aspecto, microbiología. La regla es una sola: si el pH no da 4,0, ese lote no se envasa."
+          }
+        },
+        "proceso-4": {
+          "type": "etapa",
+          "settings": {
+            "video": "shopify://files/videos/athlex-proc-empaque.mp4",
+            "num": "4",
+            "title": "CADA FRASCO SE PUEDE RASTREAR",
+            "text": "Cada frasco sale con número de lote y vencimiento, y de cada producción queda guardado un frasco testigo. Si algún día uno sale distinto, se sabe exactamente de dónde vino."
+          }
+        }
+      },
+      "block_order": [
+        "proceso-1",
+        "proceso-2",
+        "proceso-3",
+        "proceso-4"
+      ],
+      "settings": {
+        "eyebrow": "06 — CÓMO SE HACE",
+        "heading": "De dónde <em>sale</em>",
+        "lead": "[TODO — escribir cuando esté definido el proceso real de producción.]",
+        "pie": ""
+      }
+    },
+    "reviews": {
+      "type": "gad-reviews-wall",
+      "blocks": {
+        "rev-prueba-1": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-espejo-gym.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "pensé que me había pegado herpes, pero al final era por la transpiración",
+            "autor": "Marcos T.",
+            "verificada": false,
+            "fecha": "07/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-2": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-banio-pileta.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "Las cremas eran un asco porque quedabas todo pegajoso.",
+            "autor": "Diego R.",
+            "verificada": true,
+            "fecha": "07/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-3": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-auto.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "Imposible andar poniéndome pomadas en la calle.",
+            "autor": "Facundo G.",
+            "verificada": true,
+            "fecha": "06/26",
+            "destacada": true
+          }
+        },
+        "rev-prueba-4": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-cinta.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "Tenía que ir al baño constantemente o acortar mi entrenamiento.",
+            "autor": "Nicolás P.",
+            "verificada": true,
+            "fecha": "07/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-5": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-flash-noche.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "A los cinco minutos del spray la picazón se había ido.",
+            "autor": "Juan M.",
+            "verificada": false,
+            "fecha": "06/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-6": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-mesa-luz.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "No quiero ir al médico porque francamente me da demasiada vergüenza.",
+            "autor": "Leandro S.",
+            "verificada": false,
+            "fecha": "05/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-7": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-ducha.jpg",
+            "estrellas": 4,
+            "title": "",
+            "text": "uno ve la mejoría y corta, pero no los erradicaste, y da embole seguir poniendo cuando parece que está ok",
+            "autor": "Martín B.",
+            "verificada": false,
+            "fecha": "07/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-8": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-bolso-pasillo.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "Ya no estoy para andar poniéndome pomadas a cada rato.",
+            "autor": "Cristian V.",
+            "verificada": true,
+            "fecha": "06/26",
+            "destacada": true
+          }
+        },
+        "rev-prueba-9": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-mochila.jpg",
+            "estrellas": 5,
+            "title": "",
+            "text": "ya no tengo la paranoia de que alguien me agarre rascándome",
+            "autor": "Alejandro D.",
+            "verificada": false,
+            "fecha": "05/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-10": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-mate.jpg",
+            "estrellas": 4,
+            "title": "",
+            "text": "en internet ví que es un hongo llamado tiña inguinal y viendo las imágenes es exactamente lo mismo",
+            "autor": "Gonzalo F.",
+            "verificada": false,
+            "fecha": "07/26",
+            "destacada": false
+          }
+        },
+        "rev-prueba-11": {
+          "type": "resena",
+          "settings": {
+            "image": "shopify://shop_images/athlex-revu-lavarropas.jpg",
+            "estrellas": 4,
+            "title": "",
+            "text": "eso tarda en quitarse meses y deja marcas permanentes, me pasó :(",
+            "autor": "Sebastián L.",
+            "verificada": false,
+            "fecha": "06/26",
+            "destacada": false
+          }
+        }
+      },
+      "block_order": [
+        "rev-prueba-1",
+        "rev-prueba-2",
+        "rev-prueba-3",
+        "rev-prueba-4",
+        "rev-prueba-5",
+        "rev-prueba-6",
+        "rev-prueba-7",
+        "rev-prueba-8",
+        "rev-prueba-9",
+        "rev-prueba-10",
+        "rev-prueba-11"
+      ],
+      "settings": {
+        "eyebrow": "07 — LO QUE DICEN",
+        "heading": "Reseñas de <em>clientes</em>",
+        "mostrar_resumen": true,
+        "promedio": "4,7",
+        "cuantas": "11 opiniones (DATOS DE PRUEBA)",
+        "lote": 6
+      }
+    },
+    "legal": {
+      "type": "gad-legal",
+      "settings": {
+        "aviso": "Uso externo. Suspender su uso en caso de irritación. Mantener fuera del alcance de los niños.",
+        "titulo_detalle": "Advertencias, ingredientes y datos del producto",
+        "advertencias": "Uso externo. Evitá el contacto con los ojos y las mucosas. Si aparece irritación, suspendé el uso. No apliques sobre piel lastimada. No exponer a temperaturas mayores a 30 °C.",
+        "modo_uso": "Agitá antes de usar. Aplicá a 15 cm sobre la piel limpia y seca. Dejá secar unos segundos. No requiere enjuague. Repetí cuando lo necesites.",
+        "neto": "120 ml",
+        "categoria": "Producto cosmético de higiene y cuidado personal",
+        "origen": "Industria Argentina"
+      }
+    },
+    "skin": {
+      "type": "gad-landing-skin",
+      "settings": {}
+    },
+    "progreso": {
+      "type": "gad-reading-progress",
+      "settings": {}
+    },
+    "page_style": {
+      "type": "gad-page-style",
+      "settings": {
+        "colors_on": true,
+        "bg": "#E6DFCE",
+        "text": "#141210",
+        "button": "#141210",
+        "button_text": "#E6DFCE"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "reviews-mini",
+    "horizontal_ticker_Bwfdhe",
+    "image_slider_k6hTQm",
+    "faq",
+    "horizontal_ticker_qxD6nk",
+    "dolor",
+    "mecanismo",
+    "comparison_slider_9qeVzq",
+    "uso",
+    "ingredientes",
+    "proceso",
+    "reviews",
+    "legal",
+    "skin",
+    "progreso",
+    "page_style"
+  ]
+}

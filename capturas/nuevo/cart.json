@@ -1,0 +1,70 @@
+{
+ "d": {
+  "title": "Tu carrito – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "cart-items",
+    "h": 342,
+    "empty": false
+   },
+   {
+    "id": "cart-footer",
+    "h": 233,
+    "empty": false
+   },
+   {
+    "id": "featured-collection",
+    "h": 734,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 7,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Tu carrito – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "cart-items",
+    "h": 318,
+    "empty": false
+   },
+   {
+    "id": "cart-footer",
+    "h": 207,
+    "empty": false
+   },
+   {
+    "id": "featured-collection",
+    "h": 602,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 7,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

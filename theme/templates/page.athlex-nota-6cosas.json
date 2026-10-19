@@ -1,0 +1,244 @@
+{
+  "sections": {
+    "nota": {
+      "type": "gad-article",
+      "blocks": {
+        "b00": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-vestuario.jpg",
+            "alt": "Pared de lockers en un vestuario",
+            "pie": "Vestuario, ropa húmeda y toalla compartida: el escenario donde este hongo se mueve mejor. (Foto: Pexels)"
+          }
+        },
+        "b01": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Esto es lo que sacamos en limpio después de leer cientos de mensajes de gente con picazón en la ingle, revisar qué dicen los manuales médicos sobre el tema y mirar de cerca lo que le vende hoy el mercado argentino.</p><p>Son siete puntos. Se leen en tres minutos y te ahorran, por lo menos, una compra equivocada.</p>"
+          }
+        },
+        "b02": {
+          "type": "indice",
+          "settings": {
+            "titulo": "Los siete puntos"
+          }
+        },
+        "b03": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "1 · No es una enfermedad de transmisión sexual"
+          }
+        },
+        "b04": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Arrancamos por la duda que más gente se come sola y a las tres de la mañana. Eso tiene nombre: se llama <strong>tiña inguinal</strong>, y la causa un hongo del grupo de los dermatofitos, casi siempre <em>Trichophyton rubrum</em>.</p><p>Y es el mismo hongo que causa el pie de atleta, en otra parte del cuerpo. En los pies nadie se avergüenza; diez centímetros más arriba, de golpe, es un secreto.</p>"
+          }
+        },
+        "b05": {
+          "type": "destacado",
+          "settings": {
+            "texto": "El mismo hongo del pie de atleta. <em>No te lo pegó nadie en la cama.</em>"
+          }
+        },
+        "b06": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "2 · Vive de tres cosas, y una es fácil de cortar"
+          }
+        },
+        "b07": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Necesita calor, humedad y roce. Nada más que eso: no hay ninguna armadura microscópica ni ninguna guerra molecular, por más que te la vendan. El calor de una zona cerrada y el roce de caminar no los podés sacar, pero <strong>la humedad sí</strong>.</p>"
+          }
+        },
+        "b08": {
+          "type": "dia",
+          "settings": {
+            "titulo": "Un día cualquiera, y las horas en que la zona queda húmeda",
+            "marcas": "7:00 | Salís de la ducha. Te secás rápido y te vestís.\n9 a 17 | Sentado, con ropa encima, sin aire que circule.\n19:00 | Entrenás. Y volvés a tu casa con la ropa mojada.\n23:00 | Te acostás. El calor de la cama hace el resto.",
+            "pie": "Las franjas verdes son las horas húmedas. No es un rato: es casi todo el día."
+          }
+        },
+        "b09": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "3 · Viaja del pie a la ingle, y vuelve"
+          }
+        },
+        "b10": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Este es el punto que casi nadie conoce y el que más explica las recaídas. El pie funciona como <strong>reservorio</strong>: el hongo vive ahí sin molestar demasiado y desde ahí vuelve a subir, por la mano al rascarse, por la toalla, y sobre todo por <strong>el calzoncillo cuando pasa por los pies al vestirte</strong>.</p><p>De ahí sale una recomendación médica que suena a chiste y no lo es: <strong>ponerse las medias antes que el calzoncillo</strong>. Gratis, dos segundos, y para mucha gente es la diferencia.</p>"
+          }
+        },
+        "b11": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-medias.jpg",
+            "alt": "Una persona poniéndose una media antes de terminar de vestirse",
+            "pie": "Así la ropa interior no hace escala en los pies camino a la ingle. (Foto: Pexels)"
+          }
+        },
+        "b12": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "4 · El día que deja de picar no es el día de terminar"
+          }
+        },
+        "b13": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Esta es la razón número uno por la que vuelve. La picazón afloja antes de que la piel termine de recuperarse. Te sentís bien, dejás de ponerte lo que te estabas poniendo, y a las semanas volviste al punto de partida.</p>"
+          }
+        },
+        "b14": {
+          "type": "semana",
+          "settings": {
+            "titulo": "Tres semanas, dos finales distintos",
+            "fila_a": "El que corta cuando deja de picar",
+            "pie_a": "Corta el día que deja de sentirlo. Los cuadros oscuros son el tiempo que tarda en volver.",
+            "fila_b": "El que sigue una semana más",
+            "pie_b": "Sigue siete días después de dejar de sentirlo. Esa franja es toda la diferencia."
+          }
+        },
+        "b15": {
+          "type": "destacado",
+          "settings": {
+            "texto": "Cuando ya no lo sentís, <em>seguí una semana más</em>."
+          }
+        },
+        "b16": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "5 · La forma importa más que la fórmula"
+          }
+        },
+        "b17": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Si el problema es de constancia, gana lo que se usa todos los días sin pensarlo. Y ahí la crema tiene todo en contra: tenés que tocarte, frotar, esperar a que se absorba y esperar un rato más para vestirte. Dos veces por día, todos los días.</p>"
+          }
+        },
+        "b18": {
+          "type": "versus",
+          "settings": {
+            "titulo": "Lo que hay que hacer, contado en pasos",
+            "col_a": "Una crema",
+            "pasos_a": "Lavarte las manos\nAbrir el pomo\nTocarte la zona y esparcir\nEsperar a que se absorba\nVolver a lavarte las manos\nEsperar para vestirte",
+            "col_b": "Un spray",
+            "pasos_b": "Apuntar y apretar\nVestirte",
+            "pie": "Un producto que se usa todos los días le gana a uno perfecto que abandonás el jueves."
+          }
+        },
+        "b19": {
+          "type": "caja",
+          "settings": {
+            "titulo": "ATHLEX PSS",
+            "sub": "Spray corporal para zonas de roce. 120 ml. Se aplica sin tocarte, seca en segundos.",
+            "boton": "Quiero probarlo un mes",
+            "pie": "Garantía de 30 días. Si no te convence, escribinos y te devolvemos lo que pagaste."
+          }
+        },
+        "b20": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "6 · Mirá la fecha de las reseñas antes de creerles"
+          }
+        },
+        "b21": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Un consejo que sirve para la categoría entera, incluyéndonos a nosotros. Antes de comprar, abrí las reseñas y fijate en dos cosas:</p><ul><li><strong>La fecha.</strong> Si hay cientos de opiniones con fecha anterior al lanzamiento del producto, algo no cierra.</li><li><strong>Si dice compra verificada.</strong> No es lo mismo la opinión de alguien que compró que un texto suelto con una estrella al lado.</li></ul><p>Lo mismo con los porcentajes: si una página te dice que funciona en el noventa y pico por ciento de los casos, preguntate de qué estudio salió ese número y si podés leerlo. Nosotros no publicamos ninguno, y es a propósito.</p>"
+          }
+        },
+        "b22": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "7 · Hay casos en los que no hay que comprar nada"
+          }
+        },
+        "b23": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Si la piel está abierta o sangra de rascarse, si hay ampollas, pus u olor fuerte, o si hay diabetes, defensas bajas o corticoides de por medio, esto lo tiene que ver un médico antes que cualquier producto de venta libre, sea el nuestro o sea otro.</p><p>Una consulta dura quince minutos y no hay que explicarle nada a nadie más.</p>"
+          }
+        },
+        "b24": {
+          "type": "test",
+          "settings": {
+            "titulo": "¿Querés saber en cuál de los casos estás?",
+            "texto": "Armamos un test de 8 preguntas con todo esto. No pide mail ni fotos, se contesta con el pulgar, y al final te dice qué encaja con lo que contaste.",
+            "boton": "Hacer el test",
+            "url": "/pages/athlex-test"
+          }
+        },
+        "b25": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Eso es todo. Siete puntos, ninguna guerra molecular y ningún porcentaje inventado. Si después de esto querés probar lo nuestro, buenísimo. Si no, ya sabés más que ayer y los consejos gratis funcionan igual.</p>"
+          }
+        },
+        "b26": {
+          "type": "caja",
+          "settings": {
+            "titulo": "ATHLEX PSS",
+            "sub": "Envío a todo el país en caja neutra. Se paga online.",
+            "boton": "Lo quiero",
+            "pie": "Garantía de 30 días."
+          }
+        }
+      },
+      "block_order": [
+        "b00",
+        "b01",
+        "b02",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21",
+        "b22",
+        "b23",
+        "b24",
+        "b25",
+        "b26"
+      ],
+      "settings": {
+        "estilo": "portal",
+        "cinta": "PUBLICIDAD · CONTENIDO DE ATHLEX",
+        "eyebrow": "Guía rápida",
+        "titulo": "7 cosas que conviene saber antes de comprar algo para la picazón en la ingle",
+        "bajada": "Qué organismo es, de dónde llega, por qué vuelve y en qué fijarse antes de pagar. Lo que dicen los manuales médicos y lo que muestra el mercado argentino.",
+        "autor": "Por el equipo de ATHLEX",
+        "dato": "23 de agosto 2026 · 3 min de lectura",
+        "handle": "athlex",
+        "utm": "?ref=nota-6cosas",
+        "barra": true,
+        "barra_titulo": "ATHLEX PSS · 120 ml",
+        "barra_boton": "Ver producto",
+        "temas_titulo": "Temas de la nota",
+        "temas": "Piel, Hongos, Tiña inguinal, Pie de atleta, Higiene personal, Deporte",
+        "legal": "Esta nota es contenido publicitario de ATHLEX. Las referencias sobre el organismo, el reservorio en los pies y el orden al vestirse provienen de fuentes médicas públicas (StatPearls/NCBI, DermNet NZ, AAFP), citadas en nuestro material de respaldo. ATHLEX PSS es un producto cosmético de higiene y cuidado personal, de uso externo. No reemplaza una consulta médica."
+      }
+    }
+  },
+  "order": [
+    "nota"
+  ]
+}

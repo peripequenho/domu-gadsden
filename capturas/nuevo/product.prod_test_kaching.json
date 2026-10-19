@@ -1,0 +1,70 @@
+{
+ "d": {
+  "title": "Mini GPS Localizador GF-07 Sin Abono | Envío Gratis – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 2927,
+    "empty": false
+   },
+   {
+    "id": "177483634895303dd5",
+    "h": 1675,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1284"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 64,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1284",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Mini GPS Localizador GF-07 Sin Abono | Envío Gratis – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 3440,
+    "empty": false
+   },
+   {
+    "id": "177483634895303dd5",
+    "h": 1752,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1284"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 52,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1284",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

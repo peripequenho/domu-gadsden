@@ -1,0 +1,531 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "gad_sticky_media": false,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "thumbs_position": "bottom",
+        "thumbs_count": 5,
+        "thumbs_v_width": 16,
+        "thumbs_v_hide_arrows": false,
+        "thumbs_ratio": "square",
+        "main_arrows": false,
+        "gallery_arrows_scheme": "scheme-3",
+        "gallery_arrows_bare": false,
+        "gallery_dots_color": "#1b1b1b",
+        "mobile_thumbnails": "show",
+        "m_thumbs_position": "bottom",
+        "m_thumbs_count": 5,
+        "m_thumbs_v_width": 22,
+        "m_radius": 10,
+        "m_gap": 0,
+        "m_peek_type": "none",
+        "m_peek_pct": 0,
+        "m_peek_px": 0,
+        "m_edge": false,
+        "m_container": 100,
+        "m_image_width": 100,
+        "m_pagination": "hidden",
+        "m_arrows": "sides",
+        "m_arrows_scheme": "scheme-3",
+        "m_arrows_bare": false,
+        "m_dots_color": "#1b1b1b",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "video_mode": "button",
+        "video_pause": false,
+        "video_sound": false,
+        "video_timeline": false,
+        "video_button_scheme": "scheme-4",
+        "video_timeline_color": "#0b1f3a",
+        "variant_media_first": false,
+        "keep_media_order": true,
+        "filter_option": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "m_padding_top": 0,
+        "m_padding_bottom": 16
+      },
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "size": "sm",
+            "align": "left",
+            "uppercase": true,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "custom_liquid_gX3AKU": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign rating_val = product.metafields.custom.rating_avg.value %}\n{% assign sold_val = product.metafields.custom.sold_text.value %}\n\n{% if rating_val != blank or sold_val != blank %}\n<div class=\"edc-rb\">\n  {% if rating_val != blank %}\n  <div class=\"edc-rb__left\">\n    <span class=\"edc-rb__stars\">★★★★★</span>\n    <span class=\"edc-rb__rating\">{{ rating_val }}</span>\n    <span class=\"edc-rb__sep\">|</span>\n  </div>\n  {% endif %}\n\n  {% if sold_val != blank %}\n  <div class=\"edc-rb__badge\">\n    {{ sold_val }} vendidos\n  </div>\n  {% endif %}\n</div>\n{% endif %}\n\n<style>\n.edc-rb{\n  display:flex;\n  align-items:baseline;\n  gap:10px;\n  flex-wrap:nowrap;\n  margin:8px 0 12px;\n  white-space:nowrap;\n}\n.edc-rb__left{\n  display:flex;\n  align-items:baseline;\n  gap:6px;\n}\n.edc-rb__stars{\n  font-size:14px;\n  letter-spacing:1px;\n}\n.edc-rb__rating{\n  font-size:14px;\n  font-weight:500;\n}\n.edc-rb__sep{\n  opacity:.5;\n}\n.edc-rb__badge{\n  font-size:13px;\n  padding:5px 10px;\n  border-radius:999px;\n  line-height:1;\n  background: linear-gradient(135deg, #e9e1ff 0%, #cfc2ff 100%);\n  color:#2b2b2b;\n  flex-shrink:0;\n}\n</style>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "order": "price_first",
+            "price_color": "foreground",
+            "compare_color": "outline",
+            "badge": "sale",
+            "badge_text": "{icono1} SPECIAL OFFER",
+            "badge_icon_scale": 100,
+            "badge_icon_1": "redeem",
+            "badge_icon_1_filled": false,
+            "badge_icon_2": "check_circle",
+            "badge_icon_2_filled": false,
+            "show_tax_note": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "custom_liquid_haMnb7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign v = product.selected_or_first_available_variant -%}\n\n<div class=\"meli-cuotas\">\n  Mismo precio en \n  <strong>3 cuotas sin<br> interés de:</strong>\n  <span class=\"meli-cuotas__amount\">\n    {{ v.price | divided_by: 3 | money }}\n  </span>\n</div>\n\n<style>\n.meli-cuotas{\n  color:#00a650;\n  font-size:13px;\n  line-height:1.25;\n  margin-top:4px;\n}\n\n.meli-cuotas strong{\n  font-weight:600;\n}\n\n.meli-cuotas__amount{\n  font-size:14px;\n  font-weight:700;\n  letter-spacing:.2px;\n}\n</style>"
+          }
+        },
+        "conversion_bear_trust_badges_widget_nwC9MU": {
+          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
+        "custom_liquid_HmMNDc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  ML-style Payment Methods Popup (Shrine)\n  - 3 cuotas sin interés (Mercado Pago)\n  - Sin calculadora\n  - Estilo: header amarillo + acordeones\n{%- endcomment -%}\n\n<!-- TRIGGER -->\n<button\n  type=\"button\"\n  class=\"mlpay-link\"\n  data-mlpay-open>\n  Ver medios de pago\n  <span class=\"mlpay-link-arrow\" aria-hidden=\"true\">›</span>\n</button>\n\n<div class=\"mlpay-backdrop\" data-mlpay-backdrop hidden></div>\n\n<div class=\"mlpay-modal\"\n     role=\"dialog\"\n     aria-modal=\"true\"\n     aria-labelledby=\"mlpayTitle\"\n     data-mlpay-modal\n     hidden>\n\n  <div class=\"mlpay-header\">\n    <button class=\"mlpay-back\"\n            type=\"button\"\n            aria-label=\"Volver\"\n            data-mlpay-close>\n      ‹\n    </button>\n    <div class=\"mlpay-title\" id=\"mlpayTitle\">\n      Medios de pago para este producto\n    </div>\n  </div>\n\n  <div class=\"mlpay-body\">\n\n    <!-- INTRO -->\n    <div class=\"mlpay-intro\">\n      Al finalizar tu compra, pagás con el dinero disponible en tu cuenta.\n      Podés ingresar dinero a Mercado Pago por cuentas vinculadas,\n      transferencia bancaria o en efectivo.\n\n      <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n      <a class=\"mlpay-more\"\n         href=\"https://www.mercadopago.com.ar/banking/balance\"\n         target=\"_blank\"\n         rel=\"noopener\">\n        Conocer más\n      </a>\n    </div>\n\n    <div class=\"mlpay-accordion\">\n\n      <!-- TARJETAS DE CRÉDITO -->\n      <details class=\"mlpay-item\" open>\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de crédito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-badge\">\n            Mismo precio en hasta 3 cuotas\n          </div>\n\n          {%- assign credit_logos = \"visa|Visa,mastercard|Mastercard,american-express|American Express,cabal|Cabal,argencard|Argencard,diners-club|Diners Club,naranjax|Naranja X,tarjeta-shopping|Tarjeta Shopping\" | split: \",\" -%}\n\n          <div class=\"mlpay-logos\">\n            {%- for item in credit_logos -%}\n              {%- assign parts = item | split: \"|\" -%}\n              {%- assign handle = parts[0] -%}\n              {%- assign label = parts[1] -%}\n              <div class=\"mlpay-logo\">\n                <img\n                  src=\"{{ 'bank-' | append: handle | append: '.svg' | file_url }}\"\n                  alt=\"{{ label }}\"\n                  class=\"mlpay-bank-icon\"\n                  loading=\"lazy\">\n              </div>\n            {%- endfor -%}\n          </div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/payments-methods?view=conditions\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer condiciones\n          </a>\n        </div>\n      </details>\n\n      <!-- CUOTAS SIN TARJETA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Cuotas sin Tarjeta</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Comprás y luego pagás las cuotas mes a mes con efectivo,\n            débito o con el dinero de tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/credits/consumer/enrollment/\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DINERO EN CUENTA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Dinero disponible en Mercado Pago</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Pagás con el dinero disponible en tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadopago.com.ar/banking/balance\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DÉBITO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de débito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-visa-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-mastercard-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-cabal-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-maestro.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n      <!-- EFECTIVO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Efectivo</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-pago-facil.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-rapipago.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n    </div>\n  </div>\n</div>\n\n<style>\n[hidden]{display:none!important}\n\n.mlpay-link{\n  background:none;\n  border:0;\n  padding:0;\n  display:inline-flex;\n  gap:6px;\n  font-size:14px;\n  font-weight:500;\n  color:#3483FA;\n  cursor:pointer;\n}\n.mlpay-link:hover{text-decoration:underline}\n\n.mlpay-backdrop{\n  position:fixed;\n  inset:0;\n  background:rgba(0,0,0,.45);\n  z-index:9998;\n}\n\n.mlpay-modal{\n  position:fixed;\n  inset:0;\n  max-width:520px;\n  margin:auto;\n  background:#fff;\n  z-index:9999;\n  display:flex;\n  flex-direction:column;\n}\n\n.mlpay-header{\n  background:#F9D500;\n  padding:12px;\n  display:flex;\n  align-items:center;\n  gap:10px;\n}\n\n.mlpay-back{\n  background:none;\n  border:0;\n  font-size:28px;\n  cursor:pointer;\n}\n\n.mlpay-title{\n  font-weight:700;\n  font-size:16px;\n  line-height:1.15;\n}\n\n.mlpay-body{padding:16px;overflow:auto}\n\n.mlpay-item summary{\n  display:flex;\n  justify-content:space-between;\n  cursor:pointer;\n  padding:10px 0;\n}\n\n.mlpay-chevron{color:#777}\n\n.mlpay-content{padding-bottom:14px}\n\n.mlpay-badge{\n  background:#EAF7EA;\n  color:#1C7C3A;\n  font-size:12px;\n  font-weight:700;\n  padding:6px 10px;\n  border-radius:999px;\n  display:inline-block;\n  margin-bottom:10px;\n}\n\n.mlpay-logos{\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:12px;\n}\n\n.mlpay-logo{\n  background:#fafafa;\n  border-radius:12px;\n  padding:12px;\n  display:flex;\n  justify-content:center;\n}\n\n.mlpay-bank-icon{\n  width:90px;\n  height:28px;\n  object-fit:contain;\n}\n\n.mlpay-more{\n  color:#2D6CDF;\n  font-weight:600;\n  font-size:13px;\n  text-decoration:none;\n}\n\n.mlpay-more:hover{text-decoration:underline}\n</style>\n\n<script>\n(function(){\n  const openBtn=document.querySelector('[data-mlpay-open]');\n  const modal=document.querySelector('[data-mlpay-modal]');\n  const closeBtn=document.querySelector('[data-mlpay-close]');\n  const backdrop=document.querySelector('[data-mlpay-backdrop]');\n  if(!openBtn||!modal||!closeBtn||!backdrop)return;\n\n  function openModal(){\n    modal.hidden=false;\n    backdrop.hidden=false;\n    document.documentElement.style.overflow='hidden';\n  }\n\n  function closeModal(){\n    modal.hidden=true;\n    backdrop.hidden=true;\n    document.documentElement.style.overflow='';\n  }\n\n  openBtn.addEventListener('click',openModal);\n  closeBtn.addEventListener('click',closeModal);\n  backdrop.addEventListener('click',closeModal);\n  document.addEventListener('keydown',e=>{\n    if(e.key==='Escape'&&!modal.hidden)closeModal();\n  });\n})();\n</script>"
+          }
+        },
+        "custom_liquid_NKJTwG": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .guarantee-badge {\n    display: flex;\n    align-items: flex-start;\n    gap: 8px;\n    padding: 12px 16px;\n    border-radius: 6px;\n    border: 1px solid #f3e2c4;\n    background-color: #fff8ec;\n    font-size: 14px;\n  }\n\n  .guarantee-badge__icon svg {\n    width: 18px;\n    height: 18px;\n  }\n\n  .guarantee-badge__title {\n    font-weight: 600;\n    margin: 0 0 2px 0;\n  }\n\n  .guarantee-badge__text {\n    margin: 0;\n    font-size: 13px;\n    color: #555555;\n  }\n</style>\n\n<div class=\"guarantee-badge\">\n  <div class=\"guarantee-badge__icon\">\n    <svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\">\n      <circle cx=\"8\" cy=\"8\" r=\"8\" fill=\"#0BA500\"/>\n      <path d=\"M4 8.3L6.5 11L12 5.5\" stroke=\"white\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>\n  </div>\n  <div>\n    <p class=\"guarantee-badge__title\">Garantía de satisfacción de 90 días.</p>\n    <p class=\"guarantee-badge__text\">\n     Si el producto <strong>no cumple tu expectativas,</strong><br>\nO si algo falla, nos hacemos cargo y <strong>la reemplazamos sin preguntas.</strong>.</p>\n  </div>\n</div>"
+          }
+        },
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle",
+            "option_types": "pills, dropdown, dropdown",
+            "label_format": "{nombre} - {valor}",
+            "hide_sold_out": false,
+            "dropdown_full": false,
+            "swatch_size": "m",
+            "swatch_source": "none",
+            "swatch_colors": "#000000\n#6D388B\n#0000FF\n#FFCC00"
+          }
+        },
+        "04ba004e-2f54-4936-8b1c-8bcadf6573f6": {
+          "type": "quantity_selector",
+          "settings": {
+            "full_width": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "uppercase": true,
+            "price_in_button": false,
+            "skip_cart": false,
+            "custom_color": false,
+            "color": "#2b7427",
+            "icon_scale": 120,
+            "icon_gap": 10,
+            "second_button": false,
+            "second_label": "Agregar al carrito",
+            "second_custom_color": false,
+            "second_color": "#dd1d1d",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "emoji_benefits_8r83k3": {
+          "type": "benefits",
+          "settings": {
+            "benefits": "<p>{{ product.metafields.custom.desc_tit.value }}</p>",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "image_6rmkYM": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.img_01.value }}",
+            "width": 100,
+            "full_mobile": false,
+            "align": "center",
+            "radius": 0,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "custom_liquid_39ajAd": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.desc_txt_01.value != blank %}\n  {{ product.metafields.custom.desc_txt_01.value }}\n{% endif %}"
+          }
+        },
+        "image_LjeMXU": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.img_02.value }}",
+            "width": 100,
+            "full_mobile": false,
+            "align": "center",
+            "radius": 0,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "text_iG6Kng": {
+          "type": "text_icons",
+          "settings": {
+            "ti_size_m": 14,
+            "ti_size_d": 16,
+            "ti_align": "left",
+            "ti_color": "#121212",
+            "ti_icon_scale": 120,
+            "ti_icon_color": "#121212",
+            "ti_width": "full",
+            "ti_stack": "vertical",
+            "ti_gap": 8,
+            "ti_bg": false,
+            "ti_bg_color": "#f3f3f3",
+            "ti_radius": 6,
+            "ti_pad_axes": true,
+            "ti_padding_y": 6,
+            "ti_padding_x": 12,
+            "ti_border": 0,
+            "ti_border_color": "#b7b7b7",
+            "margin_top": 15,
+            "margin_bottom": 15,
+            "ti_text_1": "{{ product.metafields.custom.benef_01.value }}",
+            "ti_icon_1": "check_circle",
+            "ti_filled_1": false,
+            "ti_text_2": "{{ product.metafields.custom.benef_02.value }}",
+            "ti_icon_2": "check_circle",
+            "ti_filled_2": false,
+            "ti_text_3": "{{ product.metafields.custom.benef_03.value }}",
+            "ti_icon_3": "check_circle",
+            "ti_filled_3": false
+          }
+        },
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5": {
+          "type": "sticky_bar",
+          "settings": {
+            "action": "add_to_cart",
+            "show_when": "after_button",
+            "button_label": "Agregar al carrito",
+            "custom_button": false,
+            "button_color": "#dd1d1d",
+            "color_scheme": "scheme-1",
+            "star_color": "#ffcc00",
+            "stars_text": "(xxxx Reviews)",
+            "variant_mode": "combined",
+            "d_image": true,
+            "d_title": true,
+            "d_stars": false,
+            "d_price": true,
+            "d_badge": true,
+            "d_variants": true,
+            "d_full_button": false,
+            "d_price_in_button": false,
+            "d_transparent": false,
+            "m_image": true,
+            "m_title": false,
+            "m_stars": false,
+            "m_price": true,
+            "m_badge": false,
+            "m_variants": false,
+            "m_full_button": false,
+            "m_stack": false,
+            "m_price_in_button": false,
+            "m_transparent": false
+          }
+        },
+        "reviews_8UgFbe": {
+          "type": "reviews",
+          "settings": {
+            "rv_color_scheme": "scheme-1",
+            "rv_custom_bg": true,
+            "rv_bg": "#f2f2f2",
+            "rv_radius": 12,
+            "rv_border": 1,
+            "rv_border_color": "#b7b7b7",
+            "rv_avatar_align": "top",
+            "rv_avatar_radius": 40,
+            "rv_star_color": "#ffcc00",
+            "rv_star_offset": 0,
+            "rv_check_bg": "#6d388b",
+            "rv_check_color": "#ffffff",
+            "car_type": "loop",
+            "car_autoplay": true,
+            "car_speed": 5,
+            "show_arrows": false,
+            "show_dots": false,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "author_1": "{{ product.metafields.custom.rvw_nom_01.value }}{estrellas}",
+            "text_1": "<p>{{ product.metafields.custom.rvw_txt_01 | metafield_tag }}</p>",
+            "author_2": "{{ product.metafields.custom.rvw_nom_02.value }}{estrellas}",
+            "text_2": "<p>{{ product.metafields.custom.rvw_txt_02 | metafield_tag }}</p>",
+            "author_3": "{{ product.metafields.custom.rvw_nom_03.value }}{estrellas}",
+            "text_3": "<p>{{ product.metafields.custom.rvw_txt_03 | metafield_tag }}</p>"
+          }
+        },
+        "collapsible_tab_HEfeJf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_01_tit.value }}",
+            "icon": "none",
+            "icon_name": "{{ product.metafields.custom.faq_01_icon.value }}",
+            "icon_filled": true,
+            "content": "<p>{{ product.metafields.custom.faq_01_txt | metafield_tag }}</p>",
+            "title_size": "lg",
+            "toggle_icon": "caret",
+            "top_border": true,
+            "open": false,
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_zgYfRM": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_02_tit.value }}",
+            "icon": "none",
+            "icon_name": "{{ product.metafields.custom.faq_02_icon.value }}",
+            "icon_filled": true,
+            "content": "<p>{{ product.metafields.custom.faq_02_txt | metafield_tag }}</p>",
+            "title_size": "lg",
+            "toggle_icon": "caret",
+            "top_border": true,
+            "open": false,
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_kxP4cK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.custom.faq_03_tit.value }}",
+            "icon": "none",
+            "icon_name": "{{ product.metafields.custom.faq_03_icon.value }}",
+            "icon_filled": true,
+            "content": "<p>{{ product.metafields.custom.faq_03_txt | metafield_tag }}</p>",
+            "title_size": "lg",
+            "toggle_icon": "caret",
+            "top_border": true,
+            "open": false,
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_q4ENKB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Postventa y soporte",
+            "icon": "none",
+            "icon_name": "support_agent",
+            "icon_filled": true,
+            "content": "<p><br/><strong>1-</strong> <strong>Soporte humano</strong> por WhatsApp/mail para ajuste y uso correcto.<br/><br/><strong>2-</strong> <strong>Resolución rápida</strong> si algo falla: diagnóstico y solución sin vueltas.</p>",
+            "title_size": "lg",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_tDY7Wg": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Información del envio",
+            "icon": "none",
+            "icon_name": "local_shipping",
+            "icon_filled": true,
+            "content": "<p><strong>El envio es GRATIS HOY y llega en 24hr en C.A.B.A.</strong><br/><br/><strong>1- </strong>El envió puede demorar<strong> entre 2 a 6 </strong>días<strong> </strong>hábiles <strong>al resto del país </strong>desde el momento en que despachamos tu pedido.<br/><br/><strong>2- </strong>Una vez que despachamos tu pedido te <strong>enviamos la información al correo con el que realizaste la compra.</strong></p>",
+            "title_size": "lg",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_wkB9pw": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Garantías Domu",
+            "icon": "none",
+            "icon_name": "undo",
+            "icon_filled": true,
+            "content": "<p><strong>7 días de devolución gratis.</strong><br/>¿No te convenció? Desde que lo recibís, tenés 7 días para devolverlo sin costo. Te devolvemos el 100% de tu dinero, sin preguntas.</p><p><strong>Garantia de satisfacción de 90 días.</strong><br/>Si el producto <strong>no cumple tus expectativas, </strong>o si algo falla, nos hacemos cargo y <strong>lo reemplazamos sin preguntas.</strong></p><p><strong>¿Algún problema con tu envío?</strong><br/>Nuestro equipo te responde en el día por WhatsApp o email.<br/>💬 WhatsApp: +54 381 351-3112</p>",
+            "title_size": "lg",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "custom_liquid_gX3AKU",
+        "price",
+        "custom_liquid_haMnb7",
+        "conversion_bear_trust_badges_widget_nwC9MU",
+        "custom_liquid_HmMNDc",
+        "custom_liquid_NKJTwG",
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
+        "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
+        "buy_buttons",
+        "emoji_benefits_8r83k3",
+        "image_6rmkYM",
+        "custom_liquid_39ajAd",
+        "image_LjeMXU",
+        "text_iG6Kng",
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
+        "reviews_8UgFbe",
+        "collapsible_tab_HEfeJf",
+        "collapsible_tab_zgYfRM",
+        "collapsible_tab_kxP4cK",
+        "collapsible_tab_q4ENKB",
+        "collapsible_tab_tDY7Wg",
+        "collapsible_tab_wkB9pw"
+      ]
+    },
+    "177483634895303dd5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      },
+      "blocks": {
+        "judge_me_reviews_review_widget_hRPxAY": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_hRPxAY"
+      ]
+    },
+    "multicolumn_aTnHmr": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "Cómo funciona, en 3 pasos",
+        "heading_size": "h1",
+        "title_accent": "#6D388B",
+        "button_label": "",
+        "atc_label": "",
+        "atc_skip_cart": false,
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "card_style": "tint",
+        "card_color_scheme": "scheme-1",
+        "card_cc_bg": "#F3F3F3",
+        "card_cc_text": "#2E2A39",
+        "card_radius": 20,
+        "equal_height": false,
+        "valign": "center",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "center",
+        "title_size_d": 24,
+        "title_size_m": 22,
+        "text_size_d": 16,
+        "text_size_m": 15,
+        "title_gap": 10,
+        "card_pad_d": 24,
+        "card_pad_m": 24,
+        "full_width": false,
+        "car_type": "classic",
+        "car_autoplay": false,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": false,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "under",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_auto_height": false,
+        "m_dots": "under",
+        "m_arrows": "under",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "car_drag": "on",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "column_zRgTBK": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image/video to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": ""
+          }
+        },
+        "column_VGipyb": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image/video to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": ""
+          }
+        },
+        "column_M8eNAP": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image/video to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zRgTBK",
+        "column_VGipyb",
+        "column_M8eNAP"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "177483634895303dd5",
+    "multicolumn_aTnHmr"
+  ]
+}

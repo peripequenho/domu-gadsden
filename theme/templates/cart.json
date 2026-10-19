@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 24
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "settings": {},
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ]
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 4,
+        "title": "Tambien puede interesarte:",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "badges": "sale",
+        "columns_mobile": "2",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "visibility": "all",
+        "custom_colors": false,
+        "title_accent": "#6d388b",
+        "quick_add": "none",
+        "equal_height": false,
+        "swatch_option": "",
+        "swatch_position": "top",
+        "swatch_size_d": 36,
+        "swatch_size_m": 24,
+        "card_scheme_on": true,
+        "card_scheme": "scheme-1",
+        "full_width": false,
+        "car_type": "classic",
+        "car_autoplay": false,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": false,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "under",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_auto_height": false,
+        "m_dots": "under",
+        "m_arrows": "under"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "featured-collection"
+  ]
+}

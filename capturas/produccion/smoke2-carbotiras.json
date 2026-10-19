@@ -1,0 +1,91 @@
+{
+ "m": {
+  "title": "CarboTiras | Tiras blanqueadoras de carbón y menta – Domu Hogar",
+  "theme": "DOMU ATHLEX original",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "anuncios",
+    "h": 32,
+    "empty": false
+   },
+   {
+    "id": "hero",
+    "h": 469,
+    "empty": false
+   },
+   {
+    "id": "pasos",
+    "h": 428,
+    "empty": false
+   },
+   {
+    "id": "resenas_ui",
+    "h": 445,
+    "empty": false
+   },
+   {
+    "id": "beneficios",
+    "h": 422,
+    "empty": false
+   },
+   {
+    "id": "main",
+    "h": 1717,
+    "empty": false
+   },
+   {
+    "id": "image_slider_YzHBWx",
+    "h": 173,
+    "empty": false
+   },
+   {
+    "id": "comparar",
+    "h": 354,
+    "empty": false
+   },
+   {
+    "id": "videos_ui",
+    "h": 450,
+    "empty": false
+   },
+   {
+    "id": "garantia",
+    "h": 384,
+    "empty": false
+   },
+   {
+    "id": "comparacion",
+    "h": 515,
+    "empty": false
+   },
+   {
+    "id": "faq",
+    "h": 781,
+    "empty": false
+   },
+   {
+    "id": "cierre",
+    "h": 798,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1376"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 18,
+  "nImgs": 116,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1376",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

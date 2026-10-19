@@ -1,0 +1,220 @@
+{
+ "d": {
+  "title": "Spray para tiña inguinal | Athlex PSS 120 ml – Domu Hogar",
+  "theme": "Gadsden 1.1.2",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 1669,
+    "empty": false
+   },
+   {
+    "id": "reviews-mini",
+    "h": 115,
+    "empty": false
+   },
+   {
+    "id": "horizontal_ticker_Bwfdhe",
+    "h": 49,
+    "empty": false
+   },
+   {
+    "id": "image_slider_k6hTQm",
+    "h": 243,
+    "empty": false
+   },
+   {
+    "id": "faq",
+    "h": 805,
+    "empty": false
+   },
+   {
+    "id": "horizontal_ticker_qxD6nk",
+    "h": 49,
+    "empty": false
+   },
+   {
+    "id": "dolor",
+    "h": 629,
+    "empty": false
+   },
+   {
+    "id": "dolor-ciencia",
+    "h": 798,
+    "empty": false
+   },
+   {
+    "id": "mecanismo",
+    "h": 959,
+    "empty": false
+   },
+   {
+    "id": "comparison_slider_9qeVzq",
+    "h": 411,
+    "empty": false
+   },
+   {
+    "id": "uso",
+    "h": 1037,
+    "empty": false
+   },
+   {
+    "id": "ingredientes",
+    "h": 847,
+    "empty": false
+   },
+   {
+    "id": "proceso",
+    "h": 769,
+    "empty": false
+   },
+   {
+    "id": "reviews",
+    "h": 1662,
+    "empty": false
+   },
+   {
+    "id": "legal",
+    "h": 144,
+    "empty": false
+   },
+   {
+    "id": "skin",
+    "h": 0,
+    "empty": true
+   },
+   {
+    "id": "progreso",
+    "h": 0,
+    "empty": true
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1404"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 6,
+  "nImgs": 110,
+  "status": 0,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1404",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Spray para tiña inguinal | Athlex PSS 120 ml – Domu Hogar",
+  "theme": "Gadsden 1.1.2",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 1955,
+    "empty": false
+   },
+   {
+    "id": "reviews-mini",
+    "h": 128,
+    "empty": false
+   },
+   {
+    "id": "horizontal_ticker_Bwfdhe",
+    "h": 41,
+    "empty": false
+   },
+   {
+    "id": "image_slider_k6hTQm",
+    "h": 133,
+    "empty": false
+   },
+   {
+    "id": "faq",
+    "h": 899,
+    "empty": false
+   },
+   {
+    "id": "horizontal_ticker_qxD6nk",
+    "h": 41,
+    "empty": false
+   },
+   {
+    "id": "dolor",
+    "h": 793,
+    "empty": false
+   },
+   {
+    "id": "dolor-ciencia",
+    "h": 1187,
+    "empty": false
+   },
+   {
+    "id": "mecanismo",
+    "h": 1094,
+    "empty": false
+   },
+   {
+    "id": "comparison_slider_9qeVzq",
+    "h": 399,
+    "empty": false
+   },
+   {
+    "id": "uso",
+    "h": 969,
+    "empty": false
+   },
+   {
+    "id": "ingredientes",
+    "h": 802,
+    "empty": false
+   },
+   {
+    "id": "proceso",
+    "h": 867,
+    "empty": false
+   },
+   {
+    "id": "reviews",
+    "h": 1686,
+    "empty": false
+   },
+   {
+    "id": "legal",
+    "h": 197,
+    "empty": false
+   },
+   {
+    "id": "skin",
+    "h": 0,
+    "empty": true
+   },
+   {
+    "id": "progreso",
+    "h": 0,
+    "empty": true
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1404"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 6,
+  "nImgs": 94,
+  "status": 0,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1404",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "d": {
+  "title": "Contact – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "48a61bc7-365a-4136-bce5-4aa7f7623d0a",
+    "h": 379,
+    "empty": false
+   },
+   {
+    "id": "fd57cce8-d801-473c-9554-025221fb7723",
+    "h": 472,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [
+   "fd57cce8-d801-473c-9554-025221fb7723"
+  ],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Contact – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "48a61bc7-365a-4136-bce5-4aa7f7623d0a",
+    "h": 411,
+    "empty": false
+   },
+   {
+    "id": "fd57cce8-d801-473c-9554-025221fb7723",
+    "h": 517,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [
+   "fd57cce8-d801-473c-9554-025221fb7723"
+  ],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 304,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

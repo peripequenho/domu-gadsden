@@ -1,0 +1,295 @@
+{
+  "sections": {
+    "nota": {
+      "type": "gad-article",
+      "blocks": {
+        "b01": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Tres y diez de la mañana. Martín Ojeda se despierta rascándose.</p><p>No se despertó y después se rascó: se despertó <strong>porque</strong> se estaba rascando, dormido, y ya se lastimó otra vez. Se queda quieto un rato mirando el techo, calculando cuántas horas faltan para el despertador. Cuatro.</p><p>A la mañana va a andar hecho bolsa y no le va a poder decir a nadie por qué.</p><p>A las nueve va a pasar por la farmacia. Va a mirar la góndola, va a agarrar la misma crema de siempre o alguna nueva, si el que atiende le recomienda, y en cinco o seis días la cosa va a aflojar. Después la va a dejar. Y en tres semanas, o en dos meses, o el verano que viene, van a ser otra vez las tres y diez de la mañana.</p><p>Le pasa desde 2019.</p>"
+          }
+        },
+        "b02": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-foros.jpg",
+            "alt": "Una mano sosteniendo un teléfono encendido en la oscuridad",
+            "pie": "El horario en que se busca esto en Google dice bastante del problema. (Foto: Pexels)"
+          }
+        },
+        "b03": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "¿Te suena?"
+          }
+        },
+        "b04": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p><strong>Martín no existe.</strong></p><p>O existe unas cuantas veces: es el mismo relato que aparece una y otra vez en los foros donde la gente habla de esto sin dar la cara. Le pusimos un nombre para poder contarlo; todo lo que hace y dice en esta nota sale de ahí, de mensajes reales. Como este:</p>"
+          }
+        },
+        "b05": {
+          "type": "citas",
+          "settings": {
+            "titulo": "Lo escribió alguien que ya llevaba años",
+            "cita_1": "Suele pasar que en gral uno ve la mejoria y corta… da embole seguir poniendo cuando parece que esta ok.",
+            "fuente_1": "Mensaje de un foro público argentino, ortografía original, recortado",
+            "cita_2": "",
+            "fuente_2": "",
+            "pie": "Cita textual de un foro público. No es un cliente de ATHLEX: el producto es nuevo."
+          }
+        },
+        "b06": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Si estás leyendo esto de madrugada, no hace falta que te convenzamos de que el problema existe: lo tenés. Lo que viene ahora es por qué vuelve, que a Martín le llevó seis años entender.</p>"
+          }
+        },
+        "b07": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Lo que ya probó"
+          }
+        },
+        "b08": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>La lista es siempre parecida, y si estás leyendo esto probablemente sea parecida a la tuya.</p><p>Cremas de farmacia. Un jabón especial que le duró tres semanas. Talco. Otra crema, más cara. Una consulta con receta incluida. Y en el medio, los consejos de internet: secarte mejor, cambiar el jabón, usar ropa más suelta.</p><p>Nada de eso es una tontería. Todo eso, en algún momento, le funcionó. Ese es justamente el problema: cuando algo te funciona cuatro veces y cuatro veces te vuelve, dejás de pensar en resolverlo y empezás a convivir. Martín llegó a esa etapa en 2022, cuando empezó a cambiarse mirando la pared en el vestuario.</p><p>Y arriba de eso, la preocupación que casi nadie dice en voz alta:</p>"
+          }
+        },
+        "b09": {
+          "type": "citas",
+          "settings": {
+            "titulo": "La preocupación que casi nadie dice en voz alta",
+            "cita_1": "Ten cuidado porque te puede dar tiña inguinal y eso tarda en quitarse meses y deja marcas permanentes, me pasó :(",
+            "fuente_1": "Mensaje de un foro público en español",
+            "cita_2": "",
+            "fuente_2": "",
+            "pie": "Guardate esta última, porque más abajo tiene respuesta."
+          }
+        },
+        "b10": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "El punto exacto donde se corta"
+          }
+        },
+        "b11": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Acá viene la parte que a Martín le costó seis años entender y que un médico explica en dos renglones.</p><p>La picazón afloja bastante antes de que la piel termine de recuperarse.</p><p>Ese desfasaje es todo. Dejás de sentir la molestia, te das por sano sin decírtelo del todo, y dejás de hacer lo que venías haciendo. La zona queda como estaba, con el mismo calor y la misma humedad de todos los días, y en algún momento reaparece.</p><p><strong>La crema no falló. La dejaste el día que dejó de picarte, y ahí volvió.</strong></p>"
+          }
+        },
+        "b12": {
+          "type": "citas",
+          "settings": {
+            "titulo": "La respuesta de un médico a un paciente que preguntó exactamente esto",
+            "cita_1": "…continuar usándolo hasta una semana después de la «aparente» desaparición de las lesiones, de esta forma disminuye el riesgo de recaída.",
+            "fuente_1": "Respuesta en una consulta médica pública · [PENDIENTE: nombre y matrícula]",
+            "cita_2": "",
+            "fuente_2": "",
+            "pie": "Cita recortada de una consulta pública. Hasta tener la matrícula, va sin nombre."
+          }
+        },
+        "b13": {
+          "type": "semana",
+          "settings": {
+            "titulo": "Las mismas tres semanas, dos finales distintos",
+            "fila_a": "El que corta cuando deja de picar",
+            "pie_a": "Corta el día que deja de sentirlo. Los cuadros oscuros son el tiempo que tarda en volver.",
+            "fila_b": "El que sigue una semana más",
+            "pie_b": "Sigue siete días después de dejar de sentirlo. Esa franja verde oscura es toda la diferencia."
+          }
+        },
+        "b14": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Una semana más. Eso separa al que lo resuelve del que lo arrastra seis años.</p><p>Cuando Martín leyó eso pensó lo mismo que estás pensando vos: <em>si era tan simple, alguien me lo habría dicho.</em> Después contó las veces que había cortado apenas dejaba de picarle. Seis, una por año.</p><p>Y con eso todavía le faltaba entender la otra mitad del asunto.</p>"
+          }
+        },
+        "b15": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "La segunda razón: no siempre empieza donde te pica"
+          }
+        },
+        "b16": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>El hongo que causa esto es un dermatofito, casi siempre <em>Trichophyton rubrum</em>. Es el mismo que causa el pie de atleta, en otra parte del cuerpo.</p><p>Eso tiene una consecuencia que a Martín le voló la cabeza, porque él tenía las dos cosas desde siempre y las veía como dos problemas separados.</p><p>El pie funciona como <strong>reservorio</strong>: ahí el hongo vive tranquilo, muchas veces sin molestar demasiado, y desde ahí vuelve a subir. El viaje es de lo más doméstico: la mano cuando te rascás, la toalla, y sobre todo el calzoncillo cuando pasa por los pies al vestirte.</p><p>Por eso la recomendación médica para el que tiene las dos cosas es tan boba como esta: <strong>ponerte las medias antes que el calzoncillo</strong>. Así la ropa interior no hace escala en los pies camino a la ingle.</p><p>Es gratis, tarda dos segundos, y para mucha gente es la mitad de la explicación de por qué volvía.</p>"
+          }
+        },
+        "b17": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-medias.jpg",
+            "alt": "Una persona poniéndose una media antes de terminar de vestirse",
+            "pie": "Dos segundos, gratis, y corta el camino de ida y vuelta entre el pie y la ingle. (Foto: Pexels)"
+          }
+        },
+        "b18": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Entonces, ¿por qué la gente igual lo deja?"
+          }
+        },
+        "b19": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Sabiendo las dos cosas, lo que hay que hacer es simple: mantener la zona seca todos los días y seguir una semana más después de que la molestia se fue. Simple, no fácil.</p><p>Para ponerte una crema tenés que lavarte las manos, abrir el pomo, tocarte una zona sensible, esperar a que se absorba, lavarte otra vez y recién ahí vestirte. Dos veces por día, durante semanas, y por eso el que abandona no es vago: el procedimiento es un bardo.</p><p>Y con el jabón especial pasa algo peor. Se enjuaga a los treinta segundos y termina su trabajo dejando la zona mojada, que es justo la condición que el hongo necesita.</p>"
+          }
+        },
+        "b20": {
+          "type": "versus",
+          "settings": {
+            "titulo": "Lo que hay que hacer, contado en pasos",
+            "col_a": "Una crema",
+            "pasos_a": "Lavarte las manos\nAbrir el pomo\nTocarte la zona y esparcir\nEsperar a que se absorba\nVolver a lavarte las manos\nEsperar para vestirte",
+            "col_b": "Un spray",
+            "pasos_b": "Apuntar y apretar\nVestirte",
+            "pie": "Dos veces por día, durante semanas. Ahí se decide quién abandona."
+          }
+        },
+        "b21": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Qué es ATHLEX, y dos detalles que cambian el resultado"
+          }
+        },
+        "b22": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>ATHLEX PSS es un spray corporal para zonas de roce, armado alrededor de una sola idea: que sea tan fácil de hacer que no lo abandones. Apuntás y apretás, sin tocarte y sin frotar. Se siente frío apenas cae, seca en diez segundos y te vestís. Ahí está la diferencia con el jabón: el jabón se va por la rejilla y te deja mojado; esto se queda puesto y te deja seco.</p><p>Martín tardó dos semanas en comprarlo. Ya había gastado en cinco cosas antes y no tenía ninguna gana de sumar una sexta.</p><p>Y hay dos detalles de uso que casi nadie explica, que para alguien con años de vueltas valen más que cualquier ingrediente:</p><ul><li><strong>Apuntá más afuera de lo que ves.</strong> Cubrí dos o tres centímetros más allá del borde de lo rojo. Lo que avanza está en el borde: el centro es la parte vieja. Martín estuvo seis años apuntando justo al medio.</li><li><strong>También en los pies</strong>, que es de donde vuelve.</li></ul><p>El resto: dos o tres toques a quince centímetros sobre piel limpia y seca, dos veces por día cada doce horas, porque el efecto se va con el lavado y la transpiración. Más de tres al día irrita y no suma.</p>"
+          }
+        },
+        "b23": {
+          "type": "video",
+          "settings": {
+            "titulo": "Así se aplica y así se seca",
+            "video": "shopify://files/videos/athlex-frio-v3.mp4",
+            "pie": "Sin contacto, sin frotar y sin esperar para vestirse."
+          }
+        },
+        "b24": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Para quién no es"
+          }
+        },
+        "b25": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Esto conviene decirlo antes que después.</p><p>Si la piel está abierta, agrietada o sangra de rascarte; si hay ampollas, pus u olor fuerte; o si hay diabetes, defensas bajas o corticoides de por medio, esto lo tiene que ver un médico antes que cualquier producto de venta libre, sea el nuestro o sea otro. Tampoco va en los genitales directo.</p><p>Y si venís de años de vueltas, vale una consulta aunque más no sea para confirmar que es lo que creés que es: en los foros hay gente que perdió años con lo que al final era eczema.</p><p>Preferimos perder esa venta antes que sumarte un problema.</p>"
+          }
+        },
+        "b26": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Las tres cosas que seguro te estás preguntando"
+          }
+        },
+        "b27": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p><strong>«¿Me va a arder?»</strong> No. Se siente frío, como algo fresco en la piel, y alivia sin frotar. La fórmula no lleva alcohol, y esa fue una decisión tomada justamente para esto: para el que llega con la piel irritada de meses.</p><p><strong>«Ya probé de todo, ¿por qué esto sí?»</strong> La respuesta honesta es aburrida: el ingrediente no tiene nada de mágico. Lo que cambia son las dos razones de arriba, y que un producto que podés sostener todos los días le gana a uno perfecto que abandonás el jueves.</p><p><strong>«¿Cuánto tarda?»</strong> El alivio se siente enseguida. Después, con el uso diario, primero afloja la picazón y más adelante baja el colorado; para la tercera semana la piel suele verse normal de nuevo. Eso sí, y es lo único que te vamos a repetir dos veces: <strong>no lo dejes cuando deje de picar.</strong> Seguí hasta que la piel se vea sana, y una semana más.</p>"
+          }
+        },
+        "b28": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Y la respuesta a lo de las marcas"
+          }
+        },
+        "b29": {
+          "type": "destacado",
+          "settings": {
+            "texto": "Cuando la piel está sana, <em>se termina</em>. No te queda, ni lo tenés que andar contando."
+          }
+        },
+        "b30": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "Cómo termina la historia de Martín"
+          }
+        },
+        "b31": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>No con la piel. Eso pasó en algún momento y ni se acuerda del día.</p><p>Termina un martes cualquiera, en el vestuario, cambiándose en el medio y de frente como cualquiera, hablando de otra cosa. Sin calcular nada.</p><p>Y vos ya sabés las dos razones que a él le llevaron seis años. Podés empezar hoy con las dos que son gratis: seguir una semana más después de que deje de picar, y ponerte las medias antes que el calzoncillo.</p><p>No tenés que dejar de entrenar, ni de ir a la pileta, ni sentarte a esperar a que se te vaya solo.</p>"
+          }
+        },
+        "b32": {
+          "type": "caja",
+          "settings": {
+            "titulo": "ATHLEX PSS",
+            "sub": "Spray corporal para zonas de roce. 120 ml. Se aplica sin tocarte, se siente frío y seca en diez segundos.",
+            "boton": "Mirá los detalles y el precio",
+            "pie": "Llega en caja neutra: nadie sabe qué es ni de qué marca, ni el cartero."
+          }
+        },
+        "b33": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>En CABA llega en 24 horas; al resto del país, 3 días hábiles por Andreani con seguimiento. Y para probarlo tenés dos coberturas: <strong>10 días</strong> para cambiarlo o devolverlo sin preguntas con el envase cerrado, y <strong>30 días de garantía</strong> si no ves tu piel mejor. Sin fotos, sin motivos.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b01",
+        "b02",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21",
+        "b22",
+        "b23",
+        "b24",
+        "b25",
+        "b26",
+        "b27",
+        "b28",
+        "b29",
+        "b30",
+        "b31",
+        "b32",
+        "b33"
+      ],
+      "settings": {
+        "estilo": "portal",
+        "cinta": "PUBLICIDAD · CONTENIDO DE ATHLEX",
+        "eyebrow": "Piel · zonas de roce",
+        "titulo": "Probó de todo durante seis años. Lo que le faltaba <em>no estaba donde le picaba</em>.",
+        "bajada": "El error se comete siempre en el mismo punto y casi nadie lo ve. Qué dicen los manuales médicos sobre por qué la tiña inguinal vuelve, y qué se puede hacer hoy sin gastar un peso.",
+        "autor": "Por [PENDIENTE: nombre real]",
+        "dato": "25 de agosto 2026 · 7 min de lectura",
+        "handle": "athlex",
+        "utm": "?ref=adv-recaida",
+        "barra": true,
+        "barra_titulo": "ATHLEX PSS · 120 ml",
+        "barra_boton": "Ver producto",
+        "temas_titulo": "Temas de la nota",
+        "temas": "Piel, Hongos, Tiña inguinal, Pie de atleta, Recaídas, Higiene personal",
+        "legal": "Esta nota es contenido publicitario de ATHLEX. Martín Ojeda es un personaje compuesto a partir de mensajes reales de foros públicos, y así está declarado dentro de la nota. Las referencias sobre el organismo, el reservorio en los pies, el orden al vestirse y la continuidad de uso provienen de fuentes médicas públicas (StatPearls/NCBI, DermNet NZ, AAFP y consultas médicas públicas), citadas en nuestro material de respaldo. ATHLEX PSS es un producto cosmético de higiene y cuidado personal, de uso externo. No reemplaza una consulta médica."
+      }
+    }
+  },
+  "order": [
+    "nota"
+  ]
+}

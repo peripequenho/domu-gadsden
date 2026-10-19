@@ -1,0 +1,1291 @@
+{
+  "sections": {
+    "anuncios": {
+      "type": "gad-ticker",
+      "settings": {
+        "speed": 3,
+        "direction": "normal",
+        "pause_hover": false,
+        "gap_m": 60,
+        "gap_d": 100,
+        "color_scheme": "scheme-1",
+        "custom_colors": true,
+        "cc_bg": "#f5f7fa",
+        "cc_text": "#0b0b0b",
+        "text_size_m": 13,
+        "text_size_d": 14,
+        "italic": false,
+        "uppercase": true,
+        "bold": true,
+        "image_height_m": 26,
+        "image_height_d": 40,
+        "review_width_m": 300,
+        "review_width_d": 400,
+        "padding_top_m": 8,
+        "padding_bottom_m": 8,
+        "padding_top_d": 12,
+        "padding_bottom_d": 12,
+        "only_on_products_enabled": false,
+        "visibility": "all"
+      },
+      "blocks": {
+        "t1": {
+          "type": "text",
+          "settings": {
+            "text": "Dientes más blancos en 7 días"
+          }
+        },
+        "t2": {
+          "type": "text",
+          "settings": {
+            "text": "Envío gratis a todo el país"
+          }
+        },
+        "t3": {
+          "type": "text",
+          "settings": {
+            "text": "7 días de garantía directa"
+          }
+        },
+        "t4": {
+          "type": "text",
+          "settings": {
+            "text": "Lo negro saca lo amarillo"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ]
+    },
+    "hero": {
+      "type": "gad-rotating-hero",
+      "settings": {
+        "antes_label": "Antes",
+        "despues_label": "Después",
+        "fotos_width": 100,
+        "fotos_height": 15,
+        "bg_offset": 0,
+        "bg_ratio": "752 / 1344",
+        "parallax_speed": 25,
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "gap_height": 220,
+        "caption": "Tiras blanqueadoras de carbón activado",
+        "caption_size": 13,
+        "heading": "",
+        "words": "",
+        "word_color": "#5f5e5a",
+        "rotate_speed": 20,
+        "heading_size": "h0",
+        "promise": "Dientes más blancos en",
+        "promise_highlight": "7 días",
+        "promise_color": "#9fe1cb",
+        "pill_1": "2 por día",
+        "pill_1_icon": "event_repeat",
+        "pill_2": "30 min",
+        "pill_2_icon": "timer",
+        "pill_3": "Garantía",
+        "pill_3_icon": "verified_user",
+        "button_label": "Quiero blanquear mis dientes",
+        "note": "",
+        "padding_top": 16,
+        "padding_bottom": 40
+      }
+    },
+    "pasos": {
+      "type": "gad-auto-steps",
+      "blocks": {
+        "paso1": {
+          "type": "paso",
+          "settings": {
+            "title": "Secá los dientes",
+            "tag": "10 seg",
+            "text": "Así la tira no se resbala."
+          }
+        },
+        "paso2": {
+          "type": "paso",
+          "settings": {
+            "title": "Pegá las dos tiras",
+            "tag": "1 min",
+            "text": "Arriba y abajo, presionando con el dedo."
+          }
+        },
+        "paso3": {
+          "type": "paso",
+          "settings": {
+            "title": "Esperá y sacala",
+            "tag": "30 min",
+            "text": "Enjuagate y listo."
+          }
+        },
+        "paso4": {
+          "type": "paso",
+          "settings": {
+            "title": "Repetí",
+            "tag": "2 por día",
+            "text": "Durante 7 días, hasta terminar la caja."
+          }
+        }
+      },
+      "block_order": [
+        "paso1",
+        "paso2",
+        "paso3",
+        "paso4"
+      ],
+      "settings": {
+        "caption": "Cómo se usan",
+        "heading": "Sin turno ni consultorio",
+        "heading_size": "h2",
+        "interval": 5,
+        "image_size": 104,
+        "section_height": 0,
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "accent": "#0b0b0b",
+        "highlight": "#9fe1cb",
+        "button_label": "Quiero blanquear mis dientes",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "resenas_ui": {
+      "type": "gad-review-rows",
+      "blocks": {
+        "r1": {
+          "type": "resena",
+          "settings": {
+            "name": "Sofía M.",
+            "place": "Rosario",
+            "stars": 5,
+            "text": "Tomo mate todo el día y se nota. Me las pongo mientras miro una serie."
+          }
+        },
+        "r2": {
+          "type": "resena",
+          "settings": {
+            "name": "Martín G.",
+            "place": "CABA",
+            "stars": 5,
+            "text": "Pensé que eran como las violetas que te pintan los dientes. Estas no tiñen: sacan."
+          }
+        },
+        "r3": {
+          "type": "resena",
+          "settings": {
+            "name": "Lucía R.",
+            "place": "Córdoba",
+            "stars": 5,
+            "text": "Re fáciles de usar. Media hora y listo, ni me acuerdo que las tengo puestas."
+          }
+        },
+        "r4": {
+          "type": "resena",
+          "settings": {
+            "name": "Joaquín P.",
+            "place": "Mendoza",
+            "stars": 4,
+            "text": "Fumo y tomo café. Al terminar la caja comparé con la guía de tonos y se nota."
+          }
+        },
+        "r5": {
+          "type": "resena",
+          "settings": {
+            "name": "Camila S.",
+            "place": "La Plata",
+            "stars": 5,
+            "text": "Me las compré para un casamiento. Llegaron rapidísimo."
+          }
+        },
+        "r6": {
+          "type": "resena",
+          "settings": {
+            "name": "Nicolás F.",
+            "place": "Mar del Plata",
+            "stars": 5,
+            "text": "El gusto a menta está bueno, nada de gusto a químico."
+          }
+        },
+        "r7": {
+          "type": "resena",
+          "settings": {
+            "name": "Valentina D.",
+            "place": "Tucumán",
+            "stars": 5,
+            "text": "Ya voy por la segunda caja. Para los que tomamos mate son lo más."
+          }
+        },
+        "r8": {
+          "type": "resena",
+          "settings": {
+            "name": "Agustina L.",
+            "place": "Neuquén",
+            "stars": 5,
+            "text": "No hay que frotar nada. Te la ponés y seguís con lo tuyo."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "settings": {
+        "rating": "4,8",
+        "subtitle": "según 1.240 clientes",
+        "max_avatars": 5,
+        "more_label": "+1k",
+        "avatar_size": 38,
+        "speed": 45,
+        "mockup_faces": true,
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "beneficios": {
+      "type": "gad-cropped-cards",
+      "blocks": {
+        "b1": {
+          "type": "beneficio",
+          "settings": {
+            "image_down": 16,
+            "title": "Mate, café y pucho",
+            "text": "Saca las manchas de todos los días."
+          }
+        },
+        "b2": {
+          "type": "beneficio",
+          "settings": {
+            "image_down": 20,
+            "title": "Media hora y listo",
+            "text": "Te la ponés y seguís con lo tuyo."
+          }
+        },
+        "b3": {
+          "type": "beneficio",
+          "settings": {
+            "image_down": 0,
+            "title": "Arriba y abajo",
+            "text": "Una tira para cada fila de dientes."
+          }
+        },
+        "b4": {
+          "type": "beneficio",
+          "settings": {
+            "image_down": 0,
+            "title": "Sabor menta",
+            "text": "Fresco, nada de gusto a químico."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "settings": {
+        "heading": "Blanqueá sin cambiar tu rutina",
+        "heading_size": "h2",
+        "card_height": 160,
+        "image_size": 148,
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "gad_sticky_media": false,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "thumbs_position": "bottom",
+        "thumbs_count": 5,
+        "thumbs_v_width": 16,
+        "thumbs_v_hide_arrows": false,
+        "thumbs_ratio": "square",
+        "main_arrows": false,
+        "gallery_arrows_scheme": "scheme-3",
+        "gallery_arrows_bare": true,
+        "gallery_dots_color": "#1b1b1b",
+        "mobile_thumbnails": "show",
+        "m_thumbs_position": "bottom",
+        "m_thumbs_count": 5,
+        "m_thumbs_v_width": 22,
+        "m_radius": 0,
+        "m_gap": 0,
+        "m_peek_type": "none",
+        "m_peek_pct": 0,
+        "m_peek_px": 0,
+        "m_edge": true,
+        "m_container": 100,
+        "m_image_width": 100,
+        "m_pagination": "hidden",
+        "m_arrows": "sides",
+        "m_arrows_scheme": "scheme-3",
+        "m_arrows_bare": true,
+        "m_dots_color": "#1b1b1b",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "video_mode": "button",
+        "video_pause": false,
+        "video_sound": false,
+        "video_timeline": false,
+        "video_button_scheme": "scheme-4",
+        "video_timeline_color": "#0b1f3a",
+        "variant_media_first": false,
+        "keep_media_order": false,
+        "filter_option": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "m_padding_top": 0,
+        "m_padding_bottom": 16
+      },
+      "blocks": {
+        "bb-chips": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%} CarboTiras · chips del buy box (misma estructura que bb-chips de ATHLEX: 2×2 en desktop, loop en celular). {%- endcomment -%}\n<style>\n.ctb-tick{--ctb-accent:#0B0B0B;--ctb-ink:#0B0B0B;--ctb-line:#DCDBD6;--ctb-bg:#fff;margin:0 0 14px;max-width:440px}\n.ctb-tick ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}\n.ctb-tick li[aria-hidden=\"true\"]{display:none}\n.ctb-tick li{display:flex;align-items:center;gap:7px;min-width:0;padding:7px 9px;border:1.5px solid var(--ctb-line);\n  border-radius:10px;background:var(--ctb-bg);color:var(--ctb-ink);font-size:12px;font-weight:800;line-height:1.15;\n  letter-spacing:.01em;text-transform:uppercase}\n.ctb-tick svg{width:16px;height:16px;flex:none;stroke:var(--ctb-accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}\n@media (max-width:749px){\n  .ctb-tick{max-width:none;overflow:hidden;\n    -webkit-mask-image:linear-gradient(90deg,transparent,#000 20px,#000 calc(100% - 20px),transparent);\n    mask-image:linear-gradient(90deg,transparent,#000 20px,#000 calc(100% - 20px),transparent)}\n  .ctb-tick ul{display:flex;width:max-content;animation:ctb-tick 24s linear infinite}\n  .ctb-tick li{white-space:nowrap}\n  .ctb-tick li[aria-hidden=\"true\"]{display:flex}\n}\n@keyframes ctb-tick{to{transform:translateX(calc(-50% - 4px))}}\n@media (max-width:400px){.ctb-tick li{padding:6px 8px;font-size:12px;gap:5px;letter-spacing:.01em}.ctb-tick svg{width:15px;height:15px}}\n</style>\n{%- comment -%} cada chip va DOS VECES: la segunda tanda (aria-hidden) hace el loop en celular. Si cambiás un texto, cambialo en las dos. {%- endcomment -%}\n{%- capture c1 -%}<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 8h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z\"/><path d=\"M17 9.5h1.5a2 2 0 0 1 0 4H17M9 3v2.5M12 3v2.5M15 3v2.5\"/></svg><span>Saca manchas de mate</span>{%- endcapture -%}\n{%- capture c2 -%}<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"13\" r=\"8\"/><path d=\"M12 9v4l2.5 2M10 2h4\"/></svg><span>Media hora y listo</span>{%- endcapture -%}\n{%- capture c3 -%}<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 5 2 8 .5 3 1 5.5 2.5 5.5S9.5 17 12 17s3 4 4.5 4 2-2.5 2.5-5.5c.5-3 2-5 2-8C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z\"/></svg><span>Arriba y abajo</span>{%- endcapture -%}\n{%- capture c4 -%}<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 19c0-8 5-13 14-14-1 9-6 14-14 14z\"/><path d=\"M5 19l7-7\"/></svg><span>Sabor menta</span>{%- endcapture -%}\n<div class=\"ctb-tick\"><ul>\n  <li>{{ c1 }}</li><li>{{ c2 }}</li><li>{{ c3 }}</li><li>{{ c4 }}</li>\n  <li aria-hidden=\"true\">{{ c1 }}</li><li aria-hidden=\"true\">{{ c2 }}</li><li aria-hidden=\"true\">{{ c3 }}</li><li aria-hidden=\"true\">{{ c4 }}</li>\n</ul></div>"
+          }
+        },
+        "titulo": {
+          "type": "title",
+          "settings": {
+            "size": "sm",
+            "align": "left",
+            "uppercase": true,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "rating": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%} Igual que ATHLEX: estrellas y \"X vendidos\" salen de metacampos del producto (custom.rating_avg, custom.sold_text).\n  Sin metacampos (hoy) va la fila de MAQUETA: caritas + estrellas + nota de la sección de reseñas (⚠️ DUMMY: 4,8 y\n  1.240 clientes los pone build.py desde ct-resenas). Tocarla baja a las reseñas. Sacarla antes de publicar. {%- endcomment -%}\n{% assign rating_val = product.metafields.custom.rating_avg.value %}\n{% assign sold_val = product.metafields.custom.sold_text.value %}\n{% if rating_val != blank or sold_val != blank %}\n<div class=\"ctb-rb\">\n  {% if rating_val != blank %}\n  <div class=\"ctb-rb__left\"><span class=\"ctb-rb__stars\">★★★★★</span><span class=\"ctb-rb__rating\">{{ rating_val }}</span><span class=\"ctb-rb__sep\">|</span></div>\n  {% endif %}\n  {% if sold_val != blank %}<div class=\"ctb-rb__badge\">{{ sold_val }} vendidos</div>{% endif %}\n</div>\n{% else %}\n<a class=\"ctb-rv\" href=\"#ct-resenas\" data-ctb-ir-resenas aria-label=\"Ver reseñas: 4,8 de 5\">\n  <span class=\"ctb-rv__caras\" aria-hidden=\"true\">\n    {%- for i in (1..4) -%}<img src=\"{{ 'ct-cara-' | append: i | append: '.jpg' | file_url }}\" alt=\"\" width=\"24\" height=\"24\" loading=\"lazy\">{%- endfor -%}\n  </span>\n  <span class=\"ctb-rv__estrellas\" aria-hidden=\"true\">★★★★★</span>\n  <strong>4,8</strong><span class=\"ctb-rv__sep\">·</span><span class=\"ctb-rv__n\">1.240 clientes</span>\n</a>\n<script>\n  document.querySelector('[data-ctb-ir-resenas]')?.addEventListener('click', function (e) {\n    var r = document.querySelector('[id$=\"__resenas_ui\"]'); if (!r) return; e.preventDefault();\n    r.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });\n  });\n</script>\n{% endif %}\n<style>\n.ctb-rv{display:inline-flex;align-items:center;gap:7px;margin:2px 0 6px;color:inherit;text-decoration:none;font-size:13px;line-height:1;white-space:nowrap}\n.ctb-rv__caras{display:inline-flex}\n.ctb-rv__caras img{width:24px;height:24px;border-radius:50%;object-fit:cover;border:2px solid #F5F7FA;margin-left:-8px;display:block}\n.ctb-rv__caras img:first-child{margin-left:0}\n.ctb-rv__estrellas{letter-spacing:1px;font-size:14px;color:#0B0B0B}\n.ctb-rv strong{font-weight:800}\n.ctb-rv__sep{opacity:.4}\n.ctb-rv__n{text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(11,11,11,.3)}\n.ctb-rv:hover .ctb-rv__n{text-decoration-color:currentColor}\n.ctb-rb{display:flex;align-items:baseline;gap:10px;flex-wrap:nowrap;margin:8px 0 12px;white-space:nowrap}\n.ctb-rb__left{display:flex;align-items:baseline;gap:6px}\n.ctb-rb__stars{font-size:14px;letter-spacing:1px}\n.ctb-rb__rating{font-size:14px;font-weight:500}\n.ctb-rb__sep{opacity:.5}\n.ctb-rb__badge{font-size:13px;padding:5px 10px;border-radius:999px;line-height:1;background:linear-gradient(135deg,#E6F7F0 0%,#9FE1CB 100%);color:#0B0B0B;flex-shrink:0}\n</style>"
+          }
+        },
+        "precio": {
+          "type": "price",
+          "settings": {
+            "order": "compare_above",
+            "price_color": "button",
+            "compare_color": "foreground",
+            "badge": "sale",
+            "badge_text": "{icono1} SPECIAL OFFER",
+            "badge_icon_scale": 140,
+            "badge_icon_1": "redeem",
+            "badge_icon_1_filled": false,
+            "badge_icon_2": "check_circle",
+            "badge_icon_2_filled": false,
+            "show_tax_note": false,
+            "margin_top": 15,
+            "margin_bottom": 4,
+            "price_font": "heading",
+            "fs_scale": "125",
+            "badge_font": "heading"
+          }
+        },
+        "cuotas": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  Igual que ATHLEX: \"Mismo precio en 3 cuotas sin interés\" + \"con transferencia 10% OFF\".\n  Como ATHLEX: lee el total del pack tildado en Kaching (8-oct); sin Kaching, sigue la variante del formulario.\n{%- endcomment -%}\n{%- assign v = product.selected_or_first_available_variant -%}\n{%- assign transf = v.price | times: 90 | divided_by: 100 -%}\n<div class=\"ctb-cuotas\">Mismo precio en <strong>3 cuotas sin interés de:</strong> <span class=\"ctb-cuotas__amount\" data-ctb-cuotas>{{ v.price | divided_by: 3 | money }}</span></div>\n<div class=\"ctb-transf\"><span class=\"ctb-transf__amount\" data-ctb-transf>{{ transf | money }}</span> con transferencia <span class=\"ctb-transf__badge\">10% OFF</span></div>\n<script type=\"application/json\" data-ctb-precios>{ {%- for x in product.variants -%}\"{{ x.id }}\": {{ x.price }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%} }</script>\n<style>\n.ctb-cuotas{color:#00a650;font-size:13px;letter-spacing:0;line-height:1.25;margin:0}\n.ctb-cuotas strong{font-weight:600}\n.ctb-cuotas__amount,.ctb-transf__amount{font-size:inherit;font-weight:700;letter-spacing:.2px}\n.ctb-transf{color:#00a650;font-size:14px;line-height:1.25;margin:1px 0 0}\n/* precio y chip \"Ahorrás\" (también en la barra fija) en el mismo verde (pedido de Gero, 6-oct) */\n.product-page-price .main-price,.sticky-atc__price .price-item--sale,.sticky-atc__price .price__regular .price-item{color:#00a650 !important}\n.product-page-price .price__badge-sale,.sticky-atc__price .price__badge-sale{background:#00a650 !important;color:#fff !important;border-color:#00a650 !important}\n.product-page-price .price__badge-sale svg,.sticky-atc__price .price__badge-sale svg{color:#fff}\n/* botón de la barra fija: el CTA largo entra en una línea en celular */\ngad-sticky-bar .gad-sticky__row .gad-sticky__btn{white-space:nowrap;font-size:clamp(14px,4.2vw,18px);letter-spacing:.01em}\n/* la barra fija entra recién con el primer scroll (Gero, 7-oct) */\ngad-sticky-bar{transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .3s ease}\nhtml:not(.ctb-scrolleo) gad-sticky-bar{transform:translateY(110%);opacity:0;pointer-events:none}\n@media (prefers-reduced-motion: reduce){gad-sticky-bar{transition:opacity .3s ease}html:not(.ctb-scrolleo) gad-sticky-bar{transform:none}}\n.ctb-transf__badge{display:inline-block;background:#00a650;color:#fff;font-size:12px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:4px;vertical-align:1px}\n</style>\n<script>\n(function(){\n  var marcar = function(){ if (scrollY > 10) { document.documentElement.classList.add('ctb-scrolleo'); removeEventListener('scroll', marcar); } };\n  addEventListener('scroll', marcar, { passive: true }); marcar();\n})();\n(function(){\n  // cuotas y transferencia sobre el total del pack tildado en Kaching (mismo selector verificado que ATHLEX);\n  // sin Kaching, sobre la variante del formulario\n  var elC = document.querySelector('[data-ctb-cuotas]'), elT = document.querySelector('[data-ctb-transf]');\n  var mapa = {}; try { mapa = JSON.parse(document.querySelector('[data-ctb-precios]').textContent); } catch (e) {}\n  if (!elC) return;\n  function fmt(c){ return '$' + (c / 100).toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }\n  function dinero(txt){ if (!txt) return null; var n = parseFloat(txt.replace(/[^\\d.,]/g, '').replace(/\\./g, '').replace(',', '.')); return isNaN(n) ? null : Math.round(n * 100); }\n  function barraKaching(){\n    var c = document.querySelector('.kaching-bundles__bar input:checked');\n    return c && c.closest ? c.closest('.kaching-bundles__bar') : null;\n  }\n  function totalKaching(){\n    var bar = barraKaching();\n    var pr = bar && bar.querySelector('.kaching-bundles__bar-price');\n    return pr ? dinero(pr.textContent) : null;\n  }\n  function actualizar(){\n    var cents = totalKaching();\n    if (!cents) { var input = document.querySelector('form[id^=\"product-form-\"] input[name=\"id\"], product-form input[name=\"id\"]'); cents = input && mapa[input.value]; }\n    if (!cents) return;\n    // las 3 cuotas sin interés son desde el 2º pack de Kaching (Gero, 8-oct): con 1 caja no se muestran\n    var bar = barraKaching(), bars = bar ? [].slice.call(document.querySelectorAll('.kaching-bundles__bar')) : [];\n    elC.closest('.ctb-cuotas').style.display = bar && bars.indexOf(bar) === 0 ? 'none' : '';\n    elC.textContent = fmt(cents / 3);\n    if (elT) elT.textContent = fmt(cents * 0.9);\n  }\n  document.addEventListener('change', function(){ setTimeout(actualizar, 120); }, true);\n  document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('.kaching-bundles__bars, .kaching-bundles__bar')) setTimeout(actualizar, 150); }, true);\n  var intentos = 0, t = setInterval(function(){ if (totalKaching() !== null) { actualizar(); clearInterval(t); } if (++intentos > 40) clearInterval(t); }, 250);\n})();\n</script>"
+          }
+        },
+        "sellos": {
+          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
+        "medios-pago": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%} Copia exacta del popup \"Ver medios de pago\" de ATHLEX (custom_liquid_NbFHWK). {%- endcomment -%}\n{%- comment -%}\n  ML-style Payment Methods Popup (Shrine)\n  - 3 cuotas sin interés (Mercado Pago)\n  - Sin calculadora\n  - Estilo: header amarillo + acordeones\n{%- endcomment -%}\n\n<!-- TRIGGER -->\n<button\n  type=\"button\"\n  class=\"mlpay-link\"\n  data-mlpay-open>\n  Ver medios de pago\n  <span class=\"mlpay-link-arrow\" aria-hidden=\"true\">›</span>\n</button>\n\n<div class=\"mlpay-backdrop\" data-mlpay-backdrop hidden></div>\n\n<div class=\"mlpay-modal\"\n     role=\"dialog\"\n     aria-modal=\"true\"\n     aria-labelledby=\"mlpayTitle\"\n     data-mlpay-modal\n     hidden>\n\n  <div class=\"mlpay-header\">\n    <button class=\"mlpay-back\"\n            type=\"button\"\n            aria-label=\"Volver\"\n            data-mlpay-close>\n      ‹\n    </button>\n    <div class=\"mlpay-title\" id=\"mlpayTitle\">\n      Medios de pago para este producto\n    </div>\n  </div>\n\n  <div class=\"mlpay-body\">\n\n    <!-- INTRO -->\n    <div class=\"mlpay-intro\">\n      Al finalizar tu compra, pagás con el dinero disponible en tu cuenta.\n      Podés ingresar dinero a Mercado Pago por cuentas vinculadas,\n      transferencia bancaria o en efectivo.\n\n      <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n      <a class=\"mlpay-more\"\n         href=\"https://www.mercadopago.com.ar/banking/balance\"\n         target=\"_blank\"\n         rel=\"noopener\">\n        Conocer más\n      </a>\n    </div>\n\n    <div class=\"mlpay-accordion\">\n\n      <!-- TARJETAS DE CRÉDITO -->\n      <details class=\"mlpay-item\" open>\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de crédito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-badge\">\n            Mismo precio en hasta 3 cuotas\n          </div>\n\n          {%- assign credit_logos = \"visa|Visa,mastercard|Mastercard,american-express|American Express,cabal|Cabal,argencard|Argencard,diners-club|Diners Club,naranjax|Naranja X,tarjeta-shopping|Tarjeta Shopping\" | split: \",\" -%}\n\n          <div class=\"mlpay-logos\">\n            {%- for item in credit_logos -%}\n              {%- assign parts = item | split: \"|\" -%}\n              {%- assign handle = parts[0] -%}\n              {%- assign label = parts[1] -%}\n              <div class=\"mlpay-logo\">\n                <img\n                  src=\"{{ 'bank-' | append: handle | append: '.svg' | file_url }}\"\n                  alt=\"{{ label }}\"\n                  class=\"mlpay-bank-icon\"\n                  loading=\"lazy\">\n              </div>\n            {%- endfor -%}\n          </div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/payments-methods?view=conditions\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer condiciones\n          </a>\n        </div>\n      </details>\n\n      <!-- CUOTAS SIN TARJETA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Cuotas sin Tarjeta</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Comprás y luego pagás las cuotas mes a mes con efectivo,\n            débito o con el dinero de tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/credits/consumer/enrollment/\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DINERO EN CUENTA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Dinero disponible en Mercado Pago</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Pagás con el dinero disponible en tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadopago.com.ar/banking/balance\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DÉBITO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de débito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-visa-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-mastercard-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-cabal-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-maestro.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n      <!-- EFECTIVO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Efectivo</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-pago-facil.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-rapipago.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n    </div>\n  </div>\n</div>\n\n<style>\n[hidden]{display:none!important}\n\n.mlpay-link{\n  background:none;\n  border:0;\n  padding:0;\n  margin:1px 0 0;\n  display:inline-flex;\n  gap:6px;\n  font-size:13px;\n  font-weight:500;\n  color:#3483FA;\n  cursor:pointer;\n}\n.mlpay-link:hover{text-decoration:underline}\n\n.mlpay-backdrop{\n  position:fixed;\n  inset:0;\n  background:rgba(0,0,0,.45);\n  z-index:9998;\n}\n\n.mlpay-modal{\n  position:fixed;\n  inset:0;\n  max-width:520px;\n  margin:auto;\n  background:#fff;\n  z-index:9999;\n  display:flex;\n  flex-direction:column;\n}\n\n.mlpay-header{\n  background:#F9D500;\n  padding:12px;\n  display:flex;\n  align-items:center;\n  gap:10px;\n}\n\n.mlpay-back{\n  background:none;\n  border:0;\n  font-size:28px;\n  cursor:pointer;\n}\n\n.mlpay-title{\n  font-weight:700;\n  font-size:16px;\n  line-height:1.15;\n}\n\n.mlpay-body{padding:16px;overflow:auto}\n\n.mlpay-item summary{\n  display:flex;\n  justify-content:space-between;\n  cursor:pointer;\n  padding:10px 0;\n}\n\n.mlpay-chevron{color:#777}\n\n.mlpay-content{padding-bottom:14px}\n\n.mlpay-badge{\n  background:#EAF7EA;\n  color:#1C7C3A;\n  font-size:12px;\n  font-weight:700;\n  padding:6px 10px;\n  border-radius:999px;\n  display:inline-block;\n  margin-bottom:10px;\n}\n\n.mlpay-logos{\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:12px;\n}\n\n.mlpay-logo{\n  background:#fafafa;\n  border-radius:12px;\n  padding:12px;\n  display:flex;\n  justify-content:center;\n}\n\n.mlpay-bank-icon{\n  width:90px;\n  height:28px;\n  object-fit:contain;\n}\n\n.mlpay-more{\n  color:#2D6CDF;\n  font-weight:600;\n  font-size:13px;\n  text-decoration:none;\n}\n\n.mlpay-more:hover{text-decoration:underline}\n</style>\n\n<script>\n(function(){\n  const openBtn=document.querySelector('[data-mlpay-open]');\n  const modal=document.querySelector('[data-mlpay-modal]');\n  const closeBtn=document.querySelector('[data-mlpay-close]');\n  const backdrop=document.querySelector('[data-mlpay-backdrop]');\n  if(!openBtn||!modal||!closeBtn||!backdrop)return;\n\n  function openModal(){\n    modal.hidden=false;\n    backdrop.hidden=false;\n    document.documentElement.style.overflow='hidden';\n  }\n\n  function closeModal(){\n    modal.hidden=true;\n    backdrop.hidden=true;\n    document.documentElement.style.overflow='';\n  }\n\n  openBtn.addEventListener('click',openModal);\n  closeBtn.addEventListener('click',closeModal);\n  backdrop.addEventListener('click',closeModal);\n  document.addEventListener('keydown',e=>{\n    if(e.key==='Escape'&&!modal.hidden)closeModal();\n  });\n})();\n</script>"
+          }
+        },
+        "kaching-estilo": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%} Kaching en columnas \"de tienda\" (Gero, 8-oct): foto del pack arriba (assets/ct-pack-1..3.webp, de landing-nativa/kaching/packs.py), poco texto, sin radio, franja corta arriba (etiqueta de Kaching), precios alineados y \"3 cuotas sin interés\" (::after, lo pone este CSS) desde la 2ª opción. Bloque de envío gratis (regalos progresivos) compacto. Clases del widget de Kaching (DOM liviano). {%- endcomment -%}\n<style>\n:root { --ct-pack-1: url('{{ 'ct-pack-1.webp' | file_url }}'); --ct-pack-2: url('{{ 'ct-pack-2.webp' | file_url }}'); --ct-pack-3: url('{{ 'ct-pack-3.webp' | file_url }}'); }\n/* ===== Kaching v4: columnas \"de tienda\" (foto arriba, poco texto, sin radio) ===== */\n.kaching-bundles__bars--horizontal { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; align-items: stretch; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar { height: 100%; overflow: hidden; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-container { justify-content: flex-start !important; height: 100%; padding: 30px 0 0 !important; position: relative; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-wrapper { flex: 1 1 auto; justify-content: flex-start !important; width: 100%; padding: 0 !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-main { flex: 1 1 auto; width: 100%; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-radio { display: none !important; }\n/* foto del pack (las imágenes salen de assets del tema, por variables que define el bloque) */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-main::before { content: \"\"; display: block; width: 100%; height: 84px; margin: 4px 0 6px; background: center / contain no-repeat; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar:nth-child(1) .kaching-bundles__bar-main::before { background-image: var(--ct-pack-1); }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar:nth-child(2) .kaching-bundles__bar-main::before { background-image: var(--ct-pack-2); }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar:nth-child(3) .kaching-bundles__bar-main::before { background-image: var(--ct-pack-3); }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-content { flex: 1 1 auto; justify-content: flex-start !important; width: 100%; padding: 0 6px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-title { min-height: 2.3em; display: flex !important; align-items: center; justify-content: center; text-align: center; font-size: clamp(13.5px, 3.7vw, 17px) !important; line-height: 1.1 !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-second-line { margin-top: 2px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-subtitle { text-align: center; font-size: 11.5px !important; line-height: 1.25 !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-pricing { margin-top: auto !important; padding: 8px 0 10px !important; gap: 0; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-price { font-size: clamp(15px, 4.2vw, 19px) !important; letter-spacing: -.01em; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-full-price { font-size: 11px !important; }\n/* franja de arriba (etiqueta de Kaching): corta, en mayúsculas */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-label { position: absolute !important; top: 0; left: 0; right: 0; height: 24px; margin: 0 !important; border-radius: 12px 12px 0 0 !important; font-size: 10px !important; letter-spacing: .06em; line-height: 24px !important; padding: 0 4px !important; text-align: center; white-space: nowrap !important; overflow: hidden; text-transform: uppercase; }\n/* 3 cuotas sin interés, desde la 2ª opción; la 1ª reserva el alto */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar .kaching-bundles__bar-pricing::after { content: \"3 cuotas sin interés\"; display: block; margin: 6px 6px 0; padding: 3px 4px; border-radius: 6px; background: rgba(0, 166, 80, .1); color: #00a650; font-size: 10px; font-weight: 700; line-height: 1.2; text-align: center; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar:first-child .kaching-bundles__bar-pricing::after { visibility: hidden; }\n.kaching-bundles__bars--horizontal .kaching-bundles__free-gift { display: none !important; }\n@media (min-width: 750px) {\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-main::before { height: 104px; }\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-container { padding-top: 34px !important; }\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-label { height: 28px; line-height: 28px !important; font-size: 11px !important; }\n}\n/* v4.1 (Gero: \"sacale un toque de aire\" a la oferta): tarjetas más bajas */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-container { padding-top: 26px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-label { height: 22px; line-height: 22px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-main::before { height: 62px; margin: 4px 0 4px; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-title { min-height: 2.2em; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-pricing { padding: 6px 0 8px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar .kaching-bundles__bar-pricing::after { margin-top: 4px; }\n@media (min-width: 750px) {\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-main::before { height: 80px; }\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-container { padding-top: 30px !important; }\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-label { height: 26px; line-height: 26px !important; }\n}\n.kaching-bundles__bars--horizontal { overflow: visible !important; padding-bottom: 2px; } /* Kaching le pone overflow:auto y corta el borde de abajo */\n/* v4.2 (marcas de Gero): sin aire vacío arriba de la foto, entre foto y título ni entre detalle y precio; títulos cortos \"Pack xN\" */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-container { padding-top: 22px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-main::before { height: 58px; margin: 0 0 4px; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-title { min-height: 0 !important; }\n/* el detalle reserva 2 renglones: así los precios quedan alineados sin empujarlos al fondo */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-second-line { min-height: 29px; align-items: flex-start !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-content-left { flex: none !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-pricing { margin-top: 0 !important; padding: 2px 0 8px !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar .kaching-bundles__bar-pricing::after { font-size: 9px; padding: 2px 3px; margin: 4px 4px 0; white-space: nowrap; letter-spacing: -.01em; }\n@media (min-width: 750px) {\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-container { padding-top: 26px !important; }\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar-main::before { height: 76px; }\n  .kaching-bundles__bars--horizontal .kaching-bundles__bar .kaching-bundles__bar-pricing::after { font-size: 10.5px; }\n}\n/* v4.3: menos aire entre la aclaración y el precio */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-subtitle { line-height: 1.15 !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-second-line { min-height: 26px; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-pricing { padding-top: 0 !important; }\n@media (min-width: 750px) { .kaching-bundles__bars--horizontal .kaching-bundles__bar-second-line { min-height: 0; margin-bottom: 6px !important; } }\n/* v4.4: la mitad de aire entre la aclaración y el precio */\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-second-line { min-height: 0 !important; margin-bottom: 0 !important; }\n.kaching-bundles__bars--horizontal .kaching-bundles__bar-price { line-height: 1.05 !important; margin-top: 1px; }\n/* bloque de regalos (envío gratis) compacto: una fila con el camión chico a la izquierda */\n.kaching-bundles__progressive-gifts { gap: 6px !important; margin-top: 8px !important; }\n.kaching-bundles__progressive-gifts__header { gap: 0 !important; }\n.kaching-bundles__progressive-gifts__title { font-size: 14px !important; line-height: 1.25 !important; }\n.kaching-bundles__progressive-gifts__subtitle { font-size: 12px !important; line-height: 1.3 !important; opacity: .75; }\n.kaching-bundles__progressive-gifts__gift { padding: 4px 12px !important; min-height: 0 !important; border-radius: 12px !important; }\n.kaching-bundles__progressive-gifts__gift__content { flex-direction: row !important; align-items: center !important; gap: 10px; }\n.kaching-bundles__progressive-gifts__gift__image-wrapper { width: 40px !important; height: 34px !important; flex: none; }\n.kaching-bundles__progressive-gifts__gift__image { width: 40px !important; height: 34px !important; object-fit: contain; }\n.kaching-bundles__progressive-gifts__gift__details, .kaching-bundles__progressive-gifts__gift__details__content { flex-direction: row !important; align-items: center !important; justify-content: space-between !important; gap: 8px; flex: 1 1 auto; }\n.kaching-bundles__progressive-gifts__gift__title { font-size: 14px !important; font-weight: 700 !important; }\n.kaching-bundles__progressive-gifts__gift__label { position: static !important; transform: none !important; padding: 4px 8px !important; }\n</style>"
+          }
+        },
+        "comprar": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "uppercase": true,
+            "price_in_button": true,
+            "skip_cart": false,
+            "custom_color": true,
+            "color": "#0b0b0b",
+            "icon_scale": 120,
+            "icon_gap": 10,
+            "second_button": false,
+            "second_label": "Buy It Now",
+            "second_custom_color": false,
+            "second_color": "#dd1d1d",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "tab_uso": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cómo se usan",
+            "icon": "none",
+            "icon_name": "dentistry",
+            "icon_filled": true,
+            "content": "<p><strong>Secá los dientes.</strong> Con una servilleta o una toalla. Es lo que hace que la tira no se despegue: la saliva la hace resbalar.</p><p><strong>Pegá las dos tiras.</strong> La de arriba y la de abajo. Presioná con el dedo para que se adapte a cada diente.</p><p><strong>Esperá y sacala.</strong> A la media hora sacala y enjuagate. Dos veces por día: la caja te dura una semana.</p><p><strong>El truco:</strong> después de sacarte la tira, esperá media hora antes del mate o el café. Es lo que más repiten los que tienen buenos resultados.</p>",
+            "title_size": "md",
+            "toggle_icon": "caret",
+            "top_border": true,
+            "open": false,
+            "margin_top": 21,
+            "margin_bottom": 0
+          }
+        },
+        "tab_caja": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Qué trae la caja",
+            "icon": "none",
+            "icon_name": "inventory_2",
+            "icon_filled": true,
+            "content": "<p>14 sobres individuales. Cada sobre trae una tira superior y una inferior. Incluye una guía de tonos para comparar el antes y el después.</p>",
+            "title_size": "md",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "tab_dia": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "¿Cuánto me sale por día?",
+            "icon": "none",
+            "icon_name": "payments",
+            "icon_filled": true,
+            "content": "<p>Una caja trae 14 sobres y se usan dos por día: te dura una semana. Dividí el precio del pack por los días y te da menos de lo que sale un café.</p>",
+            "title_size": "md",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "tab_envio": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Envío",
+            "icon": "none",
+            "icon_name": "local_shipping",
+            "icon_filled": true,
+            "content": "<p><strong>El envío es GRATIS y llega en 24 h en CABA.</strong></p><p><strong>1-</strong> Al resto del país demora <strong>entre 2 y 6 días hábiles</strong> desde que despachamos tu pedido.</p><p><strong>2-</strong> Cuando lo despachamos te mandamos el seguimiento al mail con el que compraste.</p>",
+            "title_size": "md",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "tab_ingredientes": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredientes",
+            "icon": "none",
+            "icon_name": "science",
+            "icon_filled": true,
+            "content": "<p>Aceite de coco, carbón activado de coco, agua, bicarbonato de sodio, propilenglicol, PVP, carbómero, trietanolamina, carboximetilcelulosa, glicerina y mentol.</p><p><strong>Precauciones:</strong> no se recomienda durante el embarazo ni para menores de 12 años. No usar con úlceras, encías expuestas o después de un tratamiento bucal. No tragar. Si entra en contacto con los ojos, enjuagar con agua.</p>",
+            "title_size": "md",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "tab_garantia": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Garantía",
+            "icon": "none",
+            "icon_name": "undo",
+            "icon_filled": true,
+            "content": "<p><strong>7 días de garantía directa:</strong> si las usaste como dice la caja y no te convencen, te devolvemos la plata. <strong>Además, 30 días de garantía de la tienda.</strong></p>",
+            "title_size": "md",
+            "toggle_icon": "caret",
+            "top_border": false,
+            "open": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "sticky": {
+          "type": "sticky_bar",
+          "settings": {
+            "action": "add_to_cart",
+            "show_when": "always",
+            "button_label": "Quiero dientes más blancos",
+            "custom_button": true,
+            "button_color": "#0b0b0b",
+            "color_scheme": "scheme-1",
+            "star_color": "#ffcc00",
+            "stars_text": "(xxxx Reviews)",
+            "variant_mode": "combined",
+            "d_image": false,
+            "d_title": true,
+            "d_stars": false,
+            "d_price": true,
+            "d_badge": true,
+            "d_variants": false,
+            "d_full_button": false,
+            "d_price_in_button": false,
+            "d_transparent": false,
+            "m_image": false,
+            "m_title": true,
+            "m_stars": false,
+            "m_price": true,
+            "m_badge": true,
+            "m_variants": false,
+            "m_full_button": true,
+            "m_stack": true,
+            "m_price_in_button": false,
+            "m_transparent": false
+          }
+        }
+      },
+      "block_order": [
+        "bb-chips",
+        "titulo",
+        "rating",
+        "precio",
+        "cuotas",
+        "medios-pago",
+        "kaching-estilo",
+        "comprar",
+        "sellos",
+        "tab_uso",
+        "tab_caja",
+        "tab_dia",
+        "tab_envio",
+        "tab_ingredientes",
+        "tab_garantia",
+        "sticky"
+      ]
+    },
+    "image_slider_YzHBWx": {
+      "type": "gad-media-slider",
+      "settings": {
+        "show_empty": true,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "page_width": "full",
+        "radius_d": 0,
+        "m_full_width": true,
+        "radius_m": 0,
+        "car_type": "loop",
+        "car_drag": "on",
+        "car_autoplay": true,
+        "car_speed": 1.5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": false,
+        "car_dots_color": "#1b1b1b",
+        "car_center": true,
+        "d_per_view": 7,
+        "d_per_move": 3,
+        "d_gap": 0,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "hidden",
+        "m_per_view": 4,
+        "m_per_move": 1,
+        "m_gap": 0,
+        "m_peek": 0,
+        "m_edge_fit": true,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "visibility": "all",
+        "padding_top": 0,
+        "padding_bottom": 0
+      },
+      "blocks": {
+        "ugc_02": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-07.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_06": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-22.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_07": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-23.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_04": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-21.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_03": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-25.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_08": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-16.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_09": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-20.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_10": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-12.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_01": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-19.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_11": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-24.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_12": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-27.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_13": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-17.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_14": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-26.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_15": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-18.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_05": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-15.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_16": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-28.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "ugc_17": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/carbotiras-ugc-13.jpg",
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "ugc_02",
+        "ugc_06",
+        "ugc_07",
+        "ugc_04",
+        "ugc_03",
+        "ugc_08",
+        "ugc_09",
+        "ugc_10",
+        "ugc_01",
+        "ugc_11",
+        "ugc_12",
+        "ugc_13",
+        "ugc_14",
+        "ugc_15",
+        "ugc_05",
+        "ugc_16",
+        "ugc_17"
+      ]
+    },
+    "comparar": {
+      "type": "gad-compare-reveal",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "labels": true,
+        "before_label": "Antes",
+        "after_label": "Después",
+        "ratio": "4 / 5",
+        "max_width": 360,
+        "corner": 20,
+        "note": "",
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "videos_ui": {
+      "type": "gad-coverflow",
+      "blocks": {
+        "v1": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Las saco del sobre y van directo",
+            "name": "Lucía R. · Córdoba"
+          }
+        },
+        "v2": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Pensé que eran como las violetas. No tiñen: sacan",
+            "name": "Martín G. · CABA"
+          }
+        },
+        "v3": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Media hora y ni me acuerdo que las tengo",
+            "name": "Camila S. · La Plata"
+          }
+        },
+        "v4": {
+          "type": "video",
+          "settings": {
+            "stars": 4,
+            "quote": "Tomo mate todo el día y se nota",
+            "name": "Joaquín P. · Mendoza"
+          }
+        },
+        "v5": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Las compramos con mi amiga para el casamiento",
+            "name": "Valentina D. · Tucumán"
+          }
+        },
+        "v6": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Llegó rapidísimo y viene todo",
+            "name": "Sofía M. · Rosario"
+          }
+        },
+        "v7": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Me la pongo en la oficina y nadie se da cuenta",
+            "name": "Agustina L. · Neuquén"
+          }
+        },
+        "v8": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "La llevo en el auto",
+            "name": "Sofía M. · Rosario"
+          }
+        },
+        "v9": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Un sobre en la mochila y listo",
+            "name": "Lucía R. · Córdoba"
+          }
+        },
+        "v10": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "El mate de siempre, sin manchas",
+            "name": "Joaquín P. · Mendoza"
+          }
+        },
+        "v11": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Me llegó y la abrí en el cuarto",
+            "name": "Valentina D. · Tucumán"
+          }
+        },
+        "v12": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Antes de dormir, la tira y listo",
+            "name": "Agustina L. · Neuquén"
+          }
+        },
+        "v13": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "La saco del sobre y me la pongo en el baño",
+            "name": "Martín G. · CABA"
+          }
+        },
+        "v14": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "No podía parar de reírme con la tira",
+            "name": "Camila S. · La Plata"
+          }
+        },
+        "v15": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Lo dejo en la cocina al lado del mate",
+            "name": "Nicolás F. · Mar del Plata"
+          }
+        },
+        "v16": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Las tengo en la mesa de luz",
+            "name": "Sofía M. · Rosario"
+          }
+        },
+        "v17": {
+          "type": "video",
+          "settings": {
+            "stars": 4,
+            "quote": "En el baño, al lado del cepillo",
+            "name": "Lucía R. · Córdoba"
+          }
+        },
+        "v18": {
+          "type": "video",
+          "settings": {
+            "stars": 5,
+            "quote": "Las llevé de viaje en el neceser",
+            "name": "Valentina D. · Tucumán"
+          }
+        }
+      },
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8",
+        "v9",
+        "v10",
+        "v11",
+        "v12",
+        "v13",
+        "v14",
+        "v15",
+        "v16",
+        "v17",
+        "v18"
+      ],
+      "settings": {
+        "play_range": 3,
+        "heading": "Mirá cómo les fue",
+        "heading_size": "h2",
+        "card_width": 200,
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "garantia": {
+      "type": "gad-guarantee",
+      "settings": {
+        "days": 7,
+        "caption": "Garantía",
+        "heading": "7 días de garantía directa",
+        "chip": "+ 30 días de la tienda",
+        "text": "Sabemos que hay muchas tiras que prometen y no cumplen. Por eso: usalas como dice la caja y, si en los primeros 7 días no te convencen, escribinos y te devolvemos la plata.",
+        "point_1": "Un mensaje y listo",
+        "point_1_icon": "chat",
+        "point_2": "30 días de la tienda",
+        "point_2_icon": "tienda",
+        "point_3": "",
+        "point_3_icon": "escudo",
+        "button_label": "",
+        "ring_size": 160,
+        "ring_offset": 25,
+        "ring_primary": "#0b0b0b",
+        "ring_secondary": "#e4e3de",
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "comparacion": {
+      "type": "gad-compare-table",
+      "settings": {
+        "heading": "Comparación <strong>honesta</strong>",
+        "heading_size": "h1",
+        "heading_accent": "#5f5e5a",
+        "text": "<p>Las otras opciones que tenés para sacarte el amarillo, punto por punto.</p>",
+        "button_label": "",
+        "button_outline": false,
+        "atc_label": "",
+        "atc_skip_cart": false,
+        "align": "center",
+        "m_align": "center",
+        "color_scheme": "scheme-1",
+        "custom_colors": true,
+        "cc_bg": "#f5f7fa",
+        "cc_text": "#0b0b0b",
+        "cc_btn_bg": "#0b0b0b",
+        "cc_btn_text": "#ffffff",
+        "cc_outline": "#0b0b0b",
+        "position": "second",
+        "table_style": "centered",
+        "own_tab": true,
+        "radius": 14,
+        "competitors": 2,
+        "own_label": "Carbo",
+        "own_size": 14,
+        "own_logo_width_d": 90,
+        "own_logo_width_m": 60,
+        "c1_label": "Violetas",
+        "c1_size": 13,
+        "c1_logo_width_d": 90,
+        "c1_logo_width_m": 60,
+        "c2_label": "Dentista",
+        "c2_size": 13,
+        "c2_logo_width_d": 90,
+        "c2_logo_width_m": 60,
+        "c3_label": "Competitor 3",
+        "c3_size": 18,
+        "c3_logo_width_d": 90,
+        "c3_logo_width_m": 60,
+        "check_style": "filled",
+        "check_color": "#0b0b0b",
+        "check_bg": "#9fe1cb",
+        "cross_style": "filled",
+        "cross_color": "#ffffff",
+        "cross_bg": "#5f5e5a",
+        "inverted": false,
+        "hl_style": "custom",
+        "hl_scheme": "scheme-5",
+        "hl_bg": "#0b0b0b",
+        "hl_text": "#ffffff",
+        "hl_separator": 0,
+        "hl_zebra": 0,
+        "reg_style": "scheme",
+        "reg_scheme": "scheme-1",
+        "reg_bg": "#ffffff",
+        "reg_text": "#2e2a39",
+        "reg_separator": 10,
+        "reg_zebra": 0,
+        "min_line": 16,
+        "visibility": "all",
+        "padding_top": 48,
+        "padding_bottom": 48
+      },
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Saca la mancha, no la tapa",
+            "own": true,
+            "c1": false,
+            "c2": true,
+            "c3": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "benefit": "En casa, sin turnos",
+            "own": true,
+            "c1": true,
+            "c2": false,
+            "c3": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "benefit": "Sin pagar consultorio",
+            "own": true,
+            "c1": true,
+            "c2": false,
+            "c3": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "benefit": "Guía de tonos para medir",
+            "own": true,
+            "c1": false,
+            "c2": true,
+            "c3": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ]
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "settings": {
+        "caption": "Tus preguntas",
+        "heading": "Lo que todos preguntan <strong>antes de comprar</strong>",
+        "heading_size": "h1",
+        "heading_accent": "#5f5e5a",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "scheme-1",
+        "custom_colors": true,
+        "cc_bg": "#f5f7fa",
+        "cc_text": "#0b0b0b",
+        "container_color_scheme": "scheme-2",
+        "container_custom_colors": true,
+        "container_cc_bg": "#ffffff",
+        "container_cc_text": "#0b0b0b",
+        "open_first_collapsible_row": true,
+        "title_size": "md",
+        "toggle_icon": "plus",
+        "top_border": true,
+        "video_autoplay": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "visibility": "all",
+        "padding_top": 48,
+        "padding_bottom": 48
+      },
+      "blocks": {
+        "f1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuándo voy a ver resultados?",
+            "icon": "none",
+            "icon_name": "help",
+            "icon_filled": false,
+            "row_content": "<p>Depende de qué tan manchados estén. Es progresivo: se va notando a medida que avanzás con la caja. No esperes dientes de tecla de piano el día uno.</p>"
+          }
+        },
+        "f2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿El blanco dura o vuelve?",
+            "icon": "none",
+            "icon_name": "help",
+            "icon_filled": false,
+            "row_content": "<p>Si seguís tomando mate y café todos los días, con el tiempo se vuelve a manchar: es lo normal. Por eso conviene una caja de repaso cada tanto.</p>"
+          }
+        },
+        "f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Da sensibilidad?",
+            "icon": "none",
+            "icon_name": "help",
+            "icon_filled": false,
+            "row_content": "<p>Algunas personas sienten una sensibilidad leve los primeros días. Si te pasa, usalas día por medio y sacalas antes. Si tenés los dientes muy sensibles, consultá con tu dentista antes de empezar.</p>"
+          }
+        },
+        "f4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Se despegan?",
+            "icon": "none",
+            "icon_name": "help",
+            "icon_filled": false,
+            "row_content": "<p>Si secás bien el diente antes de ponerla, no. Lo que las hace resbalar es la saliva.</p>"
+          }
+        },
+        "f5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Puedo tomar mate mientras hago el tratamiento?",
+            "icon": "none",
+            "icon_name": "help",
+            "icon_filled": false,
+            "row_content": "<p>Sí. Sólo esperá media hora después de sacarte la tira.</p>"
+          }
+        },
+        "f6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Sirven si tengo coronas, carillas o arreglos?",
+            "icon": "none",
+            "icon_name": "help",
+            "icon_filled": false,
+            "row_content": "<p>No. Actúan sobre el diente natural: coronas, carillas y empastes no cambian de color.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    "cierre": {
+      "type": "gad-closing",
+      "settings": {
+        "caption": "Para los que no largan el mate",
+        "heading": "Lo negro saca",
+        "heading_mark": "lo amarillo.",
+        "heading_size": "h1",
+        "text": "Seguí con el mate. Seguí con el café de la mañana. Lo que se mancha, se saca.",
+        "show_scale": true,
+        "scale_from": "Tu tono hoy",
+        "scale_to": "Tu objetivo",
+        "item_1": "Envío gratis",
+        "item_2": "3 cuotas sin interés",
+        "item_3": "7 días de garantía",
+        "button_label": "Quiero mis CarboTiras",
+        "background": "#f5f7fa",
+        "text_color": "#0b0b0b",
+        "mark_color": "#9fe1cb",
+        "stain_color": "#f1dc9c",
+        "padding_top": 32,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "anuncios",
+    "hero",
+    "pasos",
+    "resenas_ui",
+    "beneficios",
+    "main",
+    "image_slider_YzHBWx",
+    "comparar",
+    "videos_ui",
+    "garantia",
+    "comparacion",
+    "faq",
+    "cierre"
+  ]
+}

@@ -1,0 +1,977 @@
+{
+  "sections": {
+    "slideshow_hero_ByxwwM": {
+      "type": "gad-hero-slides",
+      "settings": {
+        "height_desktop": "px",
+        "height_desktop_px": 300,
+        "height_mobile": "px",
+        "height_mobile_px": 200,
+        "transparent_header": false,
+        "th_link": "#1b1b1b",
+        "th_active": "#f5f7fa",
+        "th_hover": "#0b1f3a",
+        "th_logo": "primary",
+        "th_hide_bars": false,
+        "car_type": "loop",
+        "car_drag": false,
+        "car_autoplay": false,
+        "car_speed": 10,
+        "show_dots": true,
+        "car_dots_color": "#f5f7fa",
+        "show_arrows": false,
+        "visibility": "all",
+        "padding_top": 50,
+        "padding_bottom": 50
+      },
+      "blocks": {
+        "slide_nnHfCw": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/passing-curbside-pickup-order-through-window.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 60,
+            "overlay_color_mobile": "#000000",
+            "overlay_opacity_mobile": 0,
+            "sound_button": false,
+            "sound_scheme": "scheme-3",
+            "pretitle": "",
+            "heading": "Equipar tu hogar o tu negocio no debería ser complicado",
+            "heading_size": "h1",
+            "heading_accent": "#6d388b",
+            "subtitle": "",
+            "small_size": "h4",
+            "text": "<p>En Domu ofrecemos productos confiables con financiación directa, para que accedas a lo que necesitás sin pagar todo de una.</p>",
+            "button_label_1": "",
+            "button_outline_1": false,
+            "button_label_2": "",
+            "button_outline_2": false,
+            "color_scheme": "scheme-1",
+            "custom_colors": true,
+            "cc_text": "#ffffff",
+            "cc_btn_bg": "#dd1d1d",
+            "cc_btn_text": "#ffffff",
+            "cc_outline": "#dd1d1d",
+            "full_width": false,
+            "max_width": "none",
+            "max_width_px": 500,
+            "max_width_pct": 50,
+            "v_pos": "center",
+            "h_pos": "center",
+            "align": "center",
+            "m_v_pos": "center",
+            "m_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_nnHfCw"
+      ]
+    },
+    "icon_bar_MjU9WG": {
+      "type": "gad-icon-bar",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "text": "",
+        "layout": "vertical",
+        "icon_size": "medium",
+        "icon_color": "button",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "card_style": "none",
+        "card_color_scheme": "scheme-1",
+        "card_cc_bg": "#f3f3f3",
+        "card_cc_text": "#2e2a39",
+        "full_width": true,
+        "car_type": "loop",
+        "car_autoplay": true,
+        "car_speed": 3.5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": false,
+        "d_per_view": 3,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "under",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_per_view": "2",
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "car_drag": "on",
+        "visibility": "all",
+        "padding_top": 40,
+        "padding_bottom": 0
+      },
+      "blocks": {
+        "column_JYJ6ch": {
+          "type": "icon",
+          "settings": {
+            "icon": "account_balance",
+            "icon_filled": true,
+            "title": "Financiación directa",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_kL6mwM": {
+          "type": "icon",
+          "settings": {
+            "icon": "inventory_2",
+            "icon_filled": true,
+            "title": "Compra simple",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_Lidqng": {
+          "type": "icon",
+          "settings": {
+            "icon": "bolt",
+            "icon_filled": true,
+            "title": "Sin vueltas",
+            "text": "<p></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_JYJ6ch",
+        "column_kL6mwM",
+        "column_Lidqng"
+      ]
+    },
+    "multicolumn_LipbPN": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "title_accent": "#6d388b",
+        "button_label": "",
+        "atc_label": "",
+        "atc_skip_cart": false,
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "card_style": "tint",
+        "card_color_scheme": "scheme-1",
+        "card_cc_bg": "#f3f3f3",
+        "card_cc_text": "#2e2a39",
+        "card_radius": 20,
+        "equal_height": false,
+        "valign": "center",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "center",
+        "title_size_d": 24,
+        "title_size_m": 16,
+        "text_size_d": 16,
+        "text_size_m": 12,
+        "title_gap": 10,
+        "card_pad_d": 24,
+        "card_pad_m": 24,
+        "full_width": true,
+        "car_type": "loop",
+        "car_autoplay": true,
+        "car_speed": 3.5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": true,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "columns_desktop": 2,
+        "columns_mobile": "1",
+        "car_drag": "on",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "column_hiHM6b": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "QUÉ HACEMOS",
+            "text": "<p>Ofrecemos equipamiento para el hogar y uso diario, combinando productos funcionales con opciones de pago en cuotas claras.</p>",
+            "link_label": ""
+          }
+        },
+        "column_wMxUe9": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "PARA QUIÉN",
+            "text": "<p>Para quienes necesitan equipar su casa o su negocio sin hacer un desembolso completo desde el inicio.</p>",
+            "link_label": ""
+          }
+        },
+        "column_RcJqnX": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "QUÉ PROBLEMA RESOLVEMOS",
+            "text": "<p>Muchas compras se postergan por el costo inicial. Domu elimina esa barrera para que puedas resolver hoy y pagar de forma ordenada.</p>",
+            "link_label": ""
+          }
+        },
+        "column_e4HwjR": {
+          "type": "column",
+          "settings": {
+            "video_autoplay": true,
+            "title": "CÓMO LO RESOLVEMOS",
+            "text": "<p>Con productos seleccionados y financiación directa: accedés a lo que necesitás hoy y lo pagás en el tiempo, sin procesos innecesarios.</p>",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hiHM6b",
+        "column_wMxUe9",
+        "column_RcJqnX",
+        "column_e4HwjR"
+      ]
+    },
+    "slideshow_hero_Hpr8fx": {
+      "type": "gad-hero-slides",
+      "settings": {
+        "height_desktop": "px",
+        "height_desktop_px": 200,
+        "height_mobile": "px",
+        "height_mobile_px": 200,
+        "transparent_header": false,
+        "th_link": "#1b1b1b",
+        "th_active": "#f5f7fa",
+        "th_hover": "#0b1f3a",
+        "th_logo": "primary",
+        "th_hide_bars": false,
+        "car_type": "loop",
+        "car_drag": false,
+        "car_autoplay": false,
+        "car_speed": 10,
+        "show_dots": true,
+        "car_dots_color": "#f5f7fa",
+        "show_arrows": false,
+        "visibility": "all",
+        "padding_top": 50,
+        "padding_bottom": 50
+      },
+      "blocks": {
+        "slide_XkdpRm": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/business-owner-working-on-online-store.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 60,
+            "overlay_color_mobile": "#000000",
+            "overlay_opacity_mobile": 60,
+            "sound_button": false,
+            "sound_scheme": "scheme-3",
+            "pretitle": "",
+            "heading": "",
+            "heading_size": "h1",
+            "heading_accent": "#6d388b",
+            "subtitle": "",
+            "small_size": "h4",
+            "text": "<p>No siempre es el momento de pagar todo junto.</p><p>Domu está pensado para que accedas igual:<br/><br/>productos que cumplen, cuotas claras y una forma simple de resolver.</p>",
+            "button_label_1": "",
+            "button_outline_1": false,
+            "button_label_2": "",
+            "button_outline_2": false,
+            "color_scheme": "scheme-1",
+            "custom_colors": true,
+            "cc_text": "#f3f1ec",
+            "cc_btn_bg": "#dd1d1d",
+            "cc_btn_text": "#ffffff",
+            "cc_outline": "#dd1d1d",
+            "full_width": false,
+            "max_width": "none",
+            "max_width_px": 500,
+            "max_width_pct": 50,
+            "v_pos": "center",
+            "h_pos": "center",
+            "align": "center",
+            "m_v_pos": "center",
+            "m_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_XkdpRm"
+      ]
+    },
+    "content_tabs_KpYMNP": {
+      "type": "gad-tabs",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "text": "",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "width": "m",
+        "custom_buttons": false,
+        "button_color": "#0b1f3a",
+        "button_active_text": "#f3f1ec",
+        "button_radius": 6,
+        "nav_style": "border",
+        "active_style": "slide",
+        "layout": "horizontal",
+        "font_size_d": 15,
+        "stretch_d": false,
+        "font_size_m": 13,
+        "stretch_m": true,
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "tab_bwfq93": {
+          "type": "tab",
+          "settings": {
+            "label": "Misión",
+            "icon": "",
+            "icon_filled": false,
+            "loop": false,
+            "autoplay": false,
+            "play_scheme": "scheme-4",
+            "pulse": false,
+            "title": "Nuestra guía",
+            "title_size": "h1",
+            "title_accent": "#6d388b",
+            "text": "<p>Se trata de facilitar el acceso.<br/><br/>Que puedas resolver lo que necesitás sin tener que esperar a juntar todo el dinero de una sola vez.</p><p>Por eso combinamos productos útiles con financiación directa: para que comprar no sea una traba, sino una herramienta.</p>",
+            "button_label": "",
+            "button_outline": false,
+            "atc_label": "",
+            "atc_skip_cart": false,
+            "media_width": "full",
+            "media_position": "first",
+            "align": "center",
+            "m_media_position": "first",
+            "m_align": "center"
+          }
+        },
+        "tab_NpJTkF": {
+          "type": "tab",
+          "settings": {
+            "label": "Visión",
+            "icon": "",
+            "icon_filled": false,
+            "loop": false,
+            "autoplay": false,
+            "play_scheme": "scheme-4",
+            "pulse": false,
+            "title": "Nuestro norte",
+            "title_size": "h1",
+            "title_accent": "#6d388b",
+            "text": "<p>Se trata de cambiar la forma de comprar.<br/><br/>Que acceder a lo necesario no dependa del momento exacto en el que tenés el dinero disponible.</p><p>Buscamos construir una alternativa más simple, donde el acceso sea tan importante como el producto.</p>",
+            "button_label": "",
+            "button_outline": false,
+            "atc_label": "",
+            "atc_skip_cart": false,
+            "media_width": "full",
+            "media_position": "first",
+            "align": "center",
+            "m_media_position": "first",
+            "m_align": "center"
+          }
+        },
+        "tab_DwnkD8": {
+          "type": "tab",
+          "settings": {
+            "label": "Valores",
+            "icon": "",
+            "icon_filled": false,
+            "loop": false,
+            "autoplay": false,
+            "play_scheme": "scheme-4",
+            "pulse": false,
+            "title": "Nuestros pilares",
+            "title_size": "h1",
+            "title_accent": "#6d388b",
+            "text": "<p><strong>Acceso: </strong>Si no podés acceder, no sirve.<br/>El costo inicial no debería definir la decisión.<br/><strong>Durabilidad: </strong>Todo tiene que ser simple de entender.<br/>Qué comprás, cómo lo pagás y qué esperar.<br/><strong>Funcionalidad: </strong>Productos pensados para resolver, no para mostrar.<br/>Lo que está, cumple.<br/><br/></p>",
+            "button_label": "",
+            "button_outline": false,
+            "atc_label": "",
+            "atc_skip_cart": false,
+            "media_width": "full",
+            "media_position": "first",
+            "align": "center",
+            "m_media_position": "first",
+            "m_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "tab_bwfq93",
+        "tab_NpJTkF",
+        "tab_DwnkD8"
+      ]
+    },
+    "comparison_table_gXJrt7": {
+      "type": "gad-compare-table",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "text": "",
+        "button_label": "",
+        "button_outline": false,
+        "atc_label": "",
+        "atc_skip_cart": false,
+        "align": "center",
+        "m_align": "center",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "position": "second",
+        "table_style": "minimal",
+        "own_tab": false,
+        "radius": 20,
+        "competitors": 1,
+        "own_label": "",
+        "own_size": 18,
+        "own_logo": "shopify://shop_images/LOGO_2x_0aae1f5e-4393-4a06-b23c-bd288ccd22fb.webp",
+        "own_logo_width_d": 75,
+        "own_logo_width_m": 75,
+        "c1_label": "Otros",
+        "c1_size": 18,
+        "c1_logo_width_d": 90,
+        "c1_logo_width_m": 60,
+        "c2_label": "Competitor 2",
+        "c2_size": 18,
+        "c2_logo_width_d": 90,
+        "c2_logo_width_m": 60,
+        "c3_label": "Competitor 3",
+        "c3_size": 18,
+        "c3_logo_width_d": 90,
+        "c3_logo_width_m": 60,
+        "check_style": "filled",
+        "check_color": "#ffffff",
+        "check_bg": "#53af01",
+        "cross_style": "simple",
+        "cross_color": "#ffffff",
+        "cross_bg": "#dd1d1d",
+        "inverted": false,
+        "hl_style": "scheme",
+        "hl_scheme": "scheme-4",
+        "hl_bg": "#2e2a39",
+        "hl_text": "#ffffff",
+        "hl_separator": 0,
+        "hl_zebra": 0,
+        "reg_style": "scheme",
+        "reg_scheme": "scheme-1",
+        "reg_bg": "#ffffff",
+        "reg_text": "#2e2a39",
+        "reg_separator": 10,
+        "reg_zebra": 0,
+        "min_line": 16,
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "row_gJH8dm": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>Acceso en cuotas</strong>",
+            "own": true,
+            "c1": false,
+            "c2": false,
+            "c3": false
+          }
+        },
+        "row_iCQem7": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>Compra sin desembolso completo</strong>",
+            "own": true,
+            "c1": false,
+            "c2": false,
+            "c3": false
+          }
+        },
+        "row_kVEizn": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>Proceso simple</strong>",
+            "own": true,
+            "c1": false,
+            "c2": false,
+            "c3": false
+          }
+        },
+        "row_heLKzF": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>Decisión clara desde el inicio</strong>",
+            "own": true,
+            "c1": false,
+            "c2": false,
+            "c3": false
+          }
+        },
+        "row_TXPyCx": {
+          "type": "row",
+          "settings": {
+            "benefit": "<strong>Pensado para uso real</strong>",
+            "own": true,
+            "c1": false,
+            "c2": false,
+            "c3": false
+          }
+        }
+      },
+      "block_order": [
+        "row_gJH8dm",
+        "row_iCQem7",
+        "row_kVEizn",
+        "row_heLKzF",
+        "row_TXPyCx"
+      ]
+    },
+    "testimonials_RUyymc": {
+      "type": "gad-testimonials",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "text": "",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "media_width": "third",
+        "media_ratio": "square",
+        "text_align": "center",
+        "show_stars": true,
+        "empty_stars": "filled",
+        "star_color": "#ffcc00",
+        "star_empty_color": "#ececec",
+        "show_quotes": true,
+        "quotes_color": "#f3f1ec",
+        "card_style": "tint",
+        "card_color_scheme": "scheme-1",
+        "card_cc_bg": "#f3f3f3",
+        "card_cc_text": "#2e2a39",
+        "full_width": false,
+        "car_type": "classic",
+        "car_autoplay": false,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": false,
+        "d_per_view": 3,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "under",
+        "d_arrows": "sides",
+        "m_carousel": true,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "car_drag": "on",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "column_83zCjz": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Me resolvió el pago",
+            "text": "<p>“Lo necesitaba pero no podía pagarlo todo junto. Lo saqué en cuotas y fue clave. El proceso fue rápido y claro desde el inicio.”</p>",
+            "author": "<em><strong>Martín G.</strong></em>"
+          }
+        },
+        "column_kf6rer": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Todo claro desde el principio",
+            "text": "<p>“Me explicaron bien cómo eran las cuotas y no hubo sorpresas. Lo que acordás es lo que pagás. Eso hoy se valora mucho.”</p>",
+            "author": "<em><strong>Carla L. G.</strong></em>"
+          }
+        },
+        "column_pnjJLD": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "title": "Respondieron cuando hizo falta",
+            "text": "<p>“Tuve una consulta después de comprar y me respondieron rápido. Se nota que hay alguien del otro lado, no es automático.”</p>",
+            "author": "<em><strong>Julián B.</strong></em>"
+          }
+        }
+      },
+      "block_order": [
+        "column_83zCjz",
+        "column_kf6rer",
+        "column_pnjJLD"
+      ]
+    },
+    "multirow_x6YNjf": {
+      "type": "multirow",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "section_custom_colors": false,
+        "row_color_scheme": "scheme-1",
+        "row_custom_colors": false,
+        "m_media_full": true,
+        "m_media_order": "first",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "row_YwKgrk": {
+          "type": "row",
+          "settings": {
+            "video_autoplay": true,
+            "caption": "un proyecto con nombre y cara.",
+            "heading": "Domu es una operación liderada directamente por nosotros, ejecutando cada parte del proceso",
+            "heading_accent": "#6d388b",
+            "text": "<p>Venimos del mundo de los negocios y esto no nace para “armar una marca linda”. Nace de una idea simple: que acceder a lo que necesitás no dependa de tener toda la plata en el momento.</p><p>Trabajamos con un criterio claro: que lo que se ofrece tenga sentido en uso real y que el pago esté bien estructurado desde el inicio.</p><p>La operación está organizada para sostener eso:</p><p>• <strong>Selección:</strong> entra lo que cumple, queda afuera lo que no.<br/><br/>• <strong>Estructura de pago:</strong> condiciones claras desde el inicio.<br/><br/>• <strong>Operación:</strong> armado prolijo, despacho ordenado.<br/><br/>• <strong>Atención:</strong> respuesta rápida y resolución efectiva.</p><p>No somos una estructura burocrática, pero sí una operación controlada:<br/><br/>hay criterio, hay procesos y hay responsables en cada decisión.</p><p>Domu está pensado para que puedas resolver hoy, sin desordenar tu economía.</p>",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_YwKgrk"
+      ]
+    },
+    "slideshow_hero_R3w9HF": {
+      "type": "gad-hero-slides",
+      "settings": {
+        "height_desktop": "px",
+        "height_desktop_px": 200,
+        "height_mobile": "px",
+        "height_mobile_px": 200,
+        "transparent_header": false,
+        "th_link": "#1b1b1b",
+        "th_active": "#f5f7fa",
+        "th_hover": "#0b1f3a",
+        "th_logo": "primary",
+        "th_hide_bars": false,
+        "car_type": "loop",
+        "car_drag": false,
+        "car_autoplay": false,
+        "car_speed": 10,
+        "show_dots": true,
+        "car_dots_color": "#f5f7fa",
+        "show_arrows": false,
+        "visibility": "all",
+        "padding_top": 50,
+        "padding_bottom": 50
+      },
+      "blocks": {
+        "slide_mamBeK": {
+          "type": "slide",
+          "settings": {
+            "bg_image": "shopify://shop_images/self-serve-coffee-shop.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 60,
+            "overlay_color_mobile": "#000000",
+            "overlay_opacity_mobile": 60,
+            "sound_button": false,
+            "sound_scheme": "scheme-3",
+            "pretitle": "No se trata de",
+            "heading": "<strong>\"elegir perfecto\".</strong>",
+            "heading_size": "h1",
+            "heading_accent": "#ffffff",
+            "subtitle": "",
+            "small_size": "h4",
+            "text": "<p>Porque ese momento casi nunca llega.</p><p>Domu ordena la compra para que no tengas que acomodar tu vida alrededor de un pago.</p><p>Resolvé y seguí.</p>",
+            "button_label_1": "",
+            "button_outline_1": false,
+            "button_label_2": "",
+            "button_outline_2": false,
+            "color_scheme": "scheme-1",
+            "custom_colors": true,
+            "cc_text": "#f3f1ec",
+            "cc_btn_bg": "#dd1d1d",
+            "cc_btn_text": "#ffffff",
+            "cc_outline": "#dd1d1d",
+            "full_width": false,
+            "max_width": "none",
+            "max_width_px": 500,
+            "max_width_pct": 50,
+            "v_pos": "center",
+            "h_pos": "center",
+            "align": "center",
+            "m_v_pos": "center",
+            "m_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mamBeK"
+      ]
+    },
+    "rich_text_Ddzr3i": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "visibility": "all",
+        "padding_top": 40,
+        "padding_bottom": 52
+      },
+      "blocks": {
+        "text_HEFMmD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Comprar no debería ser un problema operativo.</strong></p><p><strong>Se trata de poder decidir con criterio, sin que todo dependa de un único momento de pago. De no frenar lo necesario por el desembolso inicial ni desordenar tu economía para resolver algo puntual.</strong></p><p><strong>Domu existe para eso: una forma más ordenada de comprar, donde el producto, el pago y la operación tienen coherencia entre sí.</strong></p><p><strong>No se trata de acumular cosas ni de elegir por impulso; se trata de tener lo correcto, en el momento en que hace falta, con una estructura que lo sostenga.</strong></p><p><strong>Menos fricción. Más control.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_HEFMmD"
+      ]
+    },
+    "contact_form_XPCpqm": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Sumate a la comunidad Domu",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "color_scheme": "scheme-4",
+        "custom_colors": false,
+        "ok_icon": "check_circle",
+        "ok_icon_filled": false,
+        "ok_text": "#28c100",
+        "ok_bg": "#f2ffed",
+        "ok_radius": 8,
+        "ok_border": 1,
+        "ok_border_color": "#28c100",
+        "err_icon": "error",
+        "err_icon_filled": false,
+        "err_text": "#ff0000",
+        "err_bg": "#fff5f5",
+        "err_radius": 8,
+        "err_border": 1,
+        "err_border_color": "#ff0000",
+        "button_full_width": true,
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "field_row_6rkXQ7": {
+          "type": "fields",
+          "settings": {
+            "f1_on": true,
+            "f1_type": "name",
+            "f1_label": "",
+            "f1_required": false,
+            "f1_error": "This field is required",
+            "f2_on": true,
+            "f2_type": "email",
+            "f2_label": "",
+            "f2_required": false,
+            "f2_error": "This field is required"
+          }
+        },
+        "field_row_PtEtkp": {
+          "type": "fields",
+          "settings": {
+            "f1_on": true,
+            "f1_type": "phone",
+            "f1_label": "",
+            "f1_required": false,
+            "f1_error": "This field is required",
+            "f2_on": false,
+            "f2_type": "custom",
+            "f2_label": "Custom input name",
+            "f2_required": false,
+            "f2_error": "This field is required"
+          }
+        }
+      },
+      "block_order": [
+        "field_row_6rkXQ7",
+        "field_row_PtEtkp"
+      ]
+    },
+    "collapsible_content_J6WxeR": {
+      "type": "collapsible-content",
+      "settings": {
+        "caption": "",
+        "heading": "Preguntas frecuentes",
+        "heading_size": "h1",
+        "heading_accent": "#6d388b",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "container_color_scheme": "scheme-2",
+        "container_custom_colors": false,
+        "open_first_collapsible_row": false,
+        "title_size": "lg",
+        "toggle_icon": "caret",
+        "top_border": false,
+        "video_autoplay": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "collapsible_row_QTiAf4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué es Domu?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Domu es una tienda enfocada en equipamiento del hogar y uso diario, con financiación directa.</p><p>Ofrecemos productos funcionales con una forma de pago clara, para que puedas resolver lo que necesitás sin depender de pagar todo en el momento.</p>"
+          }
+        },
+        "collapsible_row_fFmTKq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué tipo de productos venden?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Soluciones para preparación cotidiana y para preparacionistas: herramientas/EDC y otros productos pensados para autonomía en casa, en la calle y en el camino.</p>"
+          }
+        },
+        "collapsible_row_djfB6j": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Dónde operan? ¿Tienen local físico?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Operamos online. Por ahora no trabajamos con retiro en persona (todo se gestiona por envíos).</p>"
+          }
+        },
+        "collapsible_row_EpcTrE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Hacen envíos a todo el país?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Sí, hacemos envíos dentro de Argentina. Al finalizar la compra vas a ver las opciones, costos y tiempos estimados según tu zona.</p>"
+          }
+        },
+        "collapsible_row_izwcXe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo puedo seguir mi pedido?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Cuando tu pedido se despacha te llega la información de seguimiento por el medio que uses en la compra (mail/WhatsApp, según corresponda).</p>"
+          }
+        },
+        "collapsible_row_kwjTj6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué medios de pago aceptan?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Los medios disponibles se muestran en el checkout.</p>"
+          }
+        },
+        "collapsible_row_T4eRT9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Puedo cambiar o devolver mi compra?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Sí. Los cambios/devoluciones se gestionan según la legislación vigente y nuestras políticas. Si algo llega mal o hay un problema, lo resolvemos.</p>"
+          }
+        },
+        "collapsible_row_jjH6mc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué pasa si mi producto falla?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Si hay una falla, se revisa el caso y se soluciona sin vueltas. La idea es simple: que lo que compres funcione como corresponde.</p>"
+          }
+        },
+        "collapsible_row_9gkUmM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo los contacto?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Por los canales oficiales que figuran en la tienda (WhatsApp/Email/Instagram). Respondemos rápido porque no somos una mega marca.</p>",
+            "page": "contact"
+          }
+        },
+        "collapsible_row_BCeArW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Van a sumar más productos?",
+            "icon": "none",
+            "icon_name": "check_box",
+            "icon_filled": false,
+            "row_content": "<p>Sí. Hornero va a ir ampliando su línea con productos de preparación, siempre bajo el mismo criterio: utilidad real, simpleza y durabilidad.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_QTiAf4",
+        "collapsible_row_fFmTKq",
+        "collapsible_row_djfB6j",
+        "collapsible_row_EpcTrE",
+        "collapsible_row_izwcXe",
+        "collapsible_row_kwjTj6",
+        "collapsible_row_T4eRT9",
+        "collapsible_row_jjH6mc",
+        "collapsible_row_9gkUmM",
+        "collapsible_row_BCeArW"
+      ]
+    }
+  },
+  "order": [
+    "slideshow_hero_ByxwwM",
+    "icon_bar_MjU9WG",
+    "multicolumn_LipbPN",
+    "slideshow_hero_Hpr8fx",
+    "content_tabs_KpYMNP",
+    "comparison_table_gXJrt7",
+    "testimonials_RUyymc",
+    "multirow_x6YNjf",
+    "slideshow_hero_R3w9HF",
+    "rich_text_Ddzr3i",
+    "contact_form_XPCpqm",
+    "collapsible_content_J6WxeR"
+  ]
+}

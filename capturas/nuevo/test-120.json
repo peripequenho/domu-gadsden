@@ -1,0 +1,26 @@
+{
+ "m": {
+  "title": "ATHLEX · Test – Domu Hogar",
+  "theme": "Gadsden 1.2.0 (ATHLEX)",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "test",
+    "h": 658,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 1,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

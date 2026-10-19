@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "test": {
+      "type": "gad-quiz",
+      "settings": {
+        "titulo": "¿Roce, o <em>algo más</em>? El test de las 8 preguntas",
+        "bajada": "Si hay picazón o ardor en la ingle, contestá estas 8 preguntas. Al final te decimos qué encaja con lo que contaste, qué se puede hacer hoy sin gastar un peso, y si conviene ver a un médico antes de comprar nada.",
+        "boton_empezar": "Empezar el test",
+        "absolucion": "Eso se llama <em>tiña inguinal</em>. Es un hongo, es comunísimo, y no es una enfermedad de transmisión sexual.",
+        "voces_pie": "Cita textual de un foro público. No es un cliente de ATHLEX: el producto no salió a la venta todavía.",
+        "handle": "athlex",
+        "caja_titulo": "ATHLEX PSS",
+        "caja_sub": "Spray corporal para zonas de roce. 120 ml.",
+        "bene_1": "Se aplica sin tocar la zona y sin frotar nada.",
+        "bene_2": "Seca en segundos: te vestís enseguida, no queda pegoteado.",
+        "bene_3": "Parece un producto de deporte. Puede quedar a la vista en el baño.",
+        "caja_boton": "Quiero probarlo un mes",
+        "caja_pie": "Garantía de 30 días: si no te convence, escribinos y te devolvemos lo que pagaste.",
+        "legal": "Este test es una orientación, no un diagnóstico médico, y no reemplaza una consulta. ATHLEX PSS es un producto cosmético de higiene y cuidado personal, de uso externo."
+      }
+    }
+  },
+  "order": [
+    "test"
+  ]
+}

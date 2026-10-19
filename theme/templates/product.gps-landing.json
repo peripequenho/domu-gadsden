@@ -1,0 +1,528 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "gad_sticky_media": false,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "thumbs_position": "bottom",
+        "thumbs_count": 5,
+        "thumbs_v_width": 16,
+        "thumbs_v_hide_arrows": false,
+        "thumbs_ratio": "square",
+        "main_arrows": false,
+        "gallery_arrows_scheme": "scheme-3",
+        "gallery_arrows_bare": false,
+        "gallery_dots_color": "#1b1b1b",
+        "mobile_thumbnails": "show",
+        "m_thumbs_position": "bottom",
+        "m_thumbs_count": 5,
+        "m_thumbs_v_width": 22,
+        "m_radius": 10,
+        "m_gap": 0,
+        "m_peek_type": "none",
+        "m_peek_pct": 0,
+        "m_peek_px": 0,
+        "m_edge": false,
+        "m_container": 100,
+        "m_image_width": 100,
+        "m_pagination": "hidden",
+        "m_arrows": "sides",
+        "m_arrows_scheme": "scheme-3",
+        "m_arrows_bare": false,
+        "m_dots_color": "#1b1b1b",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "video_mode": "button",
+        "video_pause": false,
+        "video_sound": false,
+        "video_timeline": false,
+        "video_button_scheme": "scheme-4",
+        "video_timeline_color": "#0b1f3a",
+        "variant_media_first": false,
+        "keep_media_order": true,
+        "filter_option": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "m_padding_top": 0,
+        "m_padding_bottom": 16
+      },
+      "blocks": {
+        "custom_liquid_gX3AKU": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign rating_val = product.metafields.custom.rating_avg.value %}\n{% assign sold_val = product.metafields.custom.sold_text.value %}\n\n{% if rating_val != blank or sold_val != blank %}\n<div class=\"edc-rb\">\n  {% if rating_val != blank %}\n  <div class=\"edc-rb__left\">\n    <span class=\"edc-rb__stars\">★★★★★</span>\n    <span class=\"edc-rb__rating\">{{ rating_val }}</span>\n    <span class=\"edc-rb__sep\">|</span>\n  </div>\n  {% endif %}\n\n  {% if sold_val != blank %}\n  <div class=\"edc-rb__badge\">\n    {{ sold_val }} vendidos\n  </div>\n  {% endif %}\n</div>\n{% endif %}\n\n<style>\n.edc-rb{\n  display:flex;\n  align-items:baseline;\n  gap:10px;\n  flex-wrap:nowrap;\n  margin:8px 0 12px;\n  white-space:nowrap;\n}\n.edc-rb__left{\n  display:flex;\n  align-items:baseline;\n  gap:6px;\n}\n.edc-rb__stars{\n  font-size:14px;\n  letter-spacing:1px;\n}\n.edc-rb__rating{\n  font-size:14px;\n  font-weight:500;\n}\n.edc-rb__sep{\n  opacity:.5;\n}\n.edc-rb__badge{\n  font-size:13px;\n  padding:5px 10px;\n  border-radius:999px;\n  line-height:1;\n  background: linear-gradient(135deg, #e9e1ff 0%, #cfc2ff 100%);\n  color:#2b2b2b;\n  flex-shrink:0;\n}\n</style>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "size": "sm",
+            "align": "left",
+            "uppercase": true,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "custom_liquid_L4EVxm": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"gps-claims\">\n  <div class=\"gps-claim\">\n    <span class=\"gps-claim__ico\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"2.5\"/>\n        <line x1=\"10.5\" y1=\"5\" x2=\"13.5\" y2=\"5\"/>\n        <circle cx=\"12\" cy=\"18\" r=\"1.1\"/>\n      </svg>\n    </span>\n    <strong>App gratis</strong>\n  </div>\n\n  <div class=\"gps-claim\">\n    <span class=\"gps-claim__ico\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <rect x=\"2\" y=\"7\" width=\"17\" height=\"10\" rx=\"2.5\"/>\n        <line x1=\"21.5\" y1=\"10.5\" x2=\"21.5\" y2=\"13.5\"/>\n        <rect x=\"4.5\" y=\"9.5\" width=\"9\" height=\"5\" rx=\"1\" fill=\"currentColor\" stroke=\"none\"/>\n      </svg>\n    </span>\n    <strong>Hasta 15 días<br>de batería</strong>\n  </div>\n\n  <div class=\"gps-claim\">\n    <span class=\"gps-claim__ico\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <path d=\"M6 2.8h7.2L18 7.6V21a1.2 1.2 0 0 1-1.2 1.2H6A1.2 1.2 0 0 1 4.8 21V4A1.2 1.2 0 0 1 6 2.8Z\"/>\n        <rect x=\"8\" y=\"12\" width=\"7\" height=\"6\" rx=\"1.2\"/>\n        <line x1=\"11.5\" y1=\"12\" x2=\"11.5\" y2=\"18\"/>\n      </svg>\n    </span>\n    <strong>Apto chip 4G</strong>\n  </div>\n</div>\n\n<style>\n.gps-claims{\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:10px;\n  margin:16px 0;\n  text-align:center;\n}\n\n.gps-claim__ico{\n  display:block;\n  color:#0B1F3A;\n  margin:0 auto 8px;\n}\n\n.gps-claim__ico svg{\n  width:34px;\n  height:34px;\n  display:block;\n  margin:0 auto;\n}\n\n.gps-claim strong{\n  display:block;\n  font-size:13px;\n  font-weight:700;\n  line-height:1.25;\n  color:#0B1F3A;\n}\n\n@media(max-width:480px){\n  .gps-claim__ico svg{width:30px;height:30px}\n  .gps-claim strong{font-size:12px}\n}\n</style>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "uppercase": true,
+            "price_in_button": false,
+            "skip_cart": false,
+            "custom_color": false,
+            "color": "#2b7427",
+            "icon_scale": 120,
+            "icon_gap": 10,
+            "second_button": false,
+            "second_label": "Agregar al carrito",
+            "second_custom_color": false,
+            "second_color": "#dd1d1d",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "custom_liquid_GTkmHj": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"oferta-timer\">\n  <svg class=\"oferta-timer__ico\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#F5A623\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n    <circle cx=\"12\" cy=\"12\" r=\"9\"/>\n    <polyline points=\"12 7 12 12 15.5 13.5\"/>\n  </svg>\n  <span class=\"oferta-timer__txt\">La oferta termina en</span>\n  <strong class=\"oferta-timer__time\" data-oferta-timer>--:--:--</strong>\n</div>\n\n<style>\n.oferta-timer{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  gap:8px;\n  background:#F8F9FB;\n  border:1px solid #E5E8EE;\n  border-radius:10px;\n  padding:10px 16px;\n  margin:10px 0;\n}\n.oferta-timer__ico{\n  width:18px;\n  height:18px;\n  flex:none;\n}\n.oferta-timer__txt{\n  font-size:14px;\n  font-weight:700;\n  color:#0B1F3A;\n}\n.oferta-timer__time{\n  font-size:15px;\n  font-weight:800;\n  color:#1B4B91;\n  font-variant-numeric:tabular-nums;\n  letter-spacing:.5px;\n}\n</style>\n\n<script>\n(function(){\n  var el = document.querySelector('[data-oferta-timer]');\n  if(!el) return;\n  function pad(n){ return n < 10 ? '0' + n : '' + n; }\n  function tick(){\n    var now = new Date();\n    var midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);\n    var s = Math.floor((midnight - now) / 1000);\n    var h = Math.floor(s / 3600);\n    var m = Math.floor((s % 3600) / 60);\n    var sec = s % 60;\n    el.textContent = pad(h) + ':' + pad(m) + ':' + pad(sec);\n  }\n  tick();\n  setInterval(tick, 1000);\n})();\n</script>"
+          }
+        },
+        "custom_liquid_haMnb7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign v = product.selected_or_first_available_variant -%}\n{%- assign transf = v.price | times: 90 | divided_by: 100 -%}\n\n<div class=\"meli-cuotas\">\n  Mismo precio en \n  <strong>3 cuotas sin<br> interés de:</strong>\n  <span class=\"meli-cuotas__amount\" data-cuotas-amount>\n    {{ v.price | divided_by: 3 | money }}\n  </span>\n</div>\n\n<div class=\"meli-transf\">\n  <span class=\"meli-transf__amount\" data-transf-amount>{{ transf | money }}</span>\n  con transferencia\n  <span class=\"meli-transf__badge\">10% OFF</span>\n</div>\n\n<style>\n.meli-cuotas{\n  color:#00a650;\n  font-size:13px;\n  line-height:1.25;\n  margin-top:4px;\n}\n.meli-cuotas strong{\n  font-weight:600;\n}\n.meli-cuotas__amount{\n  font-size:14px;\n  font-weight:700;\n  letter-spacing:.2px;\n}\n.meli-transf{\n  color:#00a650;\n  font-size:13px;\n  line-height:1.25;\n  margin-top:6px;\n}\n.meli-transf__amount{\n  font-size:14px;\n  font-weight:700;\n  letter-spacing:.2px;\n}\n.meli-transf__badge{\n  display:inline-block;\n  background:#00a650;\n  color:#fff;\n  font-size:11px;\n  font-weight:700;\n  padding:1px 6px;\n  border-radius:4px;\n  margin-left:4px;\n  vertical-align:1px;\n}\n</style>\n\n<script>\n(function(){\n  var elCuotas = document.querySelector('[data-cuotas-amount]');\n  var elTransf = document.querySelector('[data-transf-amount]');\n  if(!elCuotas) return;\n\n  function fmt(n){\n    return '$' + n.toLocaleString('es-AR', {minimumFractionDigits:2, maximumFractionDigits:2});\n  }\n  // \"$49.999,00\" -> 49999.00\n  function parseMoney(txt){\n    if(!txt) return null;\n    var m = txt.replace(/[^\\d.,]/g, '').replace(/\\./g, '').replace(',', '.');\n    var n = parseFloat(m);\n    return isNaN(n) ? null : n;\n  }\n  // total del bundle tildado en el widget de Kaching (selector exacto verificado)\n  function selectedBundleTotal(){\n    var checked = document.querySelector('.kaching-bundles__bar input:checked');\n    var bar = checked && checked.closest ? checked.closest('.kaching-bundles__bar') : null;\n    if(!bar) return null;\n    var priceEl = bar.querySelector('.kaching-bundles__bar-price');\n    return priceEl ? parseMoney(priceEl.textContent) : null;\n  }\n  function update(){\n    var total = selectedBundleTotal();\n    if(!total) return;\n    elCuotas.textContent = fmt(total / 3);\n    if(elTransf) elTransf.textContent = fmt(total * 0.9);\n  }\n  document.addEventListener('change', function(e){\n    if(e.target.closest && e.target.closest('.kaching-bundles__bar')) setTimeout(update, 80);\n  }, true);\n  document.addEventListener('click', function(e){\n    if(e.target.closest && e.target.closest('.kaching-bundles__bars')) setTimeout(update, 150);\n  }, true);\n  // sync inicial cuando el widget termina de montar (Lleva 2 viene preseleccionado)\n  var tries = 0, t = setInterval(function(){\n    if(selectedBundleTotal() !== null){ update(); clearInterval(t); }\n    if(++tries > 40) clearInterval(t);\n  }, 250);\n})();\n</script>"
+          }
+        },
+        "conversion_bear_trust_badges_widget_nwC9MU": {
+          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {}
+        },
+        "custom_liquid_HmMNDc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- comment -%}\n  ML-style Payment Methods Popup (Shrine)\n  - 3 cuotas sin interés (Mercado Pago)\n  - Sin calculadora\n  - Estilo: header amarillo + acordeones\n{%- endcomment -%}\n\n<!-- TRIGGER -->\n<button\n  type=\"button\"\n  class=\"mlpay-link\"\n  data-mlpay-open>\n  Ver medios de pago\n  <span class=\"mlpay-link-arrow\" aria-hidden=\"true\">›</span>\n</button>\n\n<div class=\"mlpay-backdrop\" data-mlpay-backdrop hidden></div>\n\n<div class=\"mlpay-modal\"\n     role=\"dialog\"\n     aria-modal=\"true\"\n     aria-labelledby=\"mlpayTitle\"\n     data-mlpay-modal\n     hidden>\n\n  <div class=\"mlpay-header\">\n    <button class=\"mlpay-back\"\n            type=\"button\"\n            aria-label=\"Volver\"\n            data-mlpay-close>\n      ‹\n    </button>\n    <div class=\"mlpay-title\" id=\"mlpayTitle\">\n      Medios de pago para este producto\n    </div>\n  </div>\n\n  <div class=\"mlpay-body\">\n\n    <!-- INTRO -->\n    <div class=\"mlpay-intro\">\n      Al finalizar tu compra, pagás con el dinero disponible en tu cuenta.\n      Podés ingresar dinero a Mercado Pago por cuentas vinculadas,\n      transferencia bancaria o en efectivo.\n\n      <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n      <a class=\"mlpay-more\"\n         href=\"https://www.mercadopago.com.ar/banking/balance\"\n         target=\"_blank\"\n         rel=\"noopener\">\n        Conocer más\n      </a>\n    </div>\n\n    <div class=\"mlpay-accordion\">\n\n      <!-- TARJETAS DE CRÉDITO -->\n      <details class=\"mlpay-item\" open>\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de crédito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-badge\">\n            Mismo precio en hasta 3 cuotas\n          </div>\n\n          {%- assign credit_logos = \"visa|Visa,mastercard|Mastercard,american-express|American Express,cabal|Cabal,argencard|Argencard,diners-club|Diners Club,naranjax|Naranja X,tarjeta-shopping|Tarjeta Shopping\" | split: \",\" -%}\n\n          <div class=\"mlpay-logos\">\n            {%- for item in credit_logos -%}\n              {%- assign parts = item | split: \"|\" -%}\n              {%- assign handle = parts[0] -%}\n              {%- assign label = parts[1] -%}\n              <div class=\"mlpay-logo\">\n                <img\n                  src=\"{{ 'bank-' | append: handle | append: '.svg' | file_url }}\"\n                  alt=\"{{ label }}\"\n                  class=\"mlpay-bank-icon\"\n                  loading=\"lazy\">\n              </div>\n            {%- endfor -%}\n          </div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/payments-methods?view=conditions\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer condiciones\n          </a>\n        </div>\n      </details>\n\n      <!-- CUOTAS SIN TARJETA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Cuotas sin Tarjeta</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Comprás y luego pagás las cuotas mes a mes con efectivo,\n            débito o con el dinero de tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadolibre.com.ar/credits/consumer/enrollment/\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DINERO EN CUENTA -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Dinero disponible en Mercado Pago</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <p class=\"mlpay-p\">\n            Pagás con el dinero disponible en tu cuenta de Mercado Pago.\n          </p>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n\n          <a class=\"mlpay-more\"\n             href=\"https://www.mercadopago.com.ar/banking/balance\"\n             target=\"_blank\"\n             rel=\"noopener\">\n            Conocer más\n          </a>\n        </div>\n      </details>\n\n      <!-- DÉBITO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Tarjetas de débito</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-visa-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-mastercard-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-cabal-debit.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-maestro.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n      <!-- EFECTIVO -->\n      <details class=\"mlpay-item\">\n        <summary>\n          <span class=\"mlpay-sum-title\">Efectivo</span>\n          <span class=\"mlpay-chevron\">▾</span>\n        </summary>\n\n        <div class=\"mlpay-content\">\n          <div class=\"mlpay-logos-row\">\n            <img src=\"{{ 'bank-pago-facil.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n            <img src=\"{{ 'bank-rapipago.svg' | file_url }}\" class=\"mlpay-bank-icon\">\n          </div>\n          <div class=\"mlpay-sub\">Acreditación instantánea.</div>\n        </div>\n      </details>\n\n    </div>\n  </div>\n</div>\n\n<style>\n[hidden]{display:none!important}\n\n.mlpay-link{\n  background:none;\n  border:0;\n  padding:0;\n  display:inline-flex;\n  gap:6px;\n  font-size:14px;\n  font-weight:500;\n  color:#3483FA;\n  cursor:pointer;\n}\n.mlpay-link:hover{text-decoration:underline}\n\n.mlpay-backdrop{\n  position:fixed;\n  inset:0;\n  background:rgba(0,0,0,.45);\n  z-index:9998;\n}\n\n.mlpay-modal{\n  position:fixed;\n  inset:0;\n  max-width:520px;\n  margin:auto;\n  background:#fff;\n  z-index:9999;\n  display:flex;\n  flex-direction:column;\n}\n\n.mlpay-header{\n  background:#F9D500;\n  padding:12px;\n  display:flex;\n  align-items:center;\n  gap:10px;\n}\n\n.mlpay-back{\n  background:none;\n  border:0;\n  font-size:28px;\n  cursor:pointer;\n}\n\n.mlpay-title{\n  font-weight:700;\n  font-size:16px;\n  line-height:1.15;\n}\n\n.mlpay-body{padding:16px;overflow:auto}\n\n.mlpay-item summary{\n  display:flex;\n  justify-content:space-between;\n  cursor:pointer;\n  padding:10px 0;\n}\n\n.mlpay-chevron{color:#777}\n\n.mlpay-content{padding-bottom:14px}\n\n.mlpay-badge{\n  background:#EAF7EA;\n  color:#1C7C3A;\n  font-size:12px;\n  font-weight:700;\n  padding:6px 10px;\n  border-radius:999px;\n  display:inline-block;\n  margin-bottom:10px;\n}\n\n.mlpay-logos{\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:12px;\n}\n\n.mlpay-logo{\n  background:#fafafa;\n  border-radius:12px;\n  padding:12px;\n  display:flex;\n  justify-content:center;\n}\n\n.mlpay-bank-icon{\n  width:90px;\n  height:28px;\n  object-fit:contain;\n}\n\n.mlpay-more{\n  color:#2D6CDF;\n  font-weight:600;\n  font-size:13px;\n  text-decoration:none;\n}\n\n.mlpay-more:hover{text-decoration:underline}\n</style>\n\n<script>\n(function(){\n  const openBtn=document.querySelector('[data-mlpay-open]');\n  const modal=document.querySelector('[data-mlpay-modal]');\n  const closeBtn=document.querySelector('[data-mlpay-close]');\n  const backdrop=document.querySelector('[data-mlpay-backdrop]');\n  if(!openBtn||!modal||!closeBtn||!backdrop)return;\n\n  function openModal(){\n    modal.hidden=false;\n    backdrop.hidden=false;\n    document.documentElement.style.overflow='hidden';\n  }\n\n  function closeModal(){\n    modal.hidden=true;\n    backdrop.hidden=true;\n    document.documentElement.style.overflow='';\n  }\n\n  openBtn.addEventListener('click',openModal);\n  closeBtn.addEventListener('click',closeModal);\n  backdrop.addEventListener('click',closeModal);\n  document.addEventListener('keydown',e=>{\n    if(e.key==='Escape'&&!modal.hidden)closeModal();\n  });\n})();\n</script>"
+          }
+        },
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5": {
+          "type": "sticky_bar",
+          "settings": {
+            "action": "add_to_cart",
+            "show_when": "after_button",
+            "button_label": "Agregar al carrito",
+            "custom_button": false,
+            "button_color": "#dd1d1d",
+            "color_scheme": "scheme-1",
+            "star_color": "#ffcc00",
+            "stars_text": "(xxxx Reviews)",
+            "variant_mode": "combined",
+            "d_image": true,
+            "d_title": true,
+            "d_stars": false,
+            "d_price": true,
+            "d_badge": true,
+            "d_variants": true,
+            "d_full_button": false,
+            "d_price_in_button": false,
+            "d_transparent": false,
+            "m_image": true,
+            "m_title": false,
+            "m_stars": false,
+            "m_price": true,
+            "m_badge": false,
+            "m_variants": false,
+            "m_full_button": false,
+            "m_stack": false,
+            "m_price_in_button": false,
+            "m_transparent": false
+          }
+        },
+        "reviews_8UgFbe": {
+          "type": "reviews",
+          "settings": {
+            "rv_color_scheme": "scheme-1",
+            "rv_custom_bg": false,
+            "rv_bg": "#f2f2f2",
+            "rv_radius": 12,
+            "rv_border": 1,
+            "rv_border_color": "#b7b7b7",
+            "rv_avatar_align": "top",
+            "rv_avatar_radius": 40,
+            "rv_star_color": "#ffcc00",
+            "rv_star_offset": 0,
+            "rv_check_bg": "#6d388b",
+            "rv_check_color": "#ffffff",
+            "car_type": "loop",
+            "car_autoplay": true,
+            "car_speed": 5,
+            "show_arrows": false,
+            "show_dots": false,
+            "margin_top": 24,
+            "margin_bottom": 24,
+            "author_1": "{{ product.metafields.custom.rvw_nom_01.value }}{estrellas}",
+            "text_1": "<p>{{ product.metafields.custom.rvw_txt_01 | metafield_tag }}</p>",
+            "author_2": "{{ product.metafields.custom.rvw_nom_02.value }}{estrellas}",
+            "text_2": "<p>{{ product.metafields.custom.rvw_txt_02 | metafield_tag }}</p>",
+            "author_3": "{{ product.metafields.custom.rvw_nom_03.value }}{estrellas}",
+            "text_3": "<p>{{ product.metafields.custom.rvw_txt_03 | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_gX3AKU",
+        "title",
+        "custom_liquid_L4EVxm",
+        "buy_buttons",
+        "custom_liquid_GTkmHj",
+        "custom_liquid_haMnb7",
+        "conversion_bear_trust_badges_widget_nwC9MU",
+        "custom_liquid_HmMNDc",
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
+        "reviews_8UgFbe"
+      ]
+    },
+    "image_slider_bNgeFp": {
+      "type": "gad-media-slider",
+      "settings": {
+        "show_empty": true,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6D388B",
+        "color_scheme": "scheme-1",
+        "custom_colors": false,
+        "page_width": "full",
+        "radius_d": 0,
+        "m_full_width": true,
+        "radius_m": 0,
+        "car_type": "loop",
+        "car_drag": "on",
+        "car_autoplay": true,
+        "car_speed": 5,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "car_center": true,
+        "d_per_view": 3,
+        "d_per_move": 1,
+        "d_gap": 28,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "hidden",
+        "m_per_view": 2,
+        "m_per_move": 1,
+        "m_gap": 12,
+        "m_peek": 0,
+        "m_edge_fit": true,
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "image_slide_DCncBB": {
+          "type": "image_slide",
+          "settings": {
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_4ijiX6": {
+          "type": "image_slide",
+          "settings": {
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_7xwQrP": {
+          "type": "image_slide",
+          "settings": {
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        },
+        "image_slide_HRtREr": {
+          "type": "image_slide",
+          "settings": {
+            "description": "",
+            "desc_align": "center",
+            "desc_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_DCncBB",
+        "image_slide_4ijiX6",
+        "image_slide_7xwQrP",
+        "image_slide_HRtREr"
+      ]
+    },
+    "icon_bar_qH6Jxb": {
+      "type": "gad-icon-bar",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_accent": "#6D388B",
+        "text": "",
+        "layout": "vertical",
+        "icon_size": "medium",
+        "icon_color": "button",
+        "color_scheme": "scheme-4",
+        "custom_colors": false,
+        "card_style": "tint",
+        "card_color_scheme": "scheme-1",
+        "card_cc_bg": "#F3F3F3",
+        "card_cc_text": "#2E2A39",
+        "full_width": false,
+        "car_type": "loop",
+        "car_autoplay": true,
+        "car_speed": 3,
+        "car_arrows_scheme": "scheme-3",
+        "car_arrows_bare": true,
+        "car_dots_color": "#1b1b1b",
+        "d_carousel": false,
+        "d_per_view": 4,
+        "d_per_move": 1,
+        "d_gap": 40,
+        "d_peek": 0,
+        "d_edge_fit": true,
+        "d_auto_height": false,
+        "d_dots": "hidden",
+        "d_arrows": "hidden",
+        "m_carousel": true,
+        "m_per_view": "2",
+        "m_auto_height": false,
+        "m_dots": "hidden",
+        "m_arrows": "hidden",
+        "car_drag": "on",
+        "visibility": "all",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "column_PpJCn8": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "icon_filled": false,
+            "title": "{{ product.metafields.custom.sold_text.value }} vendidos",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_TgzXEU": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "icon_filled": false,
+            "title": "{{ product.metafields.custom.rating_avg.value }}/5★",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_YhCTB8": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "icon_filled": false,
+            "title": "Hasta 15 días de bateria",
+            "text": "<p></p><p></p>"
+          }
+        },
+        "column_6YfarX": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "icon_filled": false,
+            "title": "90 días de garantía",
+            "text": "<p></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_PpJCn8",
+        "column_TgzXEU",
+        "column_YhCTB8",
+        "column_6YfarX"
+      ]
+    },
+    "gps_steps_peKf7E": {
+      "type": "gad-icon-content",
+      "blocks": {
+        "step_zDL68L": {
+          "type": "step",
+          "settings": {
+            "num": "1",
+            "title": "Poné un chip prepago",
+            "text": "De cualquier compañía.",
+            "signal": true
+          }
+        },
+        "step_eDTwFA": {
+          "type": "step",
+          "settings": {
+            "num": "2",
+            "title": "Activalo desde el celular",
+            "text": "En unos minutos queda andando.",
+            "signal": false
+          }
+        },
+        "step_CBYTX8": {
+          "type": "step",
+          "settings": {
+            "num": "3",
+            "title": "Localizá cuando quieras",
+            "text": "Ves la ubicación actual desde el celu.",
+            "signal": false
+          }
+        }
+      },
+      "block_order": [
+        "step_zDL68L",
+        "step_eDTwFA",
+        "step_CBYTX8"
+      ],
+      "name": "GPS · Cómo funciona",
+      "settings": {
+        "bg": "alt",
+        "eyebrow": "02 — Cómo funciona",
+        "heading": "Se ubica por <em>red celular</em>, sin depender de nadie",
+        "lead": "Le ponés un chip prepago con datos y te manda la ubicación aproximada a tu celular. Sin abono de plataforma.",
+        "show_note": true,
+        "note": "Ubicación cada minuto por antena de red celular · sin abono de plataforma · funciona en Android y iPhone."
+      }
+    },
+    "gps_comparativa": {
+      "type": "gad-vs-table",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "feature": "Funciona lejos de casa (no solo a unos metros)",
+            "us": "ok",
+            "other": "no"
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "feature": "Se ubica por red celular con chip propio",
+            "us": "ok",
+            "other": "no"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "feature": "Sin abono mensual de plataforma",
+            "us": "ok",
+            "other": "no"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "feature": "Imán incorporado y tamaño mini",
+            "us": "ok",
+            "other": "no"
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "feature": "Se paga una sola vez",
+            "us": "ok",
+            "other": "partial"
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "feature": "Soporte y garantía en Argentina (90 días)",
+            "us": "ok",
+            "other": "no"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {}
+    },
+    "custom_liquid_8EnbUH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- assign media_1 = 'https://cdn.shopify.com/videos/c/vp/cd5cf2cd19544cf98a211313ec8bd245/cd5cf2cd19544cf98a211313ec8bd245.HD-720p-1.6Mbps-89969397.mp4' -%}\n{%- assign media_2 = 'https://cdn.shopify.com/videos/c/vp/69fbedb6b12e4018857fa7e9c2624549/69fbedb6b12e4018857fa7e9c2624549.HD-720p-1.6Mbps-89969398.mp4' -%}\n\n<div class=\"gps-app\">\n  <div class=\"ga-wrap\">\n    <span class=\"ga-eye\">La app</span>\n    <h2>Mirá cómo funciona de verdad</h2>\n    <p class=\"ga-lead\">Abrís la app, ves dónde está tu GPS y el recorrido que hizo. Simple y real.</p>\n\n    <div class=\"ga-phones\">\n      <div class=\"ga-col\">\n        <div class=\"ga-phone\"><div class=\"ga-screen\">\n          {%- if media_1 contains '.mp4' or media_1 contains '.mov' or media_1 contains '.webm' -%}\n            <video src=\"{{ media_1 }}\" autoplay loop muted playsinline></video>\n          {%- elsif media_1 != blank -%}\n            <img src=\"{{ media_1 }}\" alt=\"App en iPhone\" loading=\"lazy\">\n          {%- else -%}\n            <div class=\"ga-ph-empty\"><i></i></div>\n          {%- endif -%}\n        </div></div>\n        <span class=\"ga-label\">\n          <svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.05 12.54c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.39.81 1.4-.02 2.28-1.27 3.14-2.53.99-1.45 1.39-2.85 1.42-2.92-.03-.01-2.72-1.04-2.74-4.13zM14.46 4.9c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44z\"/></svg>\n          iPhone\n        </span>\n      </div>\n\n      <div class=\"ga-col\">\n        <div class=\"ga-phone\"><div class=\"ga-screen\">\n          {%- if media_2 contains '.mp4' or media_2 contains '.mov' or media_2 contains '.webm' -%}\n            <video src=\"{{ media_2 }}\" autoplay loop muted playsinline></video>\n          {%- elsif media_2 != blank -%}\n            <img src=\"{{ media_2 }}\" alt=\"App en Android\" loading=\"lazy\">\n          {%- else -%}\n            <div class=\"ga-ph-empty\"><i></i></div>\n          {%- endif -%}\n        </div></div>\n        <span class=\"ga-label\">\n          <svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.6 9.48l1.84-3.18a.38.38 0 0 0-.14-.52.38.38 0 0 0-.52.14l-1.86 3.22a11.4 11.4 0 0 0-9.64 0L5.42 5.92a.38.38 0 0 0-.52-.14.38.38 0 0 0-.14.52L6.6 9.48A10.86 10.86 0 0 0 1 18h22a10.86 10.86 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 1.25-1.25A1.25 1.25 0 0 1 7 15.25zm10 0a1.25 1.25 0 1 1 1.25-1.25A1.25 1.25 0 0 1 17 15.25z\"/></svg>\n          Android\n        </span>\n      </div>\n    </div>\n\n    <div class=\"ga-feats\">\n      <div class=\"ga-feat\">\n        <span class=\"ga-fi\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11Z\"/><circle cx=\"12\" cy=\"10\" r=\"2.3\"/></svg>\n        </span>\n        <div>\n          <strong>Ubicación en el mapa</strong>\n          <p>Ves dónde está y hace cuánto se actualizó: aproximada por red celular, casi en vivo.</p>\n        </div>\n      </div>\n\n      <div class=\"ga-feat\">\n        <span class=\"ga-fi\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"6\" cy=\"19\" r=\"2.2\"/><circle cx=\"18\" cy=\"5\" r=\"2.2\"/><path d=\"M8 19h7a4 4 0 0 0 0-8H9a4 4 0 0 1 0-8h7\"/></svg>\n        </span>\n        <div>\n          <strong>Historial de recorrido</strong>\n          <p>Mirás por dónde se movió durante el día.</p>\n        </div>\n      </div>\n\n      <div class=\"ga-feat\">\n        <span class=\"ga-fi\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\"><path d=\"M4 20v-6\"/><path d=\"M9 20v-9\"/><path d=\"M14 20V7\"/><path d=\"M19 20V4\"/></svg>\n        </span>\n        <div>\n          <strong>Sin límite de distancia</strong>\n          <p>No necesita tenerte cerca: funciona donde haya señal celular.</p>\n        </div>\n      </div>\n    </div>\n\n    <p class=\"ga-foot\">Compatible con iPhone y Android · requiere chip prepago con datos (no incluido).</p>\n  </div>\n</div>\n\n<style>\n  .gps-app{background:#fff;padding:80px 20px;font-family:'Poppins',system-ui,sans-serif}\n  .gps-app .ga-wrap{max-width:1180px;margin:0 auto;text-align:center}\n  .gps-app .ga-eye{font-weight:700;font-size:13.5px;letter-spacing:.22em;text-transform:uppercase;color:#2E7D32}\n  .gps-app h2{font-size:42px;font-weight:800;letter-spacing:-.02em;line-height:1.1;color:#0B1F3A;margin:12px 0 0}\n  .gps-app .ga-lead{color:#5f6b7a;font-size:18px;max-width:640px;margin:16px auto 0;line-height:1.5}\n\n  /* 2 teléfonos SIEMPRE lado a lado (se achican juntos, nunca se apilan) */\n  .gps-app .ga-phones{display:grid;grid-template-columns:1fr 1fr;justify-items:center;align-items:start;gap:clamp(12px,4vw,56px);margin-top:48px}\n  .gps-app .ga-col{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0;width:100%}\n  .gps-app .ga-phone{width:100%;max-width:230px;aspect-ratio:9/18.5;background:#0b1523;border-radius:9%/4.4%;padding:4%;box-shadow:0 26px 44px rgba(11,31,58,.20);position:relative;box-sizing:border-box}\n  .gps-app .ga-phone:after{content:\"\";position:absolute;top:6%;left:50%;transform:translateX(-50%);width:36%;height:4.5%;background:#0b1523;border-radius:99px;z-index:3}\n  .gps-app .ga-screen{width:100%;height:100%;border-radius:7%/3.4%;overflow:hidden;background:#e8eef4;position:relative;z-index:1}\n  .gps-app .ga-screen video,.gps-app .ga-screen img{width:100%;height:100%;object-fit:cover;display:block}\n  .gps-app .ga-ph-empty{position:absolute;inset:0;background:\n      radial-gradient(circle at 30% 35%, rgba(46,125,50,.16), transparent 42%),\n      linear-gradient(#dfe8f0 1px, transparent 1px), linear-gradient(90deg,#dfe8f0 1px, transparent 1px);\n      background-size:100% 100%, 26px 26px, 26px 26px;background-color:#edf2f7}\n  .gps-app .ga-ph-empty i{position:absolute;top:33%;left:28%;width:16px;height:16px;border-radius:50% 50% 50% 0;background:#2E7D32;transform:rotate(-45deg);box-shadow:0 6px 12px rgba(46,125,50,.4)}\n  .gps-app .ga-label{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:15px;color:#0B1F3A;white-space:nowrap}\n  .gps-app .ga-label svg{width:17px;height:17px;flex:none}\n\n  .gps-app .ga-feats{max-width:600px;margin:52px auto 0;text-align:left;display:flex;flex-direction:column;gap:26px}\n  .gps-app .ga-feat{display:flex;gap:16px;align-items:flex-start}\n  .gps-app .ga-fi{flex:none;width:42px;height:42px;border-radius:12px;background:#e9f5ea;color:#0B1F3A;display:grid;place-items:center}\n  .gps-app .ga-fi svg{width:20px;height:20px}\n  .gps-app .ga-feat strong{display:block;font-size:15.5px;font-weight:700;color:#0B1F3A;margin-bottom:3px}\n  .gps-app .ga-feat p{margin:0;font-size:14.5px;line-height:1.55;color:#5f6b7a}\n  .gps-app .ga-foot{margin:34px auto 0;font-size:13px;color:#8a95a1}\n\n  @media(max-width:760px){\n    .gps-app{padding:56px 16px}\n    .gps-app h2{font-size:30px}\n    .gps-app .ga-lead{font-size:16px}\n    .gps-app .ga-phones{margin-top:36px}\n    .gps-app .ga-phone{max-width:170px}\n    .gps-app .ga-label{font-size:13.5px}\n    .gps-app .ga-label svg{width:15px;height:15px}\n  }\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "visibility": "all"
+      }
+    },
+    "177483634895303dd5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      },
+      "blocks": {
+        "judge_me_reviews_review_widget_hRPxAY": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_hRPxAY"
+      ]
+    },
+    "gps_marquee": {
+      "type": "gad-marquee",
+      "settings": {}
+    },
+    "gps_cta": {
+      "type": "gad-cta-final",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_slider_bNgeFp",
+    "icon_bar_qH6Jxb",
+    "gps_steps_peKf7E",
+    "gps_comparativa",
+    "custom_liquid_8EnbUH",
+    "177483634895303dd5",
+    "gps_marquee",
+    "gps_cta"
+  ]
+}

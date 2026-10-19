@@ -1,0 +1,310 @@
+{
+  "sections": {
+    "nota": {
+      "type": "gad-article",
+      "blocks": {
+        "b01": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>La mayoría de los que tienen esto no saben cómo se llama. Lo buscan en Google de madrugada, con el teléfono abajo de la sábana, y encuentran fotos que asustan más de lo que ayudan.</p><p>Tiene nombre y es viejo. Se llama tiña inguinal y la causa el mismo hongo que produce el pie de atleta, una de las infecciones de piel más comunes que hay. Eso ya explica algo importante: por qué vuelve.</p>"
+          }
+        },
+        "b03": {
+          "type": "indice",
+          "settings": {
+            "titulo": "Lo que vas a encontrar"
+          }
+        },
+        "b04": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "1 · Empecemos por el nombre"
+          }
+        },
+        "b05": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Se llama <strong>tiña inguinal</strong>. La causa un hongo del grupo de los dermatofitos, casi siempre <em>Trichophyton rubrum</em> — el más frecuente del mundo para este cuadro.</p><p>Es <strong>el mismo hongo que causa el pie de atleta</strong>. El mismo organismo, en otra parte del cuerpo. En los pies nadie se avergüenza; diez centímetros más arriba, de golpe, es un secreto que se googlea a las tres de la mañana.</p><p>Lo más importante: <strong>no es una enfermedad de transmisión sexual</strong>. No te lo pegó nadie en la cama. Es un hongo de vestuario, de toalla y de humedad.</p>"
+          }
+        },
+        "b06": {
+          "type": "destacado",
+          "settings": {
+            "texto": "El mismo hongo del pie de atleta. <em>Nada que confesarle a nadie.</em>"
+          }
+        },
+        "b07": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "2 · De qué vive: de las horas húmedas"
+          }
+        },
+        "b08": {
+          "type": "dia",
+          "settings": {
+            "titulo": "Un día cualquiera, y las horas en que la zona queda húmeda",
+            "marcas": "7:00 | Salís de la ducha. Te secás rápido y te vestís.\n9 a 17 | Sentado, con ropa encima, sin aire que circule.\n19:00 | Entrenás. Y volvés a tu casa con la ropa mojada.\n23:00 | Te acostás. El calor de la cama hace el resto.",
+            "pie": "Las franjas verdes son las horas húmedas. No es un rato: es casi todo el día."
+          }
+        },
+        "b09": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>El dermatofito come queratina, que es de lo que está hecha la capa superficial de la piel, y necesita tres condiciones para instalarse: calor, humedad y roce. Las tres están ahí arriba, en cualquier semana normal.</p><p>Dos de las tres no se pueden sacar: el calor de una zona cerrada y el roce de caminar son tu vida. <strong>La humedad sí.</strong> Por eso el objetivo es mantener esa zona seca. No hay ninguna guerra microscópica que ganar.</p>"
+          }
+        },
+        "b10": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "3 · El camino que casi nadie ve: del pie a la ingle"
+          }
+        },
+        "b11": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Esta es la parte que más gente desconoce y la que más explica las recaídas.</p><p>El pie funciona como <strong>reservorio</strong>: el hongo vive ahí tranquilo, muchas veces sin molestar demasiado, y desde ahí vuelve a subir. El viaje es de lo más doméstico — la mano al rascarse, la toalla compartida, y sobre todo <strong>el calzoncillo cuando pasa por los pies al vestirte</strong>.</p><p>De ahí sale una recomendación médica que suena a chiste y no lo es: <strong>ponerse las medias antes que el calzoncillo</strong>. Así la ropa interior no hace escala en los pies camino a la ingle. Es gratis, se hace en dos segundos, y para mucha gente es la diferencia entre resolverlo y estar dando vueltas un año.</p><p>Si tenés algo entre los dedos del pie y algo en la ingle, estás mirando el mismo problema en dos lugares, y va y viene entre los dos.</p>"
+          }
+        },
+        "b12": {
+          "type": "tira",
+          "settings": {
+            "img_1": "shopify://shop_images/athlex-real-entreno.jpg",
+            "pie_1": "Al terminar de entrenar la ropa queda húmeda, y sigue así el viaje de vuelta. (Foto: Pexels)",
+            "img_2": "shopify://shop_images/athlex-real-sentado.jpg",
+            "pie_2": "Ocho horas sentado, con la misma ropa y sin aire que circule. (Foto: Pexels)",
+            "img_3": "shopify://shop_images/athlex-real-lavarropas.jpg",
+            "pie_3": "La toalla compartida es una de las vías de contagio dentro de una misma casa. (Foto: Pexels)"
+          }
+        },
+        "b13": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "4 · Por qué vuelve, y dónde se corta"
+          }
+        },
+        "b14": {
+          "type": "ciclo",
+          "settings": {
+            "titulo": "El círculo que ya conocés de memoria",
+            "n1": "Pica",
+            "n2": "Usás algo",
+            "n3": "Mejora",
+            "n4": "Lo dejás",
+            "pie": "El círculo no se corta solo. Se corta en el paso 4, y por eso el paso 4 es el importante."
+          }
+        },
+        "b15": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>La picazón afloja bastante antes de que la piel termine de recuperarse. Ese desfasaje es todo el problema: dejás de sentir la molestia, dejás de hacer lo que venías haciendo, y la zona queda igual que antes.</p><p>Por eso los médicos insisten con <strong>cuánto tiempo hay que seguir usándolo</strong>, y no tanto con qué usar. Hay que continuar después de que los síntomas ya se fueron.</p>"
+          }
+        },
+        "b16": {
+          "type": "semana",
+          "settings": {
+            "titulo": "Tres semanas, dos finales distintos",
+            "fila_a": "El que corta cuando deja de picar",
+            "pie_a": "Corta el día que deja de sentirlo. Los cuadros oscuros son el tiempo que tarda en volver.",
+            "fila_b": "El que sigue una semana más",
+            "pie_b": "Sigue siete días después de dejar de sentirlo. Esa franja es toda la diferencia."
+          }
+        },
+        "b17": {
+          "type": "destacado",
+          "settings": {
+            "texto": "Cuando ya no lo sentís, <em>seguí una semana más</em>. Esa semana es la que evita volver a empezar."
+          }
+        },
+        "b18": {
+          "type": "citas",
+          "settings": {
+            "titulo": "Cómo se cuenta esto cuando nadie está mirando",
+            "cita_1": "uno ve la mejoría y corta… da embole seguir poniendo cuando parece que está ok",
+            "fuente_1": "Mensaje de un foro público, en español",
+            "cita_2": "pensé que me había pegado herpes, pero al final era por la transpiración",
+            "fuente_2": "Mensaje de un foro público, en español",
+            "pie": "Citas textuales de foros públicos. No son clientes de ATHLEX."
+          }
+        },
+        "b19": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "5 · Cuatro cosas que se pueden hacer hoy, gratis"
+          }
+        },
+        "b20": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<ul><li><strong>Secar la zona a toquecitos antes de vestirse.</strong> Bien seca, no \"casi seca\". Frotar sobre piel irritada la abre más.</li><li><strong>Las medias antes que el calzoncillo</strong>, por lo que explicamos en el punto 3.</li><li><strong>Ropa interior de algodón y holgada</strong>, y cambiarla apenas quedó húmeda de transpiración. Lo ajustado y sintético mantiene el calor y la humedad justo donde no conviene.</li><li><strong>Toalla propia.</strong> Es una de las vías de contagio documentadas dentro de una misma casa.</li></ul><p>Nada de eso cuesta dinero y funciona con lo que sea que uses después. Si tenías que llevarte algo de esta nota, llevate esos cuatro puntos y el de la semana de más.</p>"
+          }
+        },
+        "b21": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "6 · Cuándo esto no es para resolver solo"
+          }
+        },
+        "b22": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Hay tres situaciones en las que conviene que lo vea un médico antes de aplicarse nada de venta libre:</p><ul><li>Si la piel está abierta, agrietada o sangra de rascarse.</li><li>Si hay ampollas, pus, olor fuerte, o la zona está hinchada y caliente.</li><li>Si hay diabetes, defensas bajas o corticoides de por medio.</li></ul><p>Sobre piel lastimada o con las defensas comprometidas, cualquier cosa que se aplique encima puede complicar el cuadro en vez de ayudarlo. Una consulta dura quince minutos y no hay que explicarle nada a nadie más.</p>"
+          }
+        },
+        "b23": {
+          "type": "test",
+          "settings": {
+            "titulo": "¿Querés saber en cuál de los casos estás?",
+            "texto": "Armamos un test de 8 preguntas con todo esto. No pide mail ni fotos, se contesta con el pulgar, y al final te dice qué encaja con lo que contaste. Si conviene ver a un médico antes que nada, también te lo dice.",
+            "boton": "Hacer el test",
+            "url": "/pages/athlex-test"
+          }
+        },
+        "b24": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "7 · Qué necesita un producto para servir en esa zona"
+          }
+        },
+        "b25": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Hasta acá no hubo marcas, y los seis puntos anteriores funcionan igual con cualquier cosa que uses. Pero si el problema es mantener seca una zona durante las horas húmedas del día, hay cuatro condiciones que cualquier producto tendría que cumplir:</p><ul><li><strong>Que se pueda hacer todos los días sin que sea un ritual.</strong> Acá la constancia le gana a la potencia: un frasco que se usa a diario le gana a uno perfecto que se abandona el jueves.</li><li><strong>Que no obligue a tocarse ni a frotar</strong> una zona que ya está sensible.</li><li><strong>Que seque rápido y deje pasar el aire</strong>, en vez de dejar una capa encima.</li><li><strong>Que no delate a nadie</strong> si queda a la vista en un baño compartido.</li></ul>"
+          }
+        },
+        "b26": {
+          "type": "versus",
+          "settings": {
+            "titulo": "Lo que hay que hacer, contado en pasos",
+            "col_a": "Una crema",
+            "pasos_a": "Lavarte las manos\nAbrir el pomo\nTocarte la zona y esparcir\nEsperar a que se absorba\nVolver a lavarte las manos\nEsperar para vestirte",
+            "col_b": "Un spray",
+            "pasos_b": "Apuntar y apretar\nVestirte",
+            "pie": "La diferencia no es la potencia. Es cuántas veces vas a tener ganas de hacerlo."
+          }
+        },
+        "b27": {
+          "type": "subtitulo",
+          "settings": {
+            "texto": "8 · Y esto es lo que hicimos nosotros"
+          }
+        },
+        "b28": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>ATHLEX PSS es un spray corporal para zonas de roce, y lo armamos alrededor de esas cuatro condiciones. Se aplica sin contacto, se seca solo en segundos y deja la piel seca y fresca. Lleva lo mismo que ponerse desodorante, en otro lugar del cuerpo.</p><p>El envase parece un producto de deporte, porque lo es: puede quedar en el estante del baño sin que nadie deduzca nada.</p>"
+          }
+        },
+        "b29": {
+          "type": "video",
+          "settings": {
+            "titulo": "Así se aplica y así se seca",
+            "video": "shopify://files/videos/athlex-frio-v3.mp4",
+            "pie": "Sin tocarse, sin frotar, sin esperar para vestirse."
+          }
+        },
+        "b30": {
+          "type": "caja",
+          "settings": {
+            "titulo": "ATHLEX PSS",
+            "sub": "Spray corporal para zonas de roce. 120 ml. Se aplica sin tocarte, seca en segundos.",
+            "boton": "Quiero probarlo un mes",
+            "pie": "Garantía de 30 días. Si no te convence, escribinos y te devolvemos lo que pagaste."
+          }
+        },
+        "b31": {
+          "type": "parrafo",
+          "settings": {
+            "texto": "<p>Dos aclaraciones para terminar, porque en este rubro hacen falta.</p><p>Una: no vas a encontrar acá ningún porcentaje de eficacia ni ninguna promesa de cuántos días tarda. No tenemos ese estudio, y preferimos decirlo antes que inventar un número.</p><p>Dos: las reseñas de la página del producto tienen fecha y se ve cuáles son de compras verificadas. Mirálas antes de decidir. Si comparás con otras páginas de la categoría, vas a entender por qué lo remarcamos.</p>"
+          }
+        },
+        "b32": {
+          "type": "firma",
+          "settings": {
+            "nombre": "[DATO: NOMBRE REAL]",
+            "rol": "Fundador de ATHLEX"
+          }
+        },
+        "b00": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-vestuario.jpg",
+            "alt": "Pared de lockers en un vestuario",
+            "pie": "El vestuario, la ropa húmeda y la toalla compartida son el escenario habitual de este hongo. (Foto: Pexels)"
+          }
+        },
+        "b11b": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/athlex-real-medias.jpg",
+            "alt": "Una persona poniéndose una media antes de terminar de vestirse",
+            "pie": "Las medias antes que el calzoncillo: así la ropa interior no hace escala en los pies. (Foto: Pexels)"
+          }
+        },
+        "b28b": {
+          "type": "video",
+          "settings": {
+            "titulo": "Qué pasa en la piel cuando la zona se mantiene seca",
+            "video": "shopify://files/videos/athlex-ciencia.mp4",
+            "pie": "Animación de ATHLEX sobre el mecanismo de secado."
+          }
+        }
+      },
+      "block_order": [
+        "b00",
+        "b01",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b11b",
+        "b12",
+        "b13",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21",
+        "b22",
+        "b23",
+        "b24",
+        "b25",
+        "b26",
+        "b27",
+        "b28",
+        "b28b",
+        "b29",
+        "b30",
+        "b31",
+        "b32"
+      ],
+      "settings": {
+        "cinta": "PUBLICIDAD · CONTENIDO DE ATHLEX",
+        "eyebrow": "Salud de la piel",
+        "titulo": "La picazón en la ingle casi nunca empieza en la ingle: los manuales médicos apuntan a los pies",
+        "bajada": "El hongo de la ingle y el del pie de atleta son el mismo. Sube en el calzoncillo cuando te vestís, y por eso a mucha gente le vuelve aunque haya usado bien la crema.",
+        "autor": "Por [DATO: NOMBRE REAL]",
+        "dato": "23 de agosto 2026, 18:17hs · 5 min de lectura",
+        "handle": "athlex",
+        "utm": "?ref=nota-sincuentos",
+        "barra": true,
+        "barra_titulo": "ATHLEX PSS · 120 ml",
+        "barra_boton": "Ver producto",
+        "legal": "Esta nota es contenido publicitario de ATHLEX. Las referencias sobre el organismo, el reservorio en los pies y el orden al vestirse provienen de fuentes médicas públicas (StatPearls/NCBI, DermNet NZ, AAFP), citadas en nuestro material de respaldo. ATHLEX PSS es un producto cosmético de higiene y cuidado personal, de uso externo. Esta nota no reemplaza una consulta médica.",
+        "estilo": "portal",
+        "temas_titulo": "Temas de la nota",
+        "temas": "Piel, Hongos, Tiña inguinal, Pie de atleta, Higiene personal, Deporte"
+      }
+    }
+  },
+  "order": [
+    "nota"
+  ]
+}

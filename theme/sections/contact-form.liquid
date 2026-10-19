@@ -1,0 +1,757 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign s = section.settings
+  assign form_id = 'ContactForm-' | append: section.id
+  assign contact_form_class = 'isolate gad-cf__form'
+  if settings.animations_reveal_on_scroll
+    assign contact_form_class = 'isolate gad-cf__form scroll-trigger animate--slide-in'
+  endif
+  assign has_email = false
+  for block in section.blocks
+    if block.type == 'fields'
+      if block.settings.f1_on and block.settings.f1_type == 'email'
+        assign has_email = true
+      endif
+      if block.settings.f2_on and block.settings.f2_type == 'email'
+        assign has_email = true
+      endif
+    endif
+  endfor
+  assign id_name = form_id | append: '-name'
+  assign id_email = form_id | append: '-email'
+  assign id_phone = form_id | append: '-phone'
+  assign id_body = form_id | append: '-body'
+-%}
+{%- render 'gad-colors', s: s, key: section.id -%}
+<div
+  class="{% render 'gad-scheme', s: s, key: section.id %}"
+  style="--ok-fg: {{ s.ok_text }}; --ok-bg: {{ s.ok_bg }}; --ok-r: {{ s.ok_radius }}px; --ok-bw: {{ s.ok_border }}px; --ok-bc: {{ s.ok_border_color }}; --err-fg: {{ s.err_text }}; --err-bg: {{ s.err_bg }}; --err-r: {{ s.err_radius }}px; --err-bw: {{ s.err_border }}px; --err-bc: {{ s.err_border_color }};"
+  {% render 'gad-section-attrs', s: s %}
+>
+  <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+    {%- if section.settings.heading != blank -%}
+      <h2
+        class="title title-wrapper--no-top-margin inline-richtext gad-hl {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if s.heading_accent != blank %}
+          style="--gad-hl: {{ s.heading_accent }};"
+        {% endif %}
+      >
+        {{ section.settings.heading }}
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+    <gad-contact-form>
+      {%- form 'contact', id: form_id, class: contact_form_class -%}
+        {%- liquid
+          assign value_name = form.name | default: customer.name
+          assign value_email = form.email | default: customer.email
+          assign value_phone = form.phone | default: customer.phone
+        -%}
+        {%- if form.posted_successfully? -%}
+          <div class="gad-form-msg gad-form-msg--ok" role="status" tabindex="-1" autofocus>
+            {%- render 'gad-icon', name: s.ok_icon, filled: s.ok_icon_filled, image: s.ok_icon_image, class: 'gad-form-msg__icon' -%}
+            <p class="gad-form-msg__text">{{ 'templates.contact.form.post_success' | t }}</p>
+          </div>
+        {%- elsif form.errors -%}
+          <div class="gad-form-msg gad-form-msg--err" role="alert" tabindex="-1" autofocus>
+            {%- render 'gad-icon', name: s.err_icon, filled: s.err_icon_filled, image: s.err_icon_image, class: 'gad-form-msg__icon' -%}
+            <div class="gad-form-msg__text">
+              <p>{{ 'templates.contact.form.error_heading' | t }}</p>
+              <ul class="list-unstyled" role="list">
+                {%- for field in form.errors -%}
+                  <li>{{ form.errors.translated_fields[field] | capitalize }} {{ form.errors.messages[field] }}</li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- if section.blocks.size == 0 -%}
+          <div class="gad-cf__row gad-cf__row--2">
+            {%- render 'gad-contact-field', type: 'name', id: id_name, value: value_name -%}
+            {%- render 'gad-contact-field', type: 'email', id: id_email, value: value_email -%}
+          </div>
+          <div class="gad-cf__row">
+            {%- render 'gad-contact-field', type: 'phone', id: id_phone, value: value_phone -%}
+          </div>
+          <div class="gad-cf__row">
+            {%- render 'gad-contact-field', type: 'comment', id: id_body, value: form.body -%}
+          </div>
+        {%- else -%}
+          {%- unless has_email -%}
+            <div class="gad-cf__row">
+              {%- render 'gad-contact-field', type: 'email', id: id_email, value: value_email -%}
+            </div>
+          {%- endunless -%}
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            {%- case block.type -%}
+              {%- when 'fields' -%}
+                {%- liquid
+                  assign n = 0
+                  if b.f1_on
+                    assign n = n | plus: 1
+                  endif
+                  if b.f2_on
+                    assign n = n | plus: 1
+                  endif
+                -%}
+                {%- if n > 0 -%}
+                  <div class="gad-cf__row gad-cf__row--{{ n }}" {{ block.shopify_attributes }}>
+                    {%- for i in (1..2) -%}
+                      {%- liquid
+                        assign k = 'f' | append: i | append: '_'
+                        assign k_on = k | append: 'on'
+                        assign k_type = k | append: 'type'
+                        assign k_label = k | append: 'label'
+                        assign k_req = k | append: 'required'
+                        assign k_err = k | append: 'error'
+                        unless b[k_on]
+                          continue
+                        endunless
+                        assign ftype = b[k_type]
+                        case ftype
+                          when 'name'
+                            assign fvalue = value_name
+                          when 'email'
+                            assign fvalue = value_email
+                          when 'phone'
+                            assign fvalue = value_phone
+                          else
+                            assign fvalue = ''
+                        endcase
+                        assign fid = form_id | append: '-' | append: block.id | append: '-' | append: i
+                      -%}
+                      {%- render 'gad-contact-field', type: ftype, id: fid, label: b[k_label], required: b[k_req], error: b[k_err], value: fvalue -%}
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+              {%- when 'textarea' -%}
+                {%- liquid
+                  assign fid = form_id | append: '-' | append: block.id
+                  assign ftype = 'comment'
+                  if b.kind == 'custom'
+                    assign ftype = 'textarea'
+                  endif
+                -%}
+                <div class="gad-cf__row" {{ block.shopify_attributes }}>
+                  {%- render 'gad-contact-field', type: ftype, id: fid, label: b.label, required: b.required, error: b.error, maxlength: b.maxlength, value: form.body -%}
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        {%- endif -%}
+        <div class="contact__button{% if s.button_full_width %} gad-cf__button--full{% endif %}">
+          <button type="submit" class="button">
+            {%- if s.button_label != blank -%}{{ s.button_label | escape }}{%- else -%}{{ 'templates.contact.form.send' | t }}{%- endif -%}
+          </button>
+        </div>
+      {%- endform -%}
+    </gad-contact-form>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.contact-form.settings.title.default",
+      "label": "t:sections.contact-form.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color",
+      "id": "heading_accent",
+      "label": "Color de las palabras resaltadas",
+      "info": "Marcá en negrita las palabras del título. Vacío: el acento de la combinación."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Texto del botón",
+      "info": "Vacío: \"Enviar\"."
+    },
+    {
+      "type": "checkbox",
+      "id": "button_full_width",
+      "label": "Botón de enviar a todo el ancho",
+      "default": false
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Colores propios"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_colors",
+      "label": "Usar colores propios",
+      "default": false,
+      "info": "Pisan a la combinación de colores elegida arriba."
+    },
+    {
+      "type": "color",
+      "id": "cc_bg",
+      "label": "Fondo",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color_background",
+      "id": "cc_bg_gradient",
+      "label": "Degradé de fondo",
+      "info": "Si cargás un degradé, reemplaza al color de fondo."
+    },
+    {
+      "type": "image_picker",
+      "id": "cc_bg_image",
+      "label": "Imagen de fondo",
+      "info": "Cubre todo el fondo y le gana al degradé."
+    },
+    {
+      "type": "image_picker",
+      "id": "cc_bg_image_mobile",
+      "label": "Imagen de fondo en mobile",
+      "info": "Vacía: usa la de desktop."
+    },
+    {
+      "type": "color",
+      "id": "cc_text",
+      "label": "Texto",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "cc_accent",
+      "label": "Acento",
+      "default": "#334FB4"
+    },
+    {
+      "type": "color",
+      "id": "cc_btn_bg",
+      "label": "Fondo del botón lleno",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "cc_btn_text",
+      "label": "Texto del botón lleno",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "cc_outline",
+      "label": "Botón de contorno y enlaces",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Mensaje de éxito"
+    },
+    {
+      "type": "text",
+      "id": "ok_icon",
+      "label": "Ícono",
+      "default": "check_circle",
+      "info": "Nombre en inglés de Material Symbols. Vacío: sin ícono."
+    },
+    {
+      "type": "checkbox",
+      "id": "ok_icon_filled",
+      "label": "Ícono relleno",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "ok_icon_image",
+      "label": "Ícono propio (imagen)"
+    },
+    {
+      "type": "color",
+      "id": "ok_text",
+      "label": "Color del texto",
+      "default": "#1E7A33"
+    },
+    {
+      "type": "color",
+      "id": "ok_bg",
+      "label": "Color del fondo",
+      "default": "#E9F7EC"
+    },
+    {
+      "type": "range",
+      "id": "ok_radius",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Redondeo",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "ok_border",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Borde",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "ok_border_color",
+      "label": "Color del borde",
+      "default": "#1E7A33"
+    },
+    {
+      "type": "header",
+      "content": "Mensajes de error"
+    },
+    {
+      "type": "text",
+      "id": "err_icon",
+      "label": "Ícono",
+      "default": "error",
+      "info": "Nombre en inglés de Material Symbols. Vacío: sin ícono."
+    },
+    {
+      "type": "checkbox",
+      "id": "err_icon_filled",
+      "label": "Ícono relleno",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "err_icon_image",
+      "label": "Ícono propio (imagen)"
+    },
+    {
+      "type": "color",
+      "id": "err_text",
+      "label": "Color del texto",
+      "default": "#B42318"
+    },
+    {
+      "type": "color",
+      "id": "err_bg",
+      "label": "Color del fondo",
+      "default": "#FDECEA"
+    },
+    {
+      "type": "range",
+      "id": "err_radius",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Redondeo",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "err_border",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Borde",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "err_border_color",
+      "label": "Color del borde",
+      "default": "#B42318"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Visibilidad y ancla"
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Mostrar en",
+      "options": [
+        {
+          "value": "all",
+          "label": "Todos los dispositivos"
+        },
+        {
+          "value": "mobile",
+          "label": "Sólo mobile"
+        },
+        {
+          "value": "desktop",
+          "label": "Sólo desktop"
+        }
+      ],
+      "default": "all",
+      "info": "Desktop empieza en el ancho que se elige en Configuración del tema > Gadsden · Carruseles."
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Nombre del ancla",
+      "placeholder": "beneficios",
+      "info": "Para que un botón lleve hasta acá: poné como enlace del botón #beneficios (el nombre que elegiste)."
+    },
+    {
+      "type": "header",
+      "content": "Tamaño de la letra"
+    },
+    {
+      "type": "select",
+      "id": "title_scale",
+      "label": "Tamaño de los títulos",
+      "options": [
+        {
+          "value": "70",
+          "label": "70 %"
+        },
+        {
+          "value": "80",
+          "label": "80 %"
+        },
+        {
+          "value": "90",
+          "label": "90 %"
+        },
+        {
+          "value": "100",
+          "label": "Normal"
+        },
+        {
+          "value": "110",
+          "label": "110 %"
+        },
+        {
+          "value": "125",
+          "label": "125 %"
+        },
+        {
+          "value": "150",
+          "label": "150 %"
+        },
+        {
+          "value": "175",
+          "label": "175 %"
+        },
+        {
+          "value": "200",
+          "label": "200 %"
+        }
+      ],
+      "default": "100"
+    },
+    {
+      "type": "select",
+      "id": "text_scale",
+      "label": "Tamaño de los textos",
+      "options": [
+        {
+          "value": "70",
+          "label": "70 %"
+        },
+        {
+          "value": "80",
+          "label": "80 %"
+        },
+        {
+          "value": "90",
+          "label": "90 %"
+        },
+        {
+          "value": "100",
+          "label": "Normal"
+        },
+        {
+          "value": "110",
+          "label": "110 %"
+        },
+        {
+          "value": "125",
+          "label": "125 %"
+        },
+        {
+          "value": "150",
+          "label": "150 %"
+        },
+        {
+          "value": "175",
+          "label": "175 %"
+        },
+        {
+          "value": "200",
+          "label": "200 %"
+        }
+      ],
+      "default": "100",
+      "info": "Agranda o achica los títulos y los textos de esta sección respecto del tamaño global."
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name",
+      "blocks": [
+        {
+          "type": "fields"
+        },
+        {
+          "type": "fields",
+          "settings": {
+            "f1_type": "phone",
+            "f2_on": false
+          }
+        },
+        {
+          "type": "textarea"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "fields",
+      "name": "Fila de campos",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Hasta 2 campos en la misma fila. En mobile van uno debajo del otro."
+        },
+        {
+          "type": "header",
+          "content": "Campo 1"
+        },
+        {
+          "type": "checkbox",
+          "id": "f1_on",
+          "label": "Activo",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "f1_type",
+          "label": "Tipo",
+          "options": [
+            {
+              "value": "name",
+              "label": "Nombre"
+            },
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "phone",
+              "label": "Teléfono"
+            },
+            {
+              "value": "custom",
+              "label": "Propio"
+            }
+          ],
+          "default": "name"
+        },
+        {
+          "type": "text",
+          "id": "f1_label",
+          "label": "Nombre del campo",
+          "info": "Vacío: el del tipo. Para un campo propio, poné el nombre (es como llega en el mensaje)."
+        },
+        {
+          "type": "checkbox",
+          "id": "f1_required",
+          "label": "Obligatorio",
+          "default": false,
+          "info": "El email siempre es obligatorio."
+        },
+        {
+          "type": "text",
+          "id": "f1_error",
+          "label": "Mensaje de error",
+          "info": "Vacío: \"Completá este campo.\" o, para el email, \"Ingresá un email válido.\""
+        },
+        {
+          "type": "header",
+          "content": "Campo 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "f2_on",
+          "label": "Activo",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "f2_type",
+          "label": "Tipo",
+          "options": [
+            {
+              "value": "name",
+              "label": "Nombre"
+            },
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "phone",
+              "label": "Teléfono"
+            },
+            {
+              "value": "custom",
+              "label": "Propio"
+            }
+          ],
+          "default": "email"
+        },
+        {
+          "type": "text",
+          "id": "f2_label",
+          "label": "Nombre del campo"
+        },
+        {
+          "type": "checkbox",
+          "id": "f2_required",
+          "label": "Obligatorio",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "f2_error",
+          "label": "Mensaje de error"
+        }
+      ]
+    },
+    {
+      "type": "textarea",
+      "name": "Cuadro de texto",
+      "settings": [
+        {
+          "type": "select",
+          "id": "kind",
+          "label": "Tipo",
+          "options": [
+            {
+              "value": "comment",
+              "label": "Comentario"
+            },
+            {
+              "value": "custom",
+              "label": "Propio"
+            }
+          ],
+          "default": "comment"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Nombre del campo",
+          "info": "Vacío: \"Comentario\"."
+        },
+        {
+          "type": "number",
+          "id": "maxlength",
+          "label": "Máximo de caracteres",
+          "default": 0,
+          "info": "0: sin límite."
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Obligatorio",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "error",
+          "label": "Mensaje de error",
+          "info": "Vacío: \"Completá este campo.\""
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

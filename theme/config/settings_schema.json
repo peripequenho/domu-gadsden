@@ -1,0 +1,3094 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Gadsden",
+    "theme_version": "1.2.7",
+    "theme_author": "Gero",
+    "theme_documentation_url": "https://github.com/peripequenho/gadsden-theme",
+    "theme_support_url": "https://cafecito.app/elcucholg"
+  },
+  {
+    "name": "t:settings_schema.logo.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "t:settings_schema.logo.settings.logo_image.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_secondary",
+        "label": "Logo secundario",
+        "info": "Para la cabecera transparente (por ejemplo, el logo en blanco). Se usa con el mismo ancho que el principal."
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "min": 50,
+        "max": 300,
+        "step": 10,
+        "default": 100,
+        "unit": "px",
+        "label": "t:settings_schema.logo.settings.logo_width.label"
+      },
+      {
+        "type": "range",
+        "id": "logo_width_mobile",
+        "min": 50,
+        "max": 300,
+        "step": 10,
+        "default": 90,
+        "unit": "px",
+        "label": "Ancho del logo en mobile",
+        "info": "En pantallas de menos de 750 px. El de arriba vale para desktop."
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.logo.settings.favicon.label",
+        "info": "t:settings_schema.logo.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.colors.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Gadsden usa cinco combinaciones con estos papeles: 1 Fondo 1 (el fondo principal), 2 Fondo 2 (un fondo alternativo), 3 Inversa (el texto como fondo), 4 Acento 1 (el color de los botones llenos) y 5 Acento 2. Cada una admite un degradé que reemplaza al fondo liso, y su propio acento para las palabras resaltadas y los íconos."
+      },
+      {
+        "type": "paragraph",
+        "content": "Gadsden arranca con cinco combinaciones: 1 · Fondo, 2 · Fondo alternativo, 3 · Acento 2, 4 · Inversa y 5 · Acento. Cada sección elige una, o usa sus colores propios desde la casilla \"Usar colores propios\"."
+      },
+      {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          {
+            "type": "color",
+            "id": "background",
+            "label": "t:settings_schema.colors.settings.background.label",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color_background",
+            "id": "background_gradient",
+            "label": "t:settings_schema.colors.settings.background_gradient.label",
+            "info": "t:settings_schema.colors.settings.background_gradient.info"
+          },
+          {
+            "type": "color",
+            "id": "text",
+            "label": "t:settings_schema.colors.settings.text.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "accent",
+            "label": "Acento",
+            "info": "Para las palabras resaltadas de los títulos, íconos y detalles de las secciones Gadsden.",
+            "default": "#334FB4"
+          },
+          {
+            "type": "color",
+            "id": "button",
+            "label": "t:settings_schema.colors.settings.button_background.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "button_label",
+            "label": "t:settings_schema.colors.settings.button_label.label",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_label",
+            "label": "t:settings_schema.colors.settings.secondary_button_label.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "shadow",
+            "label": "t:settings_schema.colors.settings.shadow.label",
+            "default": "#121212"
+          }
+        ],
+        "role": {
+          "text": "text",
+          "background": {
+            "solid": "background",
+            "gradient": "background_gradient"
+          },
+          "links": "secondary_button_label",
+          "icons": "text",
+          "primary_button": "button",
+          "on_primary_button": "button_label",
+          "primary_button_border": "button",
+          "secondary_button": "background",
+          "on_secondary_button": "secondary_button_label",
+          "secondary_button_border": "secondary_button_label"
+        }
+      },
+      {
+        "type": "select",
+        "id": "accent_icons",
+        "label": "Color de los íconos decorativos",
+        "options": [
+          {
+            "value": "text",
+            "label": "Texto"
+          },
+          {
+            "value": "accent",
+            "label": "Acento de la combinación"
+          },
+          {
+            "value": "button",
+            "label": "Botón de la combinación"
+          }
+        ],
+        "default": "text",
+        "info": "Los íconos chicos por nombre (barras, cintas, renglones con ícono) cuando la sección no elige otro color."
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.typography.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header__1.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_header_font",
+        "default": "poppins_n7",
+        "label": "t:settings_schema.typography.settings.type_header_font.label"
+      },
+      {
+        "type": "range",
+        "id": "heading_scale",
+        "min": 100,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.typography.settings.heading_scale.label",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.typography.settings.header__2.content"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_body_font",
+        "default": "poppins_n4",
+        "label": "t:settings_schema.typography.settings.type_body_font.label"
+      },
+      {
+        "type": "range",
+        "id": "body_scale",
+        "min": 100,
+        "max": 130,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.typography.settings.body_scale.label",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Interlineado y espaciado"
+      },
+      {
+        "type": "range",
+        "id": "heading_line_height",
+        "min": 0.8,
+        "max": 2,
+        "step": 0.1,
+        "label": "Interlineado de los títulos",
+        "default": 1.3
+      },
+      {
+        "type": "range",
+        "id": "heading_letter_spacing",
+        "min": -1,
+        "max": 3,
+        "step": 0.1,
+        "unit": "px",
+        "label": "Espaciado de letras de los títulos",
+        "default": 0.6
+      },
+      {
+        "type": "range",
+        "id": "body_line_height",
+        "min": 1,
+        "max": 2.4,
+        "step": 0.1,
+        "label": "Interlineado de los textos",
+        "default": 1.8
+      },
+      {
+        "type": "range",
+        "id": "body_letter_spacing",
+        "min": -1,
+        "max": 3,
+        "step": 0.1,
+        "unit": "px",
+        "label": "Espaciado de letras de los textos",
+        "default": 0.6
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.layout.name",
+    "settings": [
+      {
+        "type": "range",
+        "id": "page_width",
+        "min": 1000,
+        "max": 1600,
+        "step": 100,
+        "default": 1200,
+        "unit": "px",
+        "label": "t:settings_schema.layout.settings.page_width.label"
+      },
+      {
+        "type": "range",
+        "id": "spacing_sections",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.layout.settings.spacing_sections.label",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.layout.settings.header__grid.content"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.layout.settings.paragraph__grid.content"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_horizontal",
+        "min": 4,
+        "max": 40,
+        "step": 1,
+        "default": 8,
+        "unit": "px",
+        "label": "t:settings_schema.layout.settings.spacing_grid_horizontal.label"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_vertical",
+        "min": 4,
+        "max": 40,
+        "step": 1,
+        "default": 8,
+        "unit": "px",
+        "label": "t:settings_schema.layout.settings.spacing_grid_vertical.label"
+      },
+      {
+        "type": "select",
+        "id": "page_title_align",
+        "label": "Alineación de los títulos de página",
+        "options": [
+          {
+            "value": "left",
+            "label": "Izquierda"
+          },
+          {
+            "value": "center",
+            "label": "Centro"
+          }
+        ],
+        "default": "left",
+        "info": "Página, blog, carrito, búsqueda, lista de colecciones y banner de colección."
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.animations.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "animations_reveal_on_scroll",
+        "label": "t:settings_schema.animations.settings.animations_reveal_on_scroll.label",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "reveal_repeat",
+        "default": false,
+        "label": "Repetir la aparición",
+        "info": "La sección vuelve a ocultarse al salir de pantalla y se anima otra vez al volver."
+      },
+      {
+        "type": "range",
+        "id": "reveal_duration",
+        "min": 300,
+        "max": 1000,
+        "step": 50,
+        "default": 650,
+        "unit": "ms",
+        "label": "Duración"
+      },
+      {
+        "type": "range",
+        "id": "reveal_delay",
+        "min": 0,
+        "max": 300,
+        "step": 30,
+        "default": 150,
+        "unit": "ms",
+        "label": "Retraso inicial"
+      },
+      {
+        "type": "range",
+        "id": "reveal_stagger",
+        "min": 0,
+        "max": 300,
+        "step": 30,
+        "default": 150,
+        "unit": "ms",
+        "label": "Retraso entre partes",
+        "info": "Las partes de una sección aparecen una detrás de otra con este intervalo."
+      },
+      {
+        "type": "header",
+        "content": "Cómo arrancan las partes"
+      },
+      {
+        "type": "range",
+        "id": "reveal_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 0,
+        "unit": "%",
+        "label": "Opacidad"
+      },
+      {
+        "type": "range",
+        "id": "reveal_x",
+        "min": -100,
+        "max": 100,
+        "step": 5,
+        "default": 0,
+        "unit": "%",
+        "label": "Corrimiento horizontal"
+      },
+      {
+        "type": "range",
+        "id": "reveal_y",
+        "min": -100,
+        "max": 100,
+        "step": 5,
+        "default": 0,
+        "unit": "%",
+        "label": "Corrimiento vertical"
+      },
+      {
+        "type": "range",
+        "id": "reveal_zoom",
+        "min": 100,
+        "max": 200,
+        "step": 5,
+        "default": 100,
+        "unit": "%",
+        "label": "Zoom"
+      },
+      {
+        "type": "header",
+        "content": "Accesibilidad"
+      },
+      {
+        "type": "checkbox",
+        "id": "motion_ignore_reduce",
+        "default": false,
+        "label": "Animar aunque el visitante pida reducir movimiento",
+        "info": "Por defecto, si el sistema del visitante pide reducir el movimiento, las apariciones, los pases automáticos y las cintas se quedan quietos."
+      },
+      {
+        "type": "select",
+        "id": "animations_hover_elements",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:settings_schema.animations.settings.animations_hover_elements.options__1.label"
+          },
+          {
+            "value": "vertical-lift",
+            "label": "t:settings_schema.animations.settings.animations_hover_elements.options__2.label"
+          },
+          {
+            "value": "3d-lift",
+            "label": "t:settings_schema.animations.settings.animations_hover_elements.options__3.label"
+          }
+        ],
+        "default": "default",
+        "label": "t:settings_schema.animations.settings.animations_hover_elements.label",
+        "info": "t:settings_schema.animations.settings.animations_hover_elements.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.buttons.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "buttons_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 2
+      },
+      {
+        "type": "range",
+        "id": "buttons_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "buttons_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 8
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Efecto al pasar el mouse"
+      },
+      {
+        "type": "select",
+        "id": "button_fx_link",
+        "label": "Botones que llevan a otra página",
+        "options": [
+          {
+            "value": "none",
+            "label": "Ninguno"
+          },
+          {
+            "value": "glow",
+            "label": "Resplandor"
+          },
+          {
+            "value": "fill-center",
+            "label": "Relleno desde el centro"
+          },
+          {
+            "value": "fill-left",
+            "label": "Relleno de izquierda a derecha"
+          },
+          {
+            "value": "arrow",
+            "label": "Flecha junto al texto"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "select",
+        "id": "button_fx_action",
+        "label": "Botones de acción (agregar al carrito, pagar)",
+        "options": [
+          {
+            "value": "none",
+            "label": "Ninguno"
+          },
+          {
+            "value": "glow",
+            "label": "Resplandor"
+          },
+          {
+            "value": "fill-center",
+            "label": "Relleno desde el centro"
+          },
+          {
+            "value": "fill-left",
+            "label": "Relleno de izquierda a derecha"
+          },
+          {
+            "value": "arrow",
+            "label": "Flecha junto al texto"
+          }
+        ],
+        "default": "none",
+        "info": "En pantallas táctiles no hay \"pasar el mouse\": el efecto no se ve."
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.variant_pills.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.variant_pills.paragraph"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 25
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 8
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "variant_pills_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.inputs.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "inputs_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "inputs_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 25
+      },
+      {
+        "type": "range",
+        "id": "inputs_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 8
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.cards.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "card_style",
+        "options": [
+          {
+            "value": "standard",
+            "label": "t:settings_schema.cards.settings.style.options__1.label"
+          },
+          {
+            "value": "card",
+            "label": "t:settings_schema.cards.settings.style.options__2.label"
+          },
+          {
+            "value": "tint",
+            "label": "Con velo"
+          }
+        ],
+        "default": "standard",
+        "label": "t:settings_schema.cards.settings.style.label"
+      },
+      {
+        "type": "range",
+        "id": "card_image_padding",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.image_padding.label",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "card_text_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:settings_schema.global.settings.text_alignment.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:settings_schema.global.settings.text_alignment.options__2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:settings_schema.global.settings.text_alignment.options__3.label"
+          }
+        ],
+        "default": "left",
+        "label": "t:settings_schema.global.settings.text_alignment.label"
+      },
+      {
+        "type": "color_scheme",
+        "id": "card_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-2"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "card_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "card_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "card_corner_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 12
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Gadsden · Tarjetas"
+      },
+      {
+        "type": "select",
+        "id": "card_title_lines",
+        "label": "Renglones del título",
+        "options": [
+          {
+            "value": "none",
+            "label": "Sin límite"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          }
+        ],
+        "default": "none",
+        "info": "Lo que no entra termina en puntos suspensivos."
+      },
+      {
+        "type": "select",
+        "id": "quick_add_style",
+        "label": "Botón de agregado rápido",
+        "options": [
+          {
+            "value": "outline",
+            "label": "Con contorno"
+          },
+          {
+            "value": "filled",
+            "label": "Lleno"
+          }
+        ],
+        "default": "outline"
+      },
+      {
+        "type": "header",
+        "content": "Precio y título de la tarjeta"
+      },
+      {
+        "type": "select",
+        "id": "card_price_order",
+        "label": "Orden de los precios",
+        "options": [
+          {
+            "value": "compare_first",
+            "label": "Precio anterior primero"
+          },
+          {
+            "value": "sale_first",
+            "label": "Precio de oferta primero"
+          }
+        ],
+        "default": "compare_first"
+      },
+      {
+        "type": "select",
+        "id": "card_price_color",
+        "label": "Color del precio de oferta",
+        "options": [
+          {
+            "value": "text",
+            "label": "Color del texto"
+          },
+          {
+            "value": "accent",
+            "label": "Color del botón"
+          }
+        ],
+        "default": "text"
+      },
+      {
+        "type": "checkbox",
+        "id": "card_compare_bold",
+        "label": "Precio anterior en negrita",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "card_title_weight",
+        "label": "Peso del título",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Según el estilo base"
+          },
+          {
+            "value": "400",
+            "label": "Normal"
+          },
+          {
+            "value": "600",
+            "label": "Semi negrita"
+          },
+          {
+            "value": "700",
+            "label": "Negrita"
+          }
+        ],
+        "default": "auto"
+      },
+      {
+        "type": "checkbox",
+        "id": "card_radius_half_mobile",
+        "label": "Redondeo a la mitad con dos columnas en mobile",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.collection_cards.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "collection_card_style",
+        "options": [
+          {
+            "value": "standard",
+            "label": "t:settings_schema.collection_cards.settings.style.options__1.label"
+          },
+          {
+            "value": "card",
+            "label": "t:settings_schema.collection_cards.settings.style.options__2.label"
+          },
+          {
+            "value": "tint",
+            "label": "Con velo"
+          }
+        ],
+        "default": "standard",
+        "label": "t:settings_schema.collection_cards.settings.style.label"
+      },
+      {
+        "type": "range",
+        "id": "collection_card_image_padding",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.image_padding.label",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "collection_card_text_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:settings_schema.global.settings.text_alignment.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:settings_schema.global.settings.text_alignment.options__2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:settings_schema.global.settings.text_alignment.options__3.label"
+          }
+        ],
+        "default": "left",
+        "label": "t:settings_schema.global.settings.text_alignment.label"
+      },
+      {
+        "type": "color_scheme",
+        "id": "collection_card_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-2"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "collection_card_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "collection_card_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "collection_card_corner_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "collection_card_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "collection_card_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "collection_card_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "collection_card_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.blog_cards.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "blog_card_style",
+        "options": [
+          {
+            "value": "standard",
+            "label": "t:settings_schema.blog_cards.settings.style.options__1.label"
+          },
+          {
+            "value": "card",
+            "label": "t:settings_schema.blog_cards.settings.style.options__2.label"
+          }
+        ],
+        "default": "standard",
+        "label": "t:settings_schema.blog_cards.settings.style.label"
+      },
+      {
+        "type": "range",
+        "id": "blog_card_image_padding",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.image_padding.label",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "blog_card_text_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:settings_schema.global.settings.text_alignment.options__1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:settings_schema.global.settings.text_alignment.options__2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:settings_schema.global.settings.text_alignment.options__3.label"
+          }
+        ],
+        "default": "left",
+        "label": "t:settings_schema.global.settings.text_alignment.label"
+      },
+      {
+        "type": "color_scheme",
+        "id": "blog_card_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-2"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "blog_card_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "blog_card_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "blog_card_corner_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 0
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "blog_card_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "blog_card_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "blog_card_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "blog_card_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.content_containers.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 12
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "text_boxes_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.media.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "media_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "media_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 5
+      },
+      {
+        "type": "range",
+        "id": "media_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 12
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "media_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "media_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "media_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "media_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.popups.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.popups.paragraph"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "popup_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "popup_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "popup_corner_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 12
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "popup_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "popup_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "popup_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "popup_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.drawers.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__border.content"
+      },
+      {
+        "type": "range",
+        "id": "drawer_border_thickness",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.thickness.label",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "drawer_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 10
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.global.settings.header__shadow.content"
+      },
+      {
+        "type": "range",
+        "id": "drawer_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:settings_schema.global.settings.opacity.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "drawer_shadow_horizontal_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.horizontal_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "drawer_shadow_vertical_offset",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.vertical_offset.label",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "drawer_shadow_blur",
+        "min": 0,
+        "max": 40,
+        "step": 5,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.blur.label",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.badges.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "badge_position",
+        "options": [
+          {
+            "value": "bottom left",
+            "label": "t:settings_schema.badges.settings.position.options__1.label"
+          },
+          {
+            "value": "bottom right",
+            "label": "t:settings_schema.badges.settings.position.options__2.label"
+          },
+          {
+            "value": "top left",
+            "label": "t:settings_schema.badges.settings.position.options__3.label"
+          },
+          {
+            "value": "top right",
+            "label": "t:settings_schema.badges.settings.position.options__4.label"
+          },
+          {
+            "value": "top center",
+            "label": "Arriba al centro"
+          }
+        ],
+        "default": "top left",
+        "label": "t:settings_schema.badges.settings.position.label"
+      },
+      {
+        "type": "select",
+        "id": "card_badge_position",
+        "label": "Posición en las tarjetas de producto",
+        "options": [
+          {
+            "value": "global",
+            "label": "La misma de arriba"
+          },
+          {
+            "value": "bottom left",
+            "label": "t:settings_schema.badges.settings.position.options__1.label"
+          },
+          {
+            "value": "bottom right",
+            "label": "t:settings_schema.badges.settings.position.options__2.label"
+          },
+          {
+            "value": "top left",
+            "label": "t:settings_schema.badges.settings.position.options__3.label"
+          },
+          {
+            "value": "top right",
+            "label": "t:settings_schema.badges.settings.position.options__4.label"
+          },
+          {
+            "value": "top center",
+            "label": "Arriba al centro"
+          }
+        ],
+        "default": "global",
+        "info": "La de arriba sigue valiendo para artículos y páginas en la búsqueda."
+      },
+      {
+        "type": "select",
+        "id": "badge_top_center_style",
+        "label": "Etiqueta arriba al centro",
+        "options": [
+          {
+            "value": "inside",
+            "label": "Dentro de la imagen"
+          },
+          {
+            "value": "edge",
+            "label": "Montada sobre el borde"
+          }
+        ],
+        "default": "inside"
+      },
+      {
+        "type": "select",
+        "id": "card_badges_mode",
+        "label": "Etiquetas en las tarjetas",
+        "options": [
+          {
+            "value": "all",
+            "label": "Agotado, oferta y propias"
+          },
+          {
+            "value": "no_sale",
+            "label": "Agotado y propias (sin la de oferta)"
+          }
+        ],
+        "default": "all"
+      },
+      {
+        "type": "checkbox",
+        "id": "badge_flush",
+        "label": "Pegada al costado de la tarjeta",
+        "default": false,
+        "info": "Sin el margen alrededor de la etiqueta."
+      },
+      {
+        "type": "range",
+        "id": "badge_corner_radius",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "t:settings_schema.global.settings.corner_radius.label",
+        "default": 40
+      },
+      {
+        "type": "color_scheme",
+        "id": "sale_badge_color_scheme",
+        "label": "t:settings_schema.badges.settings.sale_badge_color_scheme.label",
+        "default": "scheme-5"
+      },
+      {
+        "type": "text",
+        "id": "sale_label_text",
+        "label": "Texto de la etiqueta de oferta",
+        "placeholder": "Ahorrás {porcentaje}",
+        "info": "Podés usar {porcentaje} y {monto} (lo que se ahorra). Vacío: dice \"Oferta\"."
+      },
+      {
+        "type": "checkbox",
+        "id": "sale_label_icon",
+        "default": true,
+        "label": "Mostrar ícono de descuento en la etiqueta"
+      },
+      {
+        "type": "color_scheme",
+        "id": "sold_out_badge_color_scheme",
+        "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
+        "default": "scheme-3"
+      },
+      {
+        "type": "header",
+        "content": "Etiquetas por tag"
+      },
+      {
+        "type": "text",
+        "id": "card_badges_tags",
+        "label": "Tags que se muestran como etiqueta",
+        "placeholder": "Nuevo, Más vendido",
+        "info": "Separados por comas. Si un producto tiene uno de estos tags, la tarjeta lo muestra como etiqueta. Podés usar {porcentaje}."
+      },
+      {
+        "type": "color_scheme",
+        "id": "card_badges_scheme",
+        "label": "Combinación de colores de las etiquetas por tag",
+        "default": "scheme-4"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.brand_information.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.brand_information.settings.paragraph.content"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "brand_headline",
+        "label": "t:settings_schema.brand_information.settings.brand_headline.label"
+      },
+      {
+        "type": "richtext",
+        "id": "brand_description",
+        "label": "t:settings_schema.brand_information.settings.brand_description.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_image",
+        "label": "t:settings_schema.brand_information.settings.brand_image.label"
+      },
+      {
+        "type": "range",
+        "id": "brand_image_width",
+        "min": 50,
+        "max": 550,
+        "step": 5,
+        "default": 100,
+        "unit": "px",
+        "label": "t:settings_schema.brand_information.settings.brand_image_width.label"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.social-media.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "social_icon_style",
+        "label": "Íconos de Facebook e Instagram",
+        "options": [
+          {
+            "value": "circle",
+            "label": "Redondos"
+          },
+          {
+            "value": "square",
+            "label": "Cuadrados"
+          }
+        ],
+        "default": "circle"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_facebook_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "t:settings_schema.social-media.settings.social_youtube_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_youtube_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_twitter_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "t:settings_schema.social-media.settings.social_snapchat_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_snapchat_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "t:settings_schema.social-media.settings.social_pinterest_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_pinterest_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "t:settings_schema.social-media.settings.social_tumblr_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_tumblr_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
+        "placeholder": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.search_input.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "predictive_search_enabled",
+        "default": true,
+        "label": "t:settings_schema.search_input.settings.predictive_search_enabled.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_show_vendor",
+        "default": false,
+        "label": "t:settings_schema.search_input.settings.predictive_search_show_vendor.label",
+        "info": "t:settings_schema.search_input.settings.predictive_search_show_vendor.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_show_price",
+        "default": false,
+        "label": "t:settings_schema.search_input.settings.predictive_search_show_price.label",
+        "info": "t:settings_schema.search_input.settings.predictive_search_show_price.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.currency_format.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.currency_format.settings.paragraph"
+      },
+      {
+        "type": "checkbox",
+        "id": "currency_code_enabled",
+        "label": "t:settings_schema.currency_format.settings.currency_code_enabled.label",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.cart.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "t:settings_schema.cart.settings.cart_type.drawer.label"
+          },
+          {
+            "value": "page",
+            "label": "t:settings_schema.cart.settings.cart_type.page.label"
+          },
+          {
+            "value": "notification",
+            "label": "t:settings_schema.cart.settings.cart_type.notification.label"
+          }
+        ],
+        "default": "drawer",
+        "label": "t:settings_schema.cart.settings.cart_type.label"
+      },
+      {
+        "type": "select",
+        "id": "cart_icon",
+        "label": "Ícono del carrito",
+        "options": [
+          {
+            "value": "bag-1",
+            "label": "Bolsa 1"
+          },
+          {
+            "value": "bag-2",
+            "label": "Bolsa 2"
+          },
+          {
+            "value": "cart-1",
+            "label": "Carrito 1"
+          },
+          {
+            "value": "cart-2",
+            "label": "Carrito 2"
+          },
+          {
+            "value": "basket-1",
+            "label": "Canasta 1"
+          },
+          {
+            "value": "basket-2",
+            "label": "Canasta 2"
+          }
+        ],
+        "default": "bag-1"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "t:settings_schema.cart.settings.show_vendor.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_cart_note",
+        "label": "t:settings_schema.cart.settings.show_cart_note.label",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.cart.settings.cart_drawer.header"
+      },
+      {
+        "type": "collection",
+        "id": "cart_drawer_collection",
+        "label": "t:settings_schema.cart.settings.cart_drawer.collection.label",
+        "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
+      },
+      {
+        "type": "color_scheme",
+        "id": "cart_color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "Carrito vacío"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_continue_shopping",
+        "default": true,
+        "label": "Mostrar el botón \"Seguir comprando\""
+      },
+      {
+        "type": "url",
+        "id": "cart_continue_url",
+        "label": "Enlace del botón",
+        "info": "Vacío: lleva a todos los productos."
+      },
+      {
+        "type": "select",
+        "id": "cart_qty_min",
+        "label": "Botón \"menos\" en el carrito",
+        "options": [
+          {
+            "value": "zero",
+            "label": "Puede llegar a cero (quita el producto)"
+          },
+          {
+            "value": "product",
+            "label": "Se detiene en el mínimo del producto"
+          }
+        ],
+        "default": "zero",
+        "info": "Con el mínimo del producto, para quitarlo se usa el tacho."
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.customer_accounts.name",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.customer_accounts.settings.paragraph.content"
+      },
+      {
+        "type": "link_list",
+        "id": "customer_account_menu",
+        "default": "customer-account-main-menu",
+        "label": "t:settings_schema.customer_accounts.settings.customer_account_menu.label"
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Estilo",
+    "settings": [
+      {
+        "type": "select",
+        "id": "base_style",
+        "label": "Estilo base",
+        "options": [
+          {
+            "value": "clasico",
+            "label": "Clásico"
+          },
+          {
+            "value": "ecom",
+            "label": "Ecom"
+          },
+          {
+            "value": "dawn",
+            "label": "Dawn"
+          }
+        ],
+        "default": "clasico",
+        "info": "Clásico: tipografía y botones de la línea clásica de Dawn. Ecom: títulos compactos, botones y precios en negrita, campos y cantidades redondeados. Dawn: la tipografía y los botones de Dawn sin cambios. Las fuentes, colores y redondeos se eligen aparte."
+      },
+      {
+        "type": "select",
+        "id": "icon_weight",
+        "label": "Trazo de los íconos",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "thin",
+            "label": "Fino"
+          }
+        ],
+        "default": "normal",
+        "info": "Fino carga una segunda versión de los íconos desde Google Fonts."
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Formularios de compra",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Estilo de los desplegables de variantes, del selector de cantidad, de las pastillas y de las muestras de color de la ficha. Los colores son de la combinación de cada sección."
+      },
+      {
+        "type": "header",
+        "content": "Desplegables de variantes"
+      },
+      {
+        "type": "select",
+        "id": "dd_bg",
+        "label": "Fondo",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "background"
+      },
+      {
+        "type": "select",
+        "id": "dd_border",
+        "label": "Borde",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "foreground"
+      },
+      {
+        "type": "select",
+        "id": "dd_text",
+        "label": "Texto",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "foreground"
+      },
+      {
+        "type": "select",
+        "id": "dd_veil",
+        "label": "Velo",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "foreground"
+      },
+      {
+        "type": "range",
+        "id": "dd_veil_opacity",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "%",
+        "label": "Opacidad del velo",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "dd_border_width",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "unit": "px",
+        "label": "Grosor del borde",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "dd_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Opacidad del borde",
+        "default": 25
+      },
+      {
+        "type": "range",
+        "id": "dd_radius",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Redondeo",
+        "default": 8
+      },
+      {
+        "type": "checkbox",
+        "id": "dd_shadow",
+        "label": "Sombra",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "dd_hover_veil",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "%",
+        "label": "Velo al pasar el mouse",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "dd_hover_border",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Borde al pasar el mouse",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Selector de cantidad"
+      },
+      {
+        "type": "select",
+        "id": "q_bg",
+        "label": "Fondo",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "background"
+      },
+      {
+        "type": "select",
+        "id": "q_border",
+        "label": "Borde",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "foreground"
+      },
+      {
+        "type": "select",
+        "id": "q_text",
+        "label": "Texto",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "foreground"
+      },
+      {
+        "type": "select",
+        "id": "q_veil",
+        "label": "Velo",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "foreground"
+      },
+      {
+        "type": "range",
+        "id": "q_veil_opacity",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "%",
+        "label": "Opacidad del velo",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "q_border_width",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "unit": "px",
+        "label": "Grosor del borde",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "q_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Opacidad del borde",
+        "default": 25
+      },
+      {
+        "type": "range",
+        "id": "q_radius",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Redondeo",
+        "default": 8
+      },
+      {
+        "type": "checkbox",
+        "id": "q_shadow",
+        "label": "Sombra",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "q_hover_veil",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "%",
+        "label": "Velo al pasar el mouse",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "q_hover_border",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Borde al pasar el mouse",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Pastillas de variantes"
+      },
+      {
+        "type": "select",
+        "id": "pill_accent",
+        "label": "Color de la elegida",
+        "options": [
+          {
+            "value": "background",
+            "label": "Fondo"
+          },
+          {
+            "value": "foreground",
+            "label": "Texto"
+          },
+          {
+            "value": "button",
+            "label": "Botón"
+          },
+          {
+            "value": "button_text",
+            "label": "Texto del botón"
+          },
+          {
+            "value": "accent",
+            "label": "Acento"
+          },
+          {
+            "value": "outline",
+            "label": "Contorno y enlaces"
+          }
+        ],
+        "default": "button"
+      },
+      {
+        "type": "range",
+        "id": "pill_veil",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "%",
+        "label": "Velo de fondo de las no elegidas",
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "pill_bold",
+        "label": "Negrita",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "pill_text_size",
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Tamaño del texto",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "pill_pad_y",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Relleno arriba y abajo",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "pill_pad_x",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Relleno a los costados",
+        "default": 20
+      },
+      {
+        "type": "header",
+        "content": "Muestras de color"
+      },
+      {
+        "type": "range",
+        "id": "swatch_radius",
+        "min": 0,
+        "max": 50,
+        "step": 5,
+        "unit": "%",
+        "label": "Redondeo",
+        "default": 50,
+        "info": "50 %: círculo."
+      },
+      {
+        "type": "range",
+        "id": "swatch_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Opacidad del borde",
+        "default": 15
+      },
+      {
+        "type": "range",
+        "id": "swatch_selected_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Opacidad del borde de la elegida",
+        "default": 100
+      },
+      {
+        "type": "textarea",
+        "id": "swatch_colors",
+        "label": "Lista global de colores",
+        "placeholder": "Negro: #000000\nBlanco: #FFFFFF",
+        "info": "Un color por renglón. La usan los selectores de variantes que eligen \"Lista global del tema\"."
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Carruseles",
+    "settings": [
+      {
+        "type": "select",
+        "id": "carousel_breakpoint",
+        "label": "Carruseles: vista de desktop desde",
+        "options": [
+          {
+            "value": "750",
+            "label": "750 px (tablet)"
+          },
+          {
+            "value": "990",
+            "label": "990 px"
+          }
+        ],
+        "default": "750",
+        "info": "Ancho desde el que los carruseles, las pestañas y los sliders usan sus ajustes de desktop."
+      },
+      {
+        "type": "checkbox",
+        "id": "product_gallery_loop",
+        "label": "Galería de la ficha en bucle",
+        "default": false,
+        "info": "En todas las fichas: después de la última foto vuelve la primera (con las flechas y deslizando), y desde la primera, hacia atrás, va a la última."
+      },
+      {
+        "type": "select",
+        "id": "carousel_arrow_bare_color",
+        "label": "Color de las flechas transparentes",
+        "options": [
+          {
+            "value": "text",
+            "label": "Texto de su combinación"
+          },
+          {
+            "value": "bg",
+            "label": "Fondo de su combinación"
+          }
+        ],
+        "default": "text"
+      },
+      {
+        "type": "paragraph",
+        "content": "El aspecto de las flechas y los puntos de todos los carruseles de la tienda."
+      },
+      {
+        "type": "header",
+        "content": "Flechas"
+      },
+      {
+        "type": "range",
+        "id": "carousel_arrow_size",
+        "min": 10,
+        "max": 80,
+        "step": 1,
+        "default": 40,
+        "unit": "px",
+        "label": "Tamaño del botón"
+      },
+      {
+        "type": "range",
+        "id": "carousel_arrow_radius",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "default": 100,
+        "unit": "%",
+        "label": "Redondeo",
+        "info": "100 %: círculo. 0 %: cuadrado."
+      },
+      {
+        "type": "range",
+        "id": "carousel_arrow_icon",
+        "min": 20,
+        "max": 100,
+        "step": 5,
+        "default": 50,
+        "unit": "%",
+        "label": "Tamaño del ícono"
+      },
+      {
+        "type": "header",
+        "content": "Puntos"
+      },
+      {
+        "type": "range",
+        "id": "carousel_dot_width",
+        "min": 2,
+        "max": 30,
+        "step": 1,
+        "default": 8,
+        "unit": "px",
+        "label": "Ancho"
+      },
+      {
+        "type": "range",
+        "id": "carousel_dot_height",
+        "min": 2,
+        "max": 30,
+        "step": 1,
+        "default": 8,
+        "unit": "px",
+        "label": "Alto"
+      },
+      {
+        "type": "range",
+        "id": "carousel_dot_active_scale",
+        "min": 100,
+        "max": 200,
+        "step": 5,
+        "default": 130,
+        "unit": "%",
+        "label": "Escala del punto activo"
+      },
+      {
+        "type": "range",
+        "id": "carousel_dot_gap",
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "default": 8,
+        "unit": "px",
+        "label": "Separación"
+      },
+      {
+        "type": "range",
+        "id": "carousel_dot_radius",
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "default": 8,
+        "unit": "px",
+        "label": "Redondeo"
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Volver arriba",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "back_to_top",
+        "label": "Mostrar el botón para volver arriba",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "back_to_top_after",
+        "min": 0,
+        "max": 1000,
+        "step": 50,
+        "unit": "px",
+        "label": "Aparece después de bajar",
+        "default": 400
+      },
+      {
+        "type": "color_scheme",
+        "id": "back_to_top_scheme",
+        "label": "Combinación de colores",
+        "default": "scheme-4",
+        "info": "El botón toma el color de los botones llenos de la combinación."
+      },
+      {
+        "type": "select",
+        "id": "back_to_top_position",
+        "label": "Posición",
+        "options": [
+          {
+            "value": "left",
+            "label": "Abajo a la izquierda"
+          },
+          {
+            "value": "center",
+            "label": "Abajo al centro"
+          },
+          {
+            "value": "right",
+            "label": "Abajo a la derecha"
+          }
+        ],
+        "default": "right"
+      },
+      {
+        "type": "range",
+        "id": "back_to_top_x",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Separación del costado",
+        "default": 20,
+        "info": "No se usa si está al centro."
+      },
+      {
+        "type": "range",
+        "id": "back_to_top_y",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "unit": "px",
+        "label": "Separación de abajo",
+        "default": 20
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Seguridad",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "protect_content",
+        "default": false,
+        "label": "Proteger el contenido",
+        "info": "Desactiva el clic derecho, la selección de texto, el arrastre de imágenes y los atajos de las herramientas del navegador. No es una protección real: sólo le pone trabas a quien copia. Los campos de formulario siguen funcionando."
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Idioma y país",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Ventana de idioma"
+      },
+      {
+        "type": "checkbox",
+        "id": "language_popup",
+        "label": "Ofrecer el idioma del navegador al entrar",
+        "default": false,
+        "info": "Sólo con más de un idioma publicado, y si el del navegador es uno de ellos. Si la cierran, no vuelve a aparecer."
+      },
+      {
+        "type": "text",
+        "id": "language_popup_title",
+        "label": "Título",
+        "default": "¿Preferís otro idioma?"
+      },
+      {
+        "type": "richtext",
+        "id": "language_popup_text",
+        "label": "Texto"
+      },
+      {
+        "type": "text",
+        "id": "language_popup_button",
+        "label": "Botón para cambiar",
+        "default": "Cambiar"
+      },
+      {
+        "type": "text",
+        "id": "language_popup_stay",
+        "label": "Botón para seguir",
+        "default": "Seguir así"
+      },
+      {
+        "type": "color_scheme",
+        "id": "language_popup_scheme",
+        "label": "Combinación de colores",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "Derecha a izquierda"
+      },
+      {
+        "type": "select",
+        "id": "rtl_mode",
+        "label": "Sentido de lectura",
+        "options": [
+          {
+            "value": "off",
+            "label": "Izquierda a derecha"
+          },
+          {
+            "value": "auto",
+            "label": "Según el idioma (árabe, hebreo, persa, urdu…)"
+          },
+          {
+            "value": "always",
+            "label": "Siempre de derecha a izquierda"
+          }
+        ],
+        "default": "off"
+      },
+      {
+        "type": "header",
+        "content": "Bloqueo por país"
+      },
+      {
+        "type": "select",
+        "id": "geo_mode",
+        "label": "Bloqueo",
+        "options": [
+          {
+            "value": "off",
+            "label": "Desactivado"
+          },
+          {
+            "value": "block",
+            "label": "Bloquear los países de la lista"
+          },
+          {
+            "value": "allow",
+            "label": "Permitir sólo los países de la lista"
+          }
+        ],
+        "default": "off",
+        "info": "Usa el país que detecta Shopify. No es una barrera de seguridad: con una VPN se puede entrar. En el editor nunca se bloquea."
+      },
+      {
+        "type": "text",
+        "id": "geo_countries",
+        "label": "Países",
+        "info": "Códigos de dos letras separados por coma, ej. AR, UY, CL."
+      },
+      {
+        "type": "richtext",
+        "id": "geo_message",
+        "label": "Mensaje",
+        "default": "<p>Por el momento no vendemos en tu país.</p>"
+      },
+      {
+        "type": "color_scheme",
+        "id": "geo_scheme",
+        "label": "Combinación de colores",
+        "default": "scheme-1"
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Apariencia avanzada",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Fuentes por enlace"
+      },
+      {
+        "type": "paragraph",
+        "content": "Para usar fuentes que no están en la biblioteca de Shopify. Lo que no cargues acá sigue con las fuentes de Tipografía."
+      },
+      {
+        "type": "text",
+        "id": "custom_font_url",
+        "label": "Enlace de la hoja de estilos",
+        "info": "Empieza con https://. Por ejemplo, el enlace \"css2\" de Google Fonts."
+      },
+      {
+        "type": "text",
+        "id": "custom_heading_font",
+        "label": "Nombre de la fuente de los títulos",
+        "info": "Tal como figura en la hoja de estilos, ej. Playfair Display."
+      },
+      {
+        "type": "range",
+        "id": "custom_heading_weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Grosor de los títulos",
+        "default": 400
+      },
+      {
+        "type": "text",
+        "id": "custom_body_font",
+        "label": "Nombre de la fuente de los textos"
+      },
+      {
+        "type": "range",
+        "id": "custom_body_weight",
+        "min": 100,
+        "max": 900,
+        "step": 100,
+        "label": "Grosor de los textos",
+        "default": 400
+      },
+      {
+        "type": "header",
+        "content": "Cursor propio"
+      },
+      {
+        "type": "image_picker",
+        "id": "cursor_image",
+        "label": "Imagen del cursor",
+        "info": "Mejor un PNG cuadrado con fondo transparente. En pantallas táctiles no se ve."
+      },
+      {
+        "type": "range",
+        "id": "cursor_size",
+        "min": 16,
+        "max": 64,
+        "step": 1,
+        "unit": "px",
+        "label": "Tamaño",
+        "default": 32
+      },
+      {
+        "type": "select",
+        "id": "cursor_hotspot",
+        "label": "Punta del cursor",
+        "options": [
+          {
+            "value": "center",
+            "label": "En el centro de la imagen"
+          },
+          {
+            "value": "top-left",
+            "label": "Arriba a la izquierda"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "checkbox",
+        "id": "cursor_on_links",
+        "label": "Usarlo también sobre enlaces y botones",
+        "default": false,
+        "info": "Si no, sobre enlaces y botones va la manito de siempre."
+      },
+      {
+        "type": "header",
+        "content": "Barra de scroll"
+      },
+      {
+        "type": "checkbox",
+        "id": "custom_scrollbar",
+        "label": "Barra de scroll propia",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "scrollbar_thumb",
+        "label": "Color de la barra",
+        "default": "#121212"
+      },
+      {
+        "type": "color",
+        "id": "scrollbar_track",
+        "label": "Color del fondo",
+        "default": "#F3F3F3"
+      },
+      {
+        "type": "range",
+        "id": "scrollbar_width",
+        "min": 4,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Ancho",
+        "default": 10,
+        "info": "En Chrome y Firefox recientes el ancho sólo admite fino (menos de 10) o normal."
+      },
+      {
+        "type": "range",
+        "id": "scrollbar_radius",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Redondeo",
+        "default": 5
+      }
+    ]
+  },
+  {
+    "name": "Gadsden · Apoyá el proyecto",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Gadsden es gratis y lo va a seguir siendo. Si te ahorra horas de laburo, podés invitarme un cafecito en [cafecito.app/elcucholg](https://cafecito.app/elcucholg). Gracias por usarlo."
+      }
+    ]
+  }
+]

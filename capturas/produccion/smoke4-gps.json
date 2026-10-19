@@ -1,0 +1,73 @@
+{
+ "m": {
+  "title": "Mini GPS Localizador GF-07 Sin Abono | Envío Gratis – Domu Hogar",
+  "theme": "DOMU Gadsden 1.1.0 (ATHLEX widgets)",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 1609,
+    "empty": false
+   },
+   {
+    "id": "image_slider_bNgeFp",
+    "h": 243,
+    "empty": false
+   },
+   {
+    "id": "icon_bar_qH6Jxb",
+    "h": 184,
+    "empty": false
+   },
+   {
+    "id": "gps_steps_peKf7E",
+    "h": 972,
+    "empty": false
+   },
+   {
+    "id": "gps_comparativa",
+    "h": 730,
+    "empty": false
+   },
+   {
+    "id": "custom_liquid_8EnbUH",
+    "h": 1178,
+    "empty": false
+   },
+   {
+    "id": "177483634895303dd5",
+    "h": 1752,
+    "empty": false
+   },
+   {
+    "id": "gps_marquee",
+    "h": 95,
+    "empty": false
+   },
+   {
+    "id": "gps_cta",
+    "h": 351,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1386"
+  ],
+  "placeholders": [
+   "image_slider_bNgeFp"
+  ],
+  "videos": [],
+  "nVideos": 2,
+  "nImgs": 50,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1386",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "d": {
+  "title": "Apto crédito LGA – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "custom_liquid_AxmgpN",
+    "h": 480,
+    "empty": false
+   },
+   {
+    "id": "main-collection-product-grid",
+    "h": 4297,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 66,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Apto crédito LGA – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "custom_liquid_AxmgpN",
+    "h": 320,
+    "empty": false
+   },
+   {
+    "id": "main-collection-product-grid",
+    "h": 7121,
+    "empty": false
+   }
+  ],
+  "broken": [],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 66,
+  "status": 200,
+  "errors": [],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

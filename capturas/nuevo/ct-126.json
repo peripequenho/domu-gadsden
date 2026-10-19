@@ -1,0 +1,180 @@
+{
+ "d": {
+  "title": "CarboTiras | Tiras blanqueadoras de carbón y menta – Domu Hogar",
+  "theme": "Gadsden 1.2.6 (en curso)",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "anuncios",
+    "h": 41,
+    "empty": false
+   },
+   {
+    "id": "hero",
+    "h": 756,
+    "empty": false
+   },
+   {
+    "id": "pasos",
+    "h": 582,
+    "empty": false
+   },
+   {
+    "id": "resenas_ui",
+    "h": 340,
+    "empty": false
+   },
+   {
+    "id": "beneficios",
+    "h": 408,
+    "empty": false
+   },
+   {
+    "id": "main",
+    "h": 1269,
+    "empty": false
+   },
+   {
+    "id": "image_slider_YzHBWx",
+    "h": 340,
+    "empty": false
+   },
+   {
+    "id": "comparar",
+    "h": 580,
+    "empty": false
+   },
+   {
+    "id": "videos_ui",
+    "h": 636,
+    "empty": false
+   },
+   {
+    "id": "garantia",
+    "h": 450,
+    "empty": false
+   },
+   {
+    "id": "comparacion",
+    "h": 519,
+    "empty": false
+   },
+   {
+    "id": "faq",
+    "h": 786,
+    "empty": false
+   },
+   {
+    "id": "cierre",
+    "h": 548,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1513"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 18,
+  "nImgs": 130,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1513",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "CarboTiras | Tiras blanqueadoras de carbón y menta – Domu Hogar",
+  "theme": "Gadsden 1.2.6 (en curso)",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "anuncios",
+    "h": 32,
+    "empty": false
+   },
+   {
+    "id": "hero",
+    "h": 717,
+    "empty": false
+   },
+   {
+    "id": "pasos",
+    "h": 196,
+    "empty": false
+   },
+   {
+    "id": "resenas_ui",
+    "h": 340,
+    "empty": false
+   },
+   {
+    "id": "beneficios",
+    "h": 415,
+    "empty": false
+   },
+   {
+    "id": "main",
+    "h": 1646,
+    "empty": false
+   },
+   {
+    "id": "image_slider_YzHBWx",
+    "h": 173,
+    "empty": false
+   },
+   {
+    "id": "comparar",
+    "h": 496,
+    "empty": false
+   },
+   {
+    "id": "videos_ui",
+    "h": 481,
+    "empty": false
+   },
+   {
+    "id": "garantia",
+    "h": 382,
+    "empty": false
+   },
+   {
+    "id": "comparacion",
+    "h": 588,
+    "empty": false
+   },
+   {
+    "id": "faq",
+    "h": 885,
+    "empty": false
+   },
+   {
+    "id": "cierre",
+    "h": 834,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1513"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 18,
+  "nImgs": 113,
+  "status": 304,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1513",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}

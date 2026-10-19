@@ -1,0 +1,70 @@
+{
+ "d": {
+  "title": "Termo Trendy Acero Inoxidable 1L - Mantén tu Bebida Caliente/Fría – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 1440,
+  "sw": 1440,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 1733,
+    "empty": false
+   },
+   {
+    "id": "177483634895303dd5",
+    "h": 261,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1293"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 31,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1293",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ },
+ "m": {
+  "title": "Termo Trendy Acero Inoxidable 1L - Mantén tu Bebida Caliente/Fría – Domu Hogar",
+  "theme": "DOMU Gadsden",
+  "w": 390,
+  "sw": 390,
+  "liquid": [],
+  "secs": [
+   {
+    "id": "main",
+    "h": 2387,
+    "empty": false
+   },
+   {
+    "id": "177483634895303dd5",
+    "h": 261,
+    "empty": false
+   }
+  ],
+  "broken": [
+   "https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1293"
+  ],
+  "placeholders": [],
+  "videos": [],
+  "nVideos": 0,
+  "nImgs": 26,
+  "status": 200,
+  "errors": [
+   "404 https://domuhogar.com/cdn/shop/files/bank-maestro.svg?v=1293",
+   "consola: Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "hscroll": false,
+  "missing": [],
+  "orderOk": true
+ }
+}
